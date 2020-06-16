@@ -1,2 +1,2 @@
-# Source code for:
-## rachaelcox.github.io
+# rachaelcox.github.io
+Source for rachaelcox.github.io website 
