@@ -13,22 +13,21 @@ body, html {
  * Page cover
  */
 
-// optional page cover leftover from Wilke lab fork...
-// #cover { 
-// 
-//   background: url(../img/WilkeLabCover-long.jpg) no-repeat top left rgb(1,2,2); 
+#cover { 
+ 
+   background: url(../img/profile_edited.png) no-repeat top right rgb(1,2,2); 
 //    background: url(../img/enzyme_cover.jpg) no-repeat top left rgb(0,0,0);
-//    -webkit-background-size: 100%;
-//    -moz-background-size: 100%;
-//    -o-background-size: 100%;
-      // or:
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    // or:
 //    background-size: 100%;
 //    -webkit-background-size: cover;
 //    -moz-background-size: cover;
 //    -o-background-size: cover;
 //    background-size: cover;
     
-//}
+}
 
 //#headline {
 //    background: url(../img/WilkeLabHeadline.png) no-repeat top left; 
@@ -43,7 +42,6 @@ body, html {
     height: 100%;
 }
 
-*/
 
 /* About block */
 
