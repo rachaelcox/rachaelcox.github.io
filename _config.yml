@@ -1,8 +1,16 @@
-# site settings
-theme: jekyll-theme-slate
+# Site settings
 title: Rachael M. Cox
-description: >
-  Biochemistry PhD Candidate at the University of Texas at Austin<br>
-  Center for Systems and Synthetic Biology
+address: The University of Texas at Austin
+email: rachaelcox@utexas.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Department of Molecular Biosciences<br>
+  Center for Systems and Synthetic Biology<br>
+  2500 Speedway, A4800<br>
+  Room: MBB 3.128B
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: rachaelmcox
-github_username: rachaelcox
+github_username:  rachaelcox
+
+# Build settings
+markdown: kramdown
