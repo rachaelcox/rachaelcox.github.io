@@ -12,31 +12,35 @@ body, html {
 /**
  * Page cover
  */
-#cover { 
-    background: url(../img/profile_031920.png) no-repeat middle right rgb(0,0,0);
-    -webkit-background-size: 50%;
-    -moz-background-size: 50%;
-    -o-background-size: 50%;
-    background-size: 50%;
-}
+//#cover { 
+//    background: url(../img/profile_031920.png) no-repeat middle right rgb(0,0,0);
+//    -webkit-background-size: 50%;
+//    -moz-background-size: 50%;
+//    -o-background-size: 50%;
+//    background-size: 50%;
+//}
 
-#headline {
-    background: url(../img/site_headline.png) no-repeat middle left; 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    height: 100%;
-}
-
-#headline-empty {
-    height: 100%;
-}
+//#headline {
+//    background: url(../img/site_headline.png) no-repeat middle left; 
+//    -webkit-background-size: 100%;
+//    -moz-background-size: 100%;
+//    -o-background-size: 100%;
+//    background-size: 100%;
+//    height: 100%;
+//}
+//
+//#headline-empty {
+//    height: 100%;
+//}
 
 
 /* about block */
 
 #about-block{
+    background: url(../img/profile_031920.png) no-repeat middle right rgb(0,0,0);
+    -webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    -o-background-size: 50%;
     background: $grey-color;
     color: #ffffff;
 }
