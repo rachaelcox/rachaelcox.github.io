@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Practical Approaches to Analyzing Biological Data with R, Spring 2020"
+title:  "Practical Approaches to Analyzing Biological Data with R, Summer 2020"
 date:   2020-06-17 00:00:01
 permalink: /classes/
 ---
@@ -9,9 +9,13 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 
 Schedule:
 
-Class compute servers:
-* 
-*
+Class information:
+* Zoom meeting:
+  - Meeting ID:
+  - Link:
+* Class compute servers:
+  - [gsafcomp01.ccbb.utexas.edu](gsafcomp01.ccbb.utexas.edu)
+  - [gsafcomp02.ccbb.utexas.edu](gsafcomp02.ccbb.utexas.edu)
 
 ## Day 1: Introduction to R and the tidyverse ecosystem
 
