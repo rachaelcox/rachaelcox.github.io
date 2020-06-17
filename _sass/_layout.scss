@@ -13,24 +13,15 @@ body, html {
  * Page cover
  */
 #cover { 
-    /*
-    background: url(../img/WilkeLabCover-long.jpg) no-repeat top left rgb(1,2,2); 
-    */
-    background: url(../img/enzyme_cover.jpg) no-repeat top left rgb(0,0,0);
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    /*
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    */
+    background: url(../img/profile_031920.png) no-repeat middle right rgb(0,0,0);
+    -webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    -o-background-size: 50%;
+    background-size: 50%;
 }
 
 #headline {
-    background: url(../img/WilkeLabHeadline.png) no-repeat top left; 
+    background: url(../img/site_headline.png) no-repeat middle left; 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
