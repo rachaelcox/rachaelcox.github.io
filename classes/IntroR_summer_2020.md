@@ -7,9 +7,9 @@ permalink: /classes/
 
 This is the homepage for the introductory R course offered by the Big Data in Biology Summer School through the Center for Biomedical Support. All lecture slides, Zoom recordings, and class worksheets will be posted here. More information regarding summer school courses can be found [here](https://research.utexas.edu/cbrs/classes/big-data-in-biology-summer-school/2020-summer-school/).
 
-Schedule:
+**Schedule:** 
 
-Class information:
+**Class information:**
 * Zoom meeting:
   - Meeting ID:
   - Link:
