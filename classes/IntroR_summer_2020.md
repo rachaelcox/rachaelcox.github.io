@@ -29,6 +29,7 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 * In-class worksheet:
     - [R Markdown](/classes/IntroR/worksheets/day1.Rmd)
     - [HTML](/classes/IntroR/worksheets/day1.html)
+    - [Test dataset](/classes/datasets/mushrooms_small.csv)
 
 ### Day 2: Data visualization with ggplot2
 * Slides: [day1.pdf](/classes/IntroR/slides/day2.pdf)
