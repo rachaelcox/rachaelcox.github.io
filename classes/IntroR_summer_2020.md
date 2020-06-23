@@ -13,6 +13,7 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 **Zoom meeting (see email for password):**
   * Meeting ID:
   * Link:
+
 **Class compute servers (see email for password):**
   * [gsafcomp01.ccbb.utexas.edu](gsafcomp01.ccbb.utexas.edu)
   * [gsafcomp02.ccbb.utexas.edu](gsafcomp02.ccbb.utexas.edu)
