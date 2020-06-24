@@ -17,7 +17,7 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 **Class compute servers (see email for password):**
   * [https://gsafcomp01.ccbb.utexas.edu/](https://gsafcomp01.ccbb.utexas.edu/)
   * [https://gsafcomp02.ccbb.utexas.edu/](https://gsafcomp02.ccbb.utexas.edu/)
-  * [https:/gsafcbig01.ccbb.utexas.edu/](https:/gsafcbig01.ccbb.utexas.edu/)
+  * [https://gsafcbig01.ccbb.utexas.edu/](https:/gsafcbig01.ccbb.utexas.edu/)
 
 ------
 
