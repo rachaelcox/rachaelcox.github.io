@@ -1,0 +1,163 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(tidyverse) # ggplot2 library is contained within the tidyverse
+theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2
+library(ggthemes) # enables colorblind-friendly color palettes
+```
+## Day 2: Data Visualization with ggplot2
+### In-class worksheet 2
+
+**June 30, 2020**
+
+## 1. Plotting x-y relationships
+
+### 1.1 Correlations
+
+We will work with the `iris` data set available in R. This data set gives the measurements in centimeters of the variables sepal length, sepal width, petal length and petal width for 50 flowers from each of 3 species of iris. The species are *Iris setosa*, *Iris versicolor*, and *Iris virginica*:
+
+```{r}
+# view the first several rows of the iris dataset
+head(iris)
+```
+
+Using ggplot, make a scatter plot of petal length vs. sepal length for the three species; the function you need for this is `geom_point()`. Color by species.
+
+```{r}
+# your R code here
+```
+
+Now, do the same plot but instead of coloring by species, facet by species using `facet_wrap()`.
+
+```{r} 
+# your R code here
+```
+
+### 1.2 Time series
+
+The `omp` data set contains a subset of DNA microarray data measuring the differential expression of *E. coli* outer membrane proteins (omp) in nutrient-limited chemostatic cultures. In this particular experiment, the medium is glucose-limited. The `gene` column denotes one 8 genes that code for outer membrane proteins, `time_min` denotes the time point sampled in minutes, and `au` denotes the change in gene expression detected by the microarray chip (arbitrary units).
+
+```{r}
+# download the `omp` dataset
+omp <- read_csv("https://rachaelcox.github.io/classes/datasets/ecoli_omp_expression.csv")
+head(omp)
+```
+
+Plot the expression of each gene over time using `geom_line()`, coloring each line by gene. Notice anything off about this plot?
+
+```{r}
+# your R code here
+```
+
+Now, make the same plot but make the size of the lines thicker by specifying the `size` argument inside of `geom_line()`. Use `scale_color_colorblind()` to convert the legend colors to a colorblind-friendly palette. Use `xlab()` and `ylab` to give the figure pretty labels.
+
+```{r}
+# your R code here
+```
+
+## 2. Plotting amounts
+
+### 2.1 Bar plots
+
+The `bacteria` data set contains data from tests of the presence of the bacterium *H. influenzae* in children with otitis media in the Northern Territory of Australia. We are interested in two columns of this data set: `presence` reports the presence (y) or absence (n) of the bacterium, `treatment` reports the treatment, which was placebo, drug, or drug+ (drug plus high adherence).
+
+```{r}
+# download the `bacteria` dataset
+bacteria <- read_csv("https://rachaelcox.github.io/classes/datasets/bacteria.csv")
+head(bacteria)
+```
+
+Using `geom_bar()`, make a bar plot that shows the absolute number of cases with or without the bacterium, stacked on top of each other, for each treatment.
+
+```{r }
+# your R code here
+```
+
+Now modify the plot so that bars representing the absolute number of cases with or without the bacterium are shown side-by-side. Use `scale_fill_brewer()` to change the plot colors. Hint: This requires the argument `position='dodge'` in `geom_bar()`.
+```{r }
+# your R code here
+```
+
+Now modify the plot so that bars represent the relative number of cases with or without the bacterium. What is the appropriate `position` option in `geom_bar()` to achieve this effect? Use `?geom_bar` to find out. Also, try setting an alternative color palette for `scale_fill_brewer()` to use by specifying the `type` and `palette` arguments (see `?scale_fill_brewer` for details).
+
+```{r }
+# your R code here
+```
+
+### 2.2 Heat maps
+
+The `dandelion` data set contains RNA-seq reads for a subset of genes differentially expressed in response to five conditions. Plot a heat map using `geom_tile` where each condition is on the x-axis and each gene (either `transcript_dandelion` or `loci_arabidopsis`) is on the y-axis. Fill the color of the heat map by the `log2_foldchange` value. Use `scale_fill_distiller()` to specify a continuous **diverging** color palette.
+
+```{r}
+# download the dandelion differential expression data set
+dandelion <- read_csv("https://rachaelcox.github.io/classes/datasets/dandelion_diffexp_tidy.csv")
+head(dandelion)
+```
+
+*(Note that I have told R Markdown to make a larger figure, by starting the code block with* `{r fig.height=6, fig.width=10}` *instead of* `{r}`*, because the default figure size is too narrow to show the resulting axes and map.)*
+
+```{r fig.height=3.5, fig.width=7}
+# your R code here
+```
+
+Make the same plot again, but rotate the text on the x-axis so they aren't mashing into each other. Try a different color palette this time.
+
+```{r fig.height=4, fig.width=7}
+# your R code here
+```
+
+## 3. Plotting distributions
+
+### 3.1 Boxplots, violin plots
+
+Using the `biopsy` dataset, make side-by-side boxplots of `clump thickness` for the diagnosis `outcome`. The geom you need to use is `geom_boxplot()`.
+
+```{r}
+# download the biopsy data set
+biopsy <- read_csv("https://rachaelcox.github.io/classes/datasets/biopsy.csv")
+head(biopsy)
+```
+
+```{r}
+# your R code here
+```
+
+Now, make the same plot again, instead using `geom_violin()`. What do you notice?
+
+```{r}
+# your R code here
+```
+
+### 3.2 Histograms, density plots
+
+Make a histogram plot of sepal lengths in the `iris` data set, using the default histogram settings. Then make two more such plots, with different bin widths. Use `geom_histogram()`. You can change the bin width by specifying the argument `binwidth =` or `bins = `. See `?geom_histogram` for more information.
+
+```{r }
+# your R code here
+```
+
+Instead of `geom_histogram()`, now use `geom_density()` and fill the area under the curves by species identity.
+
+```{r}
+# your R code here
+```
+
+Now make the areas under the curve partially transparent, so the overlap of the various distributions becomes clearly visible.
+
+```{r}
+# your R code here)
+```
+
+## 4. Layering geoms
+
+For the `iris` data set, make a plot of the 2d distribution of petal length vs. sepal length, by making an x-y plot that shows the individual data points as well as contour lines indicating the density of points in a given spatial region.
+
+```{r}
+# your R code here
+```
+
+Now instead of contour lines, add a fitted straight black line (not a curve, and no confidence band!) to each group of points. You'll need to check `?geom_smooth` to see which arguments you'll need to specify. Because we are manually overriding the color of the lines, we need to set the group aesthetic to tell ggplot2 to draw a separate line for each species.
+
+```{r}
+# your R code here
+```
