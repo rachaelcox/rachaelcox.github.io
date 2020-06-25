@@ -11,7 +11,7 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 #### Class information
 **Zoom meeting (see email for password):**
   * Meeting ID: 936 5926 3033
-  * Link: https://utexas.zoom.us/j/93659263033
+  * Link: [https://utexas.zoom.us/j/93659263033](https://utexas.zoom.us/j/93659263033)
 
 **Class compute servers (see email for password):**
   * [https://gsafcomp01.ccbb.utexas.edu/](https://gsafcomp01.ccbb.utexas.edu/)
