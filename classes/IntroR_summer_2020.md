@@ -59,6 +59,10 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 
 ### Day 4: Specialized packages for bioanalysis in R
 * Slides: [day4.pdf](/classes/IntroR/slides/day4.pdf)
+* Bioconductor: [Common classes and methods](https://bioconductor.org/developers/how-to/commonMethodsAndClasses/)
+* Vignettes:
+    - [DESeq2 (Differential Expression)](http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
+    - [dada2 (16s profiling)](https://benjjneb.github.io/dada2/tutorial.html)
 * In-class worksheet:
     - [R Markdown](/classes/IntroR/worksheets/day4.Rmd)
     - [HTML](/classes/IntroR/worksheets/day4.html)

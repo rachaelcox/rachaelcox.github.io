@@ -1,0 +1,88 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggthemes) # enables colorblind-friendly color palettes
+```
+## Day 4: Data transformation
+### In-class worksheet
+**July 2, 2020**
+
+In this worksheet, we will use the following libraries:
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(tximport) # Bioconductor
+library(rhdf5) # Bioconductor
+library(DESeq2) # Bioconductor
+library(pheatmap)
+library(dada2) # Bioconductor
+library(phyloseq) # Bioconductor
+library(Biostrings) # Bioconductor
+theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2
+```
+
+## 1. RNAseq analysis with DESeq2
+
+DESeq2 is a great package for analyzing and interpretting RNAseq results. We covered limited portions of the vignette (http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html). Using that and the reference manual (https://bioconductor.org/packages/release/bioc/manuals/DESeq2/man/DESeq2.pdf), solve these problems based on the data we looked at together in class.
+
+```{r message = FALSE}
+# download the txi object with all samples
+txi <- readRDS(url("https://rachaelcox.github.io/classes/datasets/txi.RDS"))
+
+kallisto_df <- read_csv("https://rachaelcox.github.io/classes/datasets/SraRunTable.csv")
+row.names(kallisto_df) <- kallisto_df$Run
+```
+
+
+### 1.1 Setting up a coldata object
+
+Setup a coldata object using kallisto_df. This object should have data for all samples and information about phenotype, OD600_nm, and the sample Run id.
+
+```{r}
+coldata <- kallisto_df %>%
+  select(phenotype,
+         od600_nm,
+         id)
+```
+
+### 1.2 Create dds object
+
+Create your dds object using DESeqDataSetFromTximport(). Your design should be more complex this time and should include a plus sign (HINT: Check the "Quick Start" section of the DESeq2 vignette for guidance)
+
+```{r}
+# your R code here
+```
+
+### 1.3 Do full analysis
+
+Get a data.frame with the results from your DESeq analysis. It should contain log2FC values for OD600 0.5 values/OD600 2 values.
+
+```{r}
+# your R code here
+```
+
+**Bonus challenge:** In the lecture slides we used the counts function to make a data.frame with the input counts for each condition. Look into the counts( ) function in DESeq2, is there a better way that we could have compared expression counts rather than using the RAW input values? How would you do this? What does the heatmap we made in class look like when you do this and include all eight samples?
+
+```{r}
+# your R code here
+```
+
+## 2. 16S analysis with dada2
+The dada object (generated via a call to the dada() function) stores inferred amplicon information. In the lecture we generated a dada object containing this information for all of the "Forward" reads in our dataset, dadaFS. How would you extract the unique amplicon sequences for sample # 4 (F3D142) from dadaFS?
+
+
+```{r}
+# your R code here
+```
+
+How would you extract and most informatively plot the abundances from the same sample?
+
+```{r}
+# your R code here
+```
+
+## 3 Other Bioconductor packages
+Pick a Bioconductor package or packages that you might use for your own research (use lecture slides or Google, try to find one with a vignette available). Identify some classes and methods that you would use in your analysis and write a pipeline using pseudocode that starts with raw input data (e.g. a fastq file) and outputs something meaningful. This may not be easy but focus on thinking about the steps your pipeline would need and try to work through them logically. For an easier example, you could think about redoing the RNAseq analysis from the lecture slides using the edgeR package. 
+
+```{r}
+# your pseudocode here.
+```
