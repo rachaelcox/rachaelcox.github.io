@@ -1,0 +1,28 @@
+Status:,How would you rate your current level of programming experience?,Do you have any experience with other programming languages? (check all that apply),Do you have any experience with the following software? (check all that apply),Have you taken any of the CBRS short courses? (check all that apply)
+Faculty,4,Python,Excel,"Introduction to Biocomputing, Introduction to RNA-Seq, Genome Variant Analysis"
+Faculty,2,Python,Excel,"Introduction to Python, Introduction to RNA-Seq"
+Faculty,4,Python,"Excel, SPSS Statistics, SAS System","Introduction to Python, Introduction to Biocomputing"
+Faculty,2,"Fortran and Basic.  yeah, a while ago..",Excel,None of these
+Faculty,2,Python,"Excel, SPSS Statistics",Introduction to RNA-Seq
+Graduate student,1,"None, R is my first language",Excel,Genome Variant Analysis
+Graduate student,2,Python,Excel,Introduction to Python
+Graduate student,1,Python,Excel,"Introduction to Python, Introduction to Biocomputing, Genome Variant Analysis, Comparative Genomic and Computational Approaches to the Evolution of Complex Phenotypes"
+Graduate student,3,"Python, Shell (e.g., Bash)",Excel,"Introduction to Python, Introduction to Biocomputing, Introduction to Core NGS Concepts and Tools, Introduction to RNA-Seq"
+Graduate student,4,"Python, Matlab",Excel,Introduction to Python
+Graduate student,1,Python,Excel,"Introduction to Python, Introduction to Biocomputing, Introduction to Core NGS Concepts and Tools, Introduction to RNA-Seq, Genome Variant Analysis"
+Graduate student,3,"Shell (e.g., Bash)",Excel,Introduction to RNA-Seq
+Graduate student,2,"Python, Shell (e.g., Bash)",Excel,"Introduction to Biocomputing, Introduction to RNA-Seq"
+Graduate student,2,Python,Excel,Introduction to Python
+Graduate student,2,Python,Excel,"Introduction to Python, Introduction to Biocomputing, Introduction to Core NGS Concepts and Tools, Introduction to RNA-Seq, Genome Variant Analysis, Comparative Genomic and Computational Approaches to the Evolution of Complex Phenotypes, Principles of Machine Learning for Bioinformatics"
+Graduate student,1,"None, R is my first language",Excel,Introduction to Biocomputing
+Research Associate,3,"Shell (e.g., Bash)",Excel,Introduction to Core NGS Concepts and Tools
+Undergraduate,4,Python,Excel,Introduction to Python
+Undergraduate,3,"Python, Java",Excel,None of these
+Undergraduate,3,"Python, Java",Excel,Introduction to Core NGS Concepts and Tools
+Undergraduate,2,"Java, None, R is my first language",Excel,None of these
+Undergraduate,2,"None, R is my first language",Excel,None of these
+Undergraduate,2,Java,Excel,None of these
+Undergraduate,2,"None, R is my first language",Excel,None of these
+Undergraduate,2,"None, R is my first language",Excel,None of these
+Undergraduate,3,Python,Excel,None of these
+Undergraduate,4,"Shell (e.g., Bash)",Excel,"Introduction to Biocomputing, Introduction to Core NGS Concepts and Tools"
