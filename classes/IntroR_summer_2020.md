@@ -29,10 +29,12 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 * In-class worksheet 1 (R basics):
     - [R Markdown](/classes/IntroR/worksheets/day1.Rmd)
     - [HTML](/classes/IntroR/worksheets/day1.html)
+    - [HTML, Solutions](/classes/IntroR/worksheets/day1_solutions.html)
     - [Test dataset](/classes/datasets/mushrooms_small.csv)
 * In-class worksheet 2 (Tidying data):
     - [R Markdown](/classes/IntroR/worksheets/tidying.Rmd)
     - [HTML](/classes/IntroR/worksheets/tidying.html)
+* Zoom recording: [https://utexas.zoom.us/rec/share/ye57DLb_sSBLHLf_42Hhc_QoM6jKT6a80SIYrKAOyUzBh7vi5LnxCx830lJz9U6W](https://utexas.zoom.us/rec/share/ye57DLb_sSBLHLf_42Hhc_QoM6jKT6a80SIYrKAOyUzBh7vi5LnxCx830lJz9U6W)
 
 ### Day 2: Data visualization with ggplot2
 * Slides: [day2.pdf](/classes/IntroR/slides/day2.pdf)

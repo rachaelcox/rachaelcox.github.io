@@ -319,7 +319,7 @@ range(iris$Petal.Width)</code></pre>
 <li>Save the output of the <code>head()</code> function to a new dataframe called <code>mushrooms_tiny</code>.</li>
 <li>Use the <code>write_csv</code> function to write the dataframe <code>mushrooms_tiny</code> to a new <code>.csv</code> file. <strong>Important: The filename must be given to the function as a string.</strong></li>
 </ol>
-<p><strong>Note:</strong> If you are coding on a local installation of R, you will have to specify a path to the location of the file or move the file to the working directory. Local installations of R do now have an “Upload” function. These concepts are covered at the end of this section.</p>
+<p><strong>Note:</strong> If you are coding on a local installation of R, you will have to specify a path to the location of the file or move the file to the working directory. Local installations of R do not have an “Upload” function. These concepts are covered at the end of this section.</p>
 <pre class="r"><code># read in the dataset from the working directory
 mushrooms &lt;- read_csv(&quot;mushrooms_small.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
@@ -381,16 +381,15 @@ getwd()</code></pre>
 </ol>
 <pre class="r"><code># list files in current working directory
 list.files()</code></pre>
-<pre><code>##  [1] &quot;class1_solutions.Rmd&quot; &quot;class1.Rmd&quot;           &quot;day1_data&quot;           
-##  [4] &quot;day1_solutions.html&quot;  &quot;day1_solutions.Rmd&quot;   &quot;day1.html&quot;           
-##  [7] &quot;day1.Rmd&quot;             &quot;mushrooms_small.csv&quot;  &quot;mushrooms_tiny.csv&quot;  
-## [10] &quot;R&quot;</code></pre>
+<pre><code>## [1] &quot;day1_data&quot;           &quot;day1_solutions.Rmd&quot;  &quot;day1.html&quot;          
+## [4] &quot;day1.Rmd&quot;            &quot;mushrooms_small.csv&quot; &quot;mushrooms_tiny.csv&quot; 
+## [7] &quot;R&quot;</code></pre>
 <pre class="r"><code># list files in the sub-directory called &quot;day1_data&quot;
 list.files(&quot;day1_data&quot;)</code></pre>
-<pre><code>## [1] &quot;mushrooms_tiny.csv&quot;</code></pre>
+<pre><code>## [1] &quot;mushrooms_small.csv&quot; &quot;mushrooms_tiny.csv&quot;</code></pre>
 <pre class="r"><code># list the full path to the files in &quot;day1_data&quot;
 list.files(&quot;day1_data&quot;, full.names = TRUE) # this becomes very useful for reading many sub-directory files at once</code></pre>
-<pre><code>## [1] &quot;day1_data/mushrooms_tiny.csv&quot;</code></pre>
+<pre><code>## [1] &quot;day1_data/mushrooms_small.csv&quot; &quot;day1_data/mushrooms_tiny.csv&quot;</code></pre>
 <p>Clear your global environment (the broom symbol in the top right window). Read the file in the sub-directory “day1_data” using <code>read_csv</code>. The function will need the full path given by the output from the code chunk above.</p>
 <pre class="r"><code>read_csv(&quot;day1_data/mushrooms_tiny.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:

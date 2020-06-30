@@ -129,7 +129,7 @@ Try the following:
 5. Save the output of the `head()` function to a new dataframe called `mushrooms_tiny`.
 6. Use the `write_csv` function to write the dataframe `mushrooms_tiny` to a new `.csv` file. __Important: The filename must be given to the function as a string.__
 
-**Note:** If you are coding on a local installation of R, you will have to specify a path to the location of the file or move the file to the working directory. Local installations of R do now have an "Upload" function. These concepts are covered at the end of this section.
+**Note:** If you are coding on a local installation of R, you will have to specify a path to the location of the file or move the file to the working directory. Local installations of R do not have an "Upload" function. These concepts are covered at the end of this section.
 
 ```{r}
 # read in the dataset from the working directory
