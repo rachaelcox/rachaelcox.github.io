@@ -48,7 +48,7 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
     - [R Markdown](/classes/IntroR/worksheets/day2.Rmd)
     - [HTML](/classes/IntroR/worksheets/day2.html)
     - [HTML, Solutions](/classes/IntroR/worksheets/day2_solutions.html)
-* Zoom recording: [https://utexas.zoom.us/rec/share/w-tVIZrP_WVOes_qx03EZ4R9P6Xqeaa813MW-fFczUtkdqdhjRD1nO-M1J3xR70j?startTime=1593625872000](https://utexas.zoom.us/rec/share/w-tVIZrP_WVOes_qx03EZ4R9P6Xqeaa813MW-fFczUtkdqdhjRD1nO-M1J3xR70j?startTime=1593625872000)
+    - Zoom recording: [https://utexas.zoom.us/rec/share/4vZwApr6509JYoWW9GuHGYQzHIjmT6a8hCgZqaFfy0z3TMHXTT0oGdk-gmV6rsmB?startTime=1593538617000](https://utexas.zoom.us/rec/share/4vZwApr6509JYoWW9GuHGYQzHIjmT6a8hCgZqaFfy0z3TMHXTT0oGdk-gmV6rsmB?startTime=1593538617000)
 
 ### Day 3: Data transformation with dplyr
 * Slides: [day3.pdf](/classes/IntroR/slides/day3.pdf)
@@ -62,7 +62,7 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
     - [R Markdown](/classes/IntroR/worksheets/day3.Rmd)
     - [HTML](/classes/IntroR/worksheets/day3.html)
     - [HTML, Solutions](/classes/IntroR/worksheets/day3_solutions.html)
-* Zoom recording: [https://utexas.zoom.us/rec/share/wP5UMeDtxE9LaJ3n1hmHAKomPK3Xeaa8hyVP8qEImEYyIHfPp5Mh4RdBh4-yDYve?startTime=1593644929000](https://utexas.zoom.us/rec/share/wP5UMeDtxE9LaJ3n1hmHAKomPK3Xeaa8hyVP8qEImEYyIHfPp5Mh4RdBh4-yDYve?startTime=1593644929000)
+* Zoom recording: [https://utexas.zoom.us/rec/share/w-tVIZrP_WVOes_qx03EZ4R9P6Xqeaa813MW-fFczUtkdqdhjRD1nO-M1J3xR70j?startTime=1593625872000](https://utexas.zoom.us/rec/share/w-tVIZrP_WVOes_qx03EZ4R9P6Xqeaa813MW-fFczUtkdqdhjRD1nO-M1J3xR70j?startTime=1593625872000) 
 
 ### Day 4: Specialized packages for bioanalysis in R
 * Slides: [day4.pdf](/classes/IntroR/slides/day4.pdf)
