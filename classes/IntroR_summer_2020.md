@@ -48,7 +48,7 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
     - [R Markdown](/classes/IntroR/worksheets/day2.Rmd)
     - [HTML](/classes/IntroR/worksheets/day2.html)
     - [HTML, Solutions](/classes/IntroR/worksheets/day2_solutions.html)
-    - Zoom recording: [https://utexas.zoom.us/rec/share/4vZwApr6509JYoWW9GuHGYQzHIjmT6a8hCgZqaFfy0z3TMHXTT0oGdk-gmV6rsmB?startTime=1593538617000](https://utexas.zoom.us/rec/share/4vZwApr6509JYoWW9GuHGYQzHIjmT6a8hCgZqaFfy0z3TMHXTT0oGdk-gmV6rsmB?startTime=1593538617000)
+* Zoom recording: [https://utexas.zoom.us/rec/share/4vZwApr6509JYoWW9GuHGYQzHIjmT6a8hCgZqaFfy0z3TMHXTT0oGdk-gmV6rsmB?startTime=1593538617000](https://utexas.zoom.us/rec/share/4vZwApr6509JYoWW9GuHGYQzHIjmT6a8hCgZqaFfy0z3TMHXTT0oGdk-gmV6rsmB?startTime=1593538617000)
 
 ### Day 3: Data transformation with dplyr
 * Slides: [day3.pdf](/classes/IntroR/slides/day3.pdf)
