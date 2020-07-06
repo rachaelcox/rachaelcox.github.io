@@ -77,4 +77,5 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 * In-class worksheet:
     - [R Markdown](/classes/IntroR/worksheets/day4.Rmd)
     - [HTML](/classes/IntroR/worksheets/day4.html)
-
+    - [HTML, Solutions](/classes/IntroR/worksheets/day4_solutions.html)
+* Zoom recording: [https://utexas.zoom.us/rec/share/ou1XLanp7EBOZY39zx7BS_EiGqDgaaa8gSNN8qYJn0eTPGQLReOwwk7-puhjokvR?startTime=1593712472000](https://utexas.zoom.us/rec/share/ou1XLanp7EBOZY39zx7BS_EiGqDgaaa8gSNN8qYJn0eTPGQLReOwwk7-puhjokvR?startTime=1593712472000)
