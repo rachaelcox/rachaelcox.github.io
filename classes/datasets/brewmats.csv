@@ -1,0 +1,769 @@
+data_type,material_type,year,month,type,month_usage_by_type,month_sum_all_types,year_sum_by_type
+Pounds of Materials Used,Grain Products,2008,1,Malt and malt products,374165152,592595514,4497468603
+Pounds of Materials Used,Grain Products,2008,1,Corn and corn products,57563519,592595514,726766392
+Pounds of Materials Used,Grain Products,2008,1,Rice and rice products,72402143,592595514,814375092
+Pounds of Materials Used,Grain Products,2008,1,Barley and barley products,3800844,592595514,58048335
+Pounds of Materials Used,Grain Products,2008,1,Wheat and wheat products,1177186,592595514,18207676
+Pounds of Materials Used,Non-Grain Products,2008,1,Sugar and syrups,78358212,592595514,848033865
+Pounds of Materials Used,Non-Grain Products,2008,1,Hops (dry),4506546,592595514,54889519
+Pounds of Materials Used,Non-Grain Products,2008,1,Hops (used as extracts),621912,592595514,6019292
+Pounds of Materials Used,Grain Products,2008,2,Malt and malt products,355687578,568220736,4497468603
+Pounds of Materials Used,Grain Products,2008,2,Corn and corn products,59513161,568220736,726766392
+Pounds of Materials Used,Grain Products,2008,2,Rice and rice products,66061597,568220736,814375092
+Pounds of Materials Used,Grain Products,2008,2,Barley and barley products,3236714,568220736,58048335
+Pounds of Materials Used,Grain Products,2008,2,Wheat and wheat products,1240983,568220736,18207676
+Pounds of Materials Used,Non-Grain Products,2008,2,Sugar and syrups,80188744,568220736,848033865
+Pounds of Materials Used,Non-Grain Products,2008,2,Hops (dry),1815271,568220736,54889519
+Pounds of Materials Used,Non-Grain Products,2008,2,Hops (used as extracts),476688,568220736,6019292
+Pounds of Materials Used,Grain Products,2008,3,Malt and malt products,399855819,628294334,4497468603
+Pounds of Materials Used,Grain Products,2008,3,Corn and corn products,60800221,628294334,726766392
+Pounds of Materials Used,Grain Products,2008,3,Rice and rice products,72629666,628294334,814375092
+Pounds of Materials Used,Grain Products,2008,3,Barley and barley products,6950276,628294334,58048335
+Pounds of Materials Used,Grain Products,2008,3,Wheat and wheat products,1888250,628294334,18207676
+Pounds of Materials Used,Non-Grain Products,2008,3,Sugar and syrups,78907213,628294334,848033865
+Pounds of Materials Used,Non-Grain Products,2008,3,Hops (dry),6067167,628294334,54889519
+Pounds of Materials Used,Non-Grain Products,2008,3,Hops (used as extracts),1195722,628294334,6019292
+Pounds of Materials Used,Grain Products,2008,4,Malt and malt products,388639443,617389736,4497468603
+Pounds of Materials Used,Grain Products,2008,4,Corn and corn products,61555980,617389736,726766392
+Pounds of Materials Used,Grain Products,2008,4,Rice and rice products,73309991,617389736,814375092
+Pounds of Materials Used,Grain Products,2008,4,Barley and barley products,3912088,617389736,58048335
+Pounds of Materials Used,Grain Products,2008,4,Wheat and wheat products,1404733,617389736,18207676
+Pounds of Materials Used,Non-Grain Products,2008,4,Sugar and syrups,81199989,617389736,848033865
+Pounds of Materials Used,Non-Grain Products,2008,4,Hops (dry),6864440,617389736,54889519
+Pounds of Materials Used,Non-Grain Products,2008,4,Hops (used as extracts),503072,617389736,6019292
+Pounds of Materials Used,Grain Products,2008,5,Malt and malt products,411307544,654792307,4497468603
+Pounds of Materials Used,Grain Products,2008,5,Corn and corn products,63945802,654792307,726766392
+Pounds of Materials Used,Grain Products,2008,5,Rice and rice products,76219021,654792307,814375092
+Pounds of Materials Used,Grain Products,2008,5,Barley and barley products,3660048,654792307,58048335
+Pounds of Materials Used,Grain Products,2008,5,Wheat and wheat products,1697578,654792307,18207676
+Pounds of Materials Used,Non-Grain Products,2008,5,Sugar and syrups,89946309,654792307,848033865
+Pounds of Materials Used,Non-Grain Products,2008,5,Hops (dry),7470130,654792307,54889519
+Pounds of Materials Used,Non-Grain Products,2008,5,Hops (used as extracts),545875,654792307,6019292
+Pounds of Materials Used,Grain Products,2008,6,Malt and malt products,415161326,651483138,4497468603
+Pounds of Materials Used,Grain Products,2008,6,Corn and corn products,65645480,651483138,726766392
+Pounds of Materials Used,Grain Products,2008,6,Rice and rice products,71779022,651483138,814375092
+Pounds of Materials Used,Grain Products,2008,6,Barley and barley products,7751285,651483138,58048335
+Pounds of Materials Used,Grain Products,2008,6,Wheat and wheat products,2258532,651483138,18207676
+Pounds of Materials Used,Non-Grain Products,2008,6,Sugar and syrups,81012422,651483138,848033865
+Pounds of Materials Used,Non-Grain Products,2008,6,Hops (dry),7361941,651483138,54889519
+Pounds of Materials Used,Non-Grain Products,2008,6,Hops (used as extracts),513130,651483138,6019292
+Pounds of Materials Used,Grain Products,2008,7,Malt and malt products,405393784,630509409,4497468603
+Pounds of Materials Used,Grain Products,2008,7,Corn and corn products,66406321,630509409,726766392
+Pounds of Materials Used,Grain Products,2008,7,Rice and rice products,74945452,630509409,814375092
+Pounds of Materials Used,Grain Products,2008,7,Barley and barley products,3395619,630509409,58048335
+Pounds of Materials Used,Grain Products,2008,7,Wheat and wheat products,1371856,630509409,18207676
+Pounds of Materials Used,Non-Grain Products,2008,7,Sugar and syrups,76728131,630509409,848033865
+Pounds of Materials Used,Non-Grain Products,2008,7,Hops (dry),1759452,630509409,54889519
+Pounds of Materials Used,Non-Grain Products,2008,7,Hops (used as extracts),508794,630509409,6019292
+Pounds of Materials Used,Grain Products,2008,8,Malt and malt products,389391266,620995630,4497468603
+Pounds of Materials Used,Grain Products,2008,8,Corn and corn products,64953210,620995630,726766392
+Pounds of Materials Used,Grain Products,2008,8,Rice and rice products,70993476,620995630,814375092
+Pounds of Materials Used,Grain Products,2008,8,Barley and barley products,3772040,620995630,58048335
+Pounds of Materials Used,Grain Products,2008,8,Wheat and wheat products,1588068,620995630,18207676
+Pounds of Materials Used,Non-Grain Products,2008,8,Sugar and syrups,83928121,620995630,848033865
+Pounds of Materials Used,Non-Grain Products,2008,8,Hops (dry),5992025,620995630,54889519
+Pounds of Materials Used,Non-Grain Products,2008,8,Hops (used as extracts),377424,620995630,6019292
+Pounds of Materials Used,Grain Products,2008,9,Malt and malt products,362587470,570346335,4497468603
+Pounds of Materials Used,Grain Products,2008,9,Corn and corn products,59787127,570346335,726766392
+Pounds of Materials Used,Grain Products,2008,9,Rice and rice products,61739894,570346335,814375092
+Pounds of Materials Used,Grain Products,2008,9,Barley and barley products,8282404,570346335,58048335
+Pounds of Materials Used,Grain Products,2008,9,Wheat and wheat products,1840600,570346335,18207676
+Pounds of Materials Used,Non-Grain Products,2008,9,Sugar and syrups,71982604,570346335,848033865
+Pounds of Materials Used,Non-Grain Products,2008,9,Hops (dry),3788942,570346335,54889519
+Pounds of Materials Used,Non-Grain Products,2008,9,Hops (used as extracts),337294,570346335,6019292
+Pounds of Materials Used,Grain Products,2008,10,Malt and malt products,353803777,527670522,4497468603
+Pounds of Materials Used,Grain Products,2008,10,Corn and corn products,63047343,527670522,726766392
+Pounds of Materials Used,Grain Products,2008,10,Rice and rice products,58607059,527670522,814375092
+Pounds of Materials Used,Grain Products,2008,10,Barley and barley products,3825118,527670522,58048335
+Pounds of Materials Used,Grain Products,2008,10,Wheat and wheat products,1431903,527670522,18207676
+Pounds of Materials Used,Non-Grain Products,2008,10,Sugar and syrups,42828943,527670522,848033865
+Pounds of Materials Used,Non-Grain Products,2008,10,Hops (dry),3788949,527670522,54889519
+Pounds of Materials Used,Non-Grain Products,2008,10,Hops (used as extracts),337430,527670522,6019292
+Pounds of Materials Used,Grain Products,2008,11,Malt and malt products,322733711,482831043,4497468603
+Pounds of Materials Used,Grain Products,2008,11,Corn and corn products,53628776,482831043,726766392
+Pounds of Materials Used,Grain Products,2008,11,Rice and rice products,53971515,482831043,814375092
+Pounds of Materials Used,Grain Products,2008,11,Barley and barley products,3309266,482831043,58048335
+Pounds of Materials Used,Grain Products,2008,11,Wheat and wheat products,959228,482831043,18207676
+Pounds of Materials Used,Non-Grain Products,2008,11,Sugar and syrups,44000736,482831043,848033865
+Pounds of Materials Used,Non-Grain Products,2008,11,Hops (dry),3897905,482831043,54889519
+Pounds of Materials Used,Non-Grain Products,2008,11,Hops (used as extracts),329906,482831043,6019292
+Pounds of Materials Used,Grain Products,2008,12,Malt and malt products,318741733,478680070,4497468603
+Pounds of Materials Used,Grain Products,2008,12,Corn and corn products,49919452,478680070,726766392
+Pounds of Materials Used,Grain Products,2008,12,Rice and rice products,61716256,478680070,814375092
+Pounds of Materials Used,Grain Products,2008,12,Barley and barley products,6152633,478680070,58048335
+Pounds of Materials Used,Grain Products,2008,12,Wheat and wheat products,1348759,478680070,18207676
+Pounds of Materials Used,Non-Grain Products,2008,12,Sugar and syrups,38952441,478680070,848033865
+Pounds of Materials Used,Non-Grain Products,2008,12,Hops (dry),1576751,478680070,54889519
+Pounds of Materials Used,Non-Grain Products,2008,12,Hops (used as extracts),272045,478680070,6019292
+Pounds of Materials Used,Grain Products,2009,1,Malt and malt products,361377478,557117756,4298874888
+Pounds of Materials Used,Grain Products,2009,1,Corn and corn products,63115693,557117756,711768515
+Pounds of Materials Used,Grain Products,2009,1,Rice and rice products,59961083,557117756,718909529
+Pounds of Materials Used,Grain Products,2009,1,Barley and barley products,2169601,557117756,58121006
+Pounds of Materials Used,Grain Products,2009,1,Wheat and wheat products,873714,557117756,18142553
+Pounds of Materials Used,Non-Grain Products,2009,1,Sugar and syrups,67834569,557117756,731159003
+Pounds of Materials Used,Non-Grain Products,2009,1,Hops (dry),1461121,557117756,59907030
+Pounds of Materials Used,Non-Grain Products,2009,1,Hops (used as extracts),324497,557117756,4113053
+Pounds of Materials Used,Grain Products,2009,2,Malt and malt products,339472713,539389676,4298874888
+Pounds of Materials Used,Grain Products,2009,2,Corn and corn products,60966715,539389676,711768515
+Pounds of Materials Used,Grain Products,2009,2,Rice and rice products,60150183,539389676,718909529
+Pounds of Materials Used,Grain Products,2009,2,Barley and barley products,3334476,539389676,58121006
+Pounds of Materials Used,Grain Products,2009,2,Wheat and wheat products,1142813,539389676,18142553
+Pounds of Materials Used,Non-Grain Products,2009,2,Sugar and syrups,69375203,539389676,731159003
+Pounds of Materials Used,Non-Grain Products,2009,2,Hops (dry),4601598,539389676,59907030
+Pounds of Materials Used,Non-Grain Products,2009,2,Hops (used as extracts),345975,539389676,4113053
+Pounds of Materials Used,Grain Products,2009,3,Malt and malt products,380133298,597153119,4298874888
+Pounds of Materials Used,Grain Products,2009,3,Corn and corn products,66543131,597153119,711768515
+Pounds of Materials Used,Grain Products,2009,3,Rice and rice products,64006735,597153119,718909529
+Pounds of Materials Used,Grain Products,2009,3,Barley and barley products,7094005,597153119,58121006
+Pounds of Materials Used,Grain Products,2009,3,Wheat and wheat products,2175247,597153119,18142553
+Pounds of Materials Used,Non-Grain Products,2009,3,Sugar and syrups,70030415,597153119,731159003
+Pounds of Materials Used,Non-Grain Products,2009,3,Hops (dry),6787391,597153119,59907030
+Pounds of Materials Used,Non-Grain Products,2009,3,Hops (used as extracts),382897,597153119,4113053
+Pounds of Materials Used,Grain Products,2009,4,Malt and malt products,384396702,597053796,4298874888
+Pounds of Materials Used,Grain Products,2009,4,Corn and corn products,67266636,597053796,711768515
+Pounds of Materials Used,Grain Products,2009,4,Rice and rice products,63166930,597053796,718909529
+Pounds of Materials Used,Grain Products,2009,4,Barley and barley products,3349556,597053796,58121006
+Pounds of Materials Used,Grain Products,2009,4,Wheat and wheat products,1569606,597053796,18142553
+Pounds of Materials Used,Non-Grain Products,2009,4,Sugar and syrups,71341108,597053796,731159003
+Pounds of Materials Used,Non-Grain Products,2009,4,Hops (dry),5574889,597053796,59907030
+Pounds of Materials Used,Non-Grain Products,2009,4,Hops (used as extracts),388369,597053796,4113053
+Pounds of Materials Used,Grain Products,2009,5,Malt and malt products,391469434,608981778,4298874888
+Pounds of Materials Used,Grain Products,2009,5,Corn and corn products,62481084,608981778,711768515
+Pounds of Materials Used,Grain Products,2009,5,Rice and rice products,67120251,608981778,718909529
+Pounds of Materials Used,Grain Products,2009,5,Barley and barley products,3684818,608981778,58121006
+Pounds of Materials Used,Grain Products,2009,5,Wheat and wheat products,1712205,608981778,18142553
+Pounds of Materials Used,Non-Grain Products,2009,5,Sugar and syrups,75011893,608981778,731159003
+Pounds of Materials Used,Non-Grain Products,2009,5,Hops (dry),7051829,608981778,59907030
+Pounds of Materials Used,Non-Grain Products,2009,5,Hops (used as extracts),450264,608981778,4113053
+Pounds of Materials Used,Grain Products,2009,6,Malt and malt products,381247341,594842625,4298874888
+Pounds of Materials Used,Grain Products,2009,6,Corn and corn products,62107546,594842625,711768515
+Pounds of Materials Used,Grain Products,2009,6,Rice and rice products,64576127,594842625,718909529
+Pounds of Materials Used,Grain Products,2009,6,Barley and barley products,8146509,594842625,58121006
+Pounds of Materials Used,Grain Products,2009,6,Wheat and wheat products,1966215,594842625,18142553
+Pounds of Materials Used,Non-Grain Products,2009,6,Sugar and syrups,69563483,594842625,731159003
+Pounds of Materials Used,Non-Grain Products,2009,6,Hops (dry),6854083,594842625,59907030
+Pounds of Materials Used,Non-Grain Products,2009,6,Hops (used as extracts),381321,594842625,4113053
+Pounds of Materials Used,Grain Products,2009,7,Malt and malt products,382672919,592566418,4298874888
+Pounds of Materials Used,Grain Products,2009,7,Corn and corn products,68510353,592566418,711768515
+Pounds of Materials Used,Grain Products,2009,7,Rice and rice products,63277242,592566418,718909529
+Pounds of Materials Used,Grain Products,2009,7,Barley and barley products,4185235,592566418,58121006
+Pounds of Materials Used,Grain Products,2009,7,Wheat and wheat products,1475523,592566418,18142553
+Pounds of Materials Used,Non-Grain Products,2009,7,Sugar and syrups,64776817,592566418,731159003
+Pounds of Materials Used,Non-Grain Products,2009,7,Hops (dry),7309199,592566418,59907030
+Pounds of Materials Used,Non-Grain Products,2009,7,Hops (used as extracts),359130,592566418,4113053
+Pounds of Materials Used,Grain Products,2009,8,Malt and malt products,362521445,553781874,4298874888
+Pounds of Materials Used,Grain Products,2009,8,Corn and corn products,57684547,553781874,711768515
+Pounds of Materials Used,Grain Products,2009,8,Rice and rice products,61417028,553781874,718909529
+Pounds of Materials Used,Grain Products,2009,8,Barley and barley products,3789027,553781874,58121006
+Pounds of Materials Used,Grain Products,2009,8,Wheat and wheat products,1298648,553781874,18142553
+Pounds of Materials Used,Non-Grain Products,2009,8,Sugar and syrups,61354833,553781874,731159003
+Pounds of Materials Used,Non-Grain Products,2009,8,Hops (dry),5393471,553781874,59907030
+Pounds of Materials Used,Non-Grain Products,2009,8,Hops (used as extracts),322875,553781874,4113053
+Pounds of Materials Used,Grain Products,2009,9,Malt and malt products,370369895,548276758,4298874888
+Pounds of Materials Used,Grain Products,2009,9,Corn and corn products,54632420,548276758,711768515
+Pounds of Materials Used,Grain Products,2009,9,Rice and rice products,57686245,548276758,718909529
+Pounds of Materials Used,Grain Products,2009,9,Barley and barley products,8106300,548276758,58121006
+Pounds of Materials Used,Grain Products,2009,9,Wheat and wheat products,1934968,548276758,18142553
+Pounds of Materials Used,Non-Grain Products,2009,9,Sugar and syrups,50025197,548276758,731159003
+Pounds of Materials Used,Non-Grain Products,2009,9,Hops (dry),5216389,548276758,59907030
+Pounds of Materials Used,Non-Grain Products,2009,9,Hops (used as extracts),305344,548276758,4113053
+Pounds of Materials Used,Grain Products,2009,10,Malt and malt products,333286901,498155175,4298874888
+Pounds of Materials Used,Grain Products,2009,10,Corn and corn products,55590153,498155175,711768515
+Pounds of Materials Used,Grain Products,2009,10,Rice and rice products,55167784,498155175,718909529
+Pounds of Materials Used,Grain Products,2009,10,Barley and barley products,3615556,498155175,58121006
+Pounds of Materials Used,Grain Products,2009,10,Wheat and wheat products,1025133,498155175,18142553
+Pounds of Materials Used,Non-Grain Products,2009,10,Sugar and syrups,47840939,498155175,731159003
+Pounds of Materials Used,Non-Grain Products,2009,10,Hops (dry),1326445,498155175,59907030
+Pounds of Materials Used,Non-Grain Products,2009,10,Hops (used as extracts),302264,498155175,4113053
+Pounds of Materials Used,Grain Products,2009,11,Malt and malt products,309688888,461317553,4298874888
+Pounds of Materials Used,Grain Products,2009,11,Corn and corn products,47018983,461317553,711768515
+Pounds of Materials Used,Grain Products,2009,11,Rice and rice products,50460060,461317553,718909529
+Pounds of Materials Used,Grain Products,2009,11,Barley and barley products,3374449,461317553,58121006
+Pounds of Materials Used,Grain Products,2009,11,Wheat and wheat products,1116613,461317553,18142553
+Pounds of Materials Used,Non-Grain Products,2009,11,Sugar and syrups,44926666,461317553,731159003
+Pounds of Materials Used,Non-Grain Products,2009,11,Hops (dry),4442654,461317553,59907030
+Pounds of Materials Used,Non-Grain Products,2009,11,Hops (used as extracts),289240,461317553,4113053
+Pounds of Materials Used,Grain Products,2009,12,Malt and malt products,302237874,452359049,4298874888
+Pounds of Materials Used,Grain Products,2009,12,Corn and corn products,45851254,452359049,711768515
+Pounds of Materials Used,Grain Products,2009,12,Rice and rice products,51919861,452359049,718909529
+Pounds of Materials Used,Grain Products,2009,12,Barley and barley products,7271474,452359049,58121006
+Pounds of Materials Used,Grain Products,2009,12,Wheat and wheat products,1851868,452359049,18142553
+Pounds of Materials Used,Non-Grain Products,2009,12,Sugar and syrups,39077880,452359049,731159003
+Pounds of Materials Used,Non-Grain Products,2009,12,Hops (dry),3887961,452359049,59907030
+Pounds of Materials Used,Non-Grain Products,2009,12,Hops (used as extracts),260877,452359049,4113053
+Pounds of Materials Used,Grain Products,2010,1,Malt and malt products,330304432,504134685,4146613431
+Pounds of Materials Used,Grain Products,2010,1,Corn and corn products,56705162,504134685,700751347
+Pounds of Materials Used,Grain Products,2010,1,Rice and rice products,59701345,504134685,713449319
+Pounds of Materials Used,Grain Products,2010,1,Barley and barley products,3668374,504134685,87693044
+Pounds of Materials Used,Grain Products,2010,1,Wheat and wheat products,1409685,504134685,22162591
+Pounds of Materials Used,Non-Grain Products,2010,1,Sugar and syrups,47308358,504134685,769069238
+Pounds of Materials Used,Non-Grain Products,2010,1,Hops (dry),4765924,504134685,90857470
+Pounds of Materials Used,Non-Grain Products,2010,1,Hops (used as extracts),271405,504134685,4288532
+Pounds of Materials Used,Grain Products,2010,2,Malt and malt products,305543380,472526253,4146613431
+Pounds of Materials Used,Grain Products,2010,2,Corn and corn products,54486996,472526253,700751347
+Pounds of Materials Used,Grain Products,2010,2,Rice and rice products,55198940,472526253,713449319
+Pounds of Materials Used,Grain Products,2010,2,Barley and barley products,3726630,472526253,87693044
+Pounds of Materials Used,Grain Products,2010,2,Wheat and wheat products,1683401,472526253,22162591
+Pounds of Materials Used,Non-Grain Products,2010,2,Sugar and syrups,46718854,472526253,769069238
+Pounds of Materials Used,Non-Grain Products,2010,2,Hops (dry),4899463,472526253,90857470
+Pounds of Materials Used,Non-Grain Products,2010,2,Hops (used as extracts),268589,472526253,4288532
+Pounds of Materials Used,Grain Products,2010,3,Malt and malt products,366733254,569960012,4146613431
+Pounds of Materials Used,Grain Products,2010,3,Corn and corn products,60991969,569960012,700751347
+Pounds of Materials Used,Grain Products,2010,3,Rice and rice products,59991160,569960012,713449319
+Pounds of Materials Used,Grain Products,2010,3,Barley and barley products,10220654,569960012,87693044
+Pounds of Materials Used,Grain Products,2010,3,Wheat and wheat products,2762670,569960012,22162591
+Pounds of Materials Used,Non-Grain Products,2010,3,Sugar and syrups,61007512,569960012,769069238
+Pounds of Materials Used,Non-Grain Products,2010,3,Hops (dry),7932387,569960012,90857470
+Pounds of Materials Used,Non-Grain Products,2010,3,Hops (used as extracts),320406,569960012,4288532
+Pounds of Materials Used,Grain Products,2010,4,Malt and malt products,374018118,584110489,4146613431
+Pounds of Materials Used,Grain Products,2010,4,Corn and corn products,61273430,584110489,700751347
+Pounds of Materials Used,Grain Products,2010,4,Rice and rice products,59803024,584110489,713449319
+Pounds of Materials Used,Grain Products,2010,4,Barley and barley products,5030962,584110489,87693044
+Pounds of Materials Used,Grain Products,2010,4,Wheat and wheat products,2247616,584110489,22162591
+Pounds of Materials Used,Non-Grain Products,2010,4,Sugar and syrups,73040421,584110489,769069238
+Pounds of Materials Used,Non-Grain Products,2010,4,Hops (dry),8240399,584110489,90857470
+Pounds of Materials Used,Non-Grain Products,2010,4,Hops (used as extracts),456519,584110489,4288532
+Pounds of Materials Used,Grain Products,2010,5,Malt and malt products,399504457,624233991,4146613431
+Pounds of Materials Used,Grain Products,2010,5,Corn and corn products,62684555,624233991,700751347
+Pounds of Materials Used,Grain Products,2010,5,Rice and rice products,69284131,624233991,713449319
+Pounds of Materials Used,Grain Products,2010,5,Barley and barley products,4903020,624233991,87693044
+Pounds of Materials Used,Grain Products,2010,5,Wheat and wheat products,2264521,624233991,22162591
+Pounds of Materials Used,Non-Grain Products,2010,5,Sugar and syrups,76115769,624233991,769069238
+Pounds of Materials Used,Non-Grain Products,2010,5,Hops (dry),9080801,624233991,90857470
+Pounds of Materials Used,Non-Grain Products,2010,5,Hops (used as extracts),396737,624233991,4288532
+Pounds of Materials Used,Grain Products,2010,6,Malt and malt products,380521275,600177188,4146613431
+Pounds of Materials Used,Grain Products,2010,6,Corn and corn products,60811086,600177188,700751347
+Pounds of Materials Used,Grain Products,2010,6,Rice and rice products,66627541,600177188,713449319
+Pounds of Materials Used,Grain Products,2010,6,Barley and barley products,11280602,600177188,87693044
+Pounds of Materials Used,Grain Products,2010,6,Wheat and wheat products,2896874,600177188,22162591
+Pounds of Materials Used,Non-Grain Products,2010,6,Sugar and syrups,67266337,600177188,769069238
+Pounds of Materials Used,Non-Grain Products,2010,6,Hops (dry),10418215,600177188,90857470
+Pounds of Materials Used,Non-Grain Products,2010,6,Hops (used as extracts),355258,600177188,4288532
+Pounds of Materials Used,Grain Products,2010,7,Malt and malt products,384726834,603556470,4146613431
+Pounds of Materials Used,Grain Products,2010,7,Corn and corn products,58694301,603556470,700751347
+Pounds of Materials Used,Grain Products,2010,7,Rice and rice products,68031711,603556470,713449319
+Pounds of Materials Used,Grain Products,2010,7,Barley and barley products,5224206,603556470,87693044
+Pounds of Materials Used,Grain Products,2010,7,Wheat and wheat products,1628102,603556470,22162591
+Pounds of Materials Used,Non-Grain Products,2010,7,Sugar and syrups,76584550,603556470,769069238
+Pounds of Materials Used,Non-Grain Products,2010,7,Hops (dry),8297261,603556470,90857470
+Pounds of Materials Used,Non-Grain Products,2010,7,Hops (used as extracts),369505,603556470,4288532
+Pounds of Materials Used,Grain Products,2010,8,Malt and malt products,358726926,572805667,4146613431
+Pounds of Materials Used,Grain Products,2010,8,Corn and corn products,60424525,572805667,700751347
+Pounds of Materials Used,Grain Products,2010,8,Rice and rice products,63192375,572805667,713449319
+Pounds of Materials Used,Grain Products,2010,8,Barley and barley products,5276045,572805667,87693044
+Pounds of Materials Used,Grain Products,2010,8,Wheat and wheat products,1379102,572805667,22162591
+Pounds of Materials Used,Non-Grain Products,2010,8,Sugar and syrups,75815015,572805667,769069238
+Pounds of Materials Used,Non-Grain Products,2010,8,Hops (dry),7272871,572805667,90857470
+Pounds of Materials Used,Non-Grain Products,2010,8,Hops (used as extracts),718808,572805667,4288532
+Pounds of Materials Used,Grain Products,2010,9,Malt and malt products,329671455,554004802,4146613431
+Pounds of Materials Used,Grain Products,2010,9,Corn and corn products,77399155,554004802,700751347
+Pounds of Materials Used,Grain Products,2010,9,Rice and rice products,54884345,554004802,713449319
+Pounds of Materials Used,Grain Products,2010,9,Barley and barley products,14107767,554004802,87693044
+Pounds of Materials Used,Grain Products,2010,9,Wheat and wheat products,2150923,554004802,22162591
+Pounds of Materials Used,Non-Grain Products,2010,9,Sugar and syrups,69053125,554004802,769069238
+Pounds of Materials Used,Non-Grain Products,2010,9,Hops (dry),6437916,554004802,90857470
+Pounds of Materials Used,Non-Grain Products,2010,9,Hops (used as extracts),300116,554004802,4288532
+Pounds of Materials Used,Grain Products,2010,10,Malt and malt products,333230020,524170214,4146613431
+Pounds of Materials Used,Grain Products,2010,10,Corn and corn products,51427974,524170214,700751347
+Pounds of Materials Used,Grain Products,2010,10,Rice and rice products,55450803,524170214,713449319
+Pounds of Materials Used,Grain Products,2010,10,Barley and barley products,6203762,524170214,87693044
+Pounds of Materials Used,Grain Products,2010,10,Wheat and wheat products,1053279,524170214,22162591
+Pounds of Materials Used,Non-Grain Products,2010,10,Sugar and syrups,67265699,524170214,769069238
+Pounds of Materials Used,Non-Grain Products,2010,10,Hops (dry),9244763,524170214,90857470
+Pounds of Materials Used,Non-Grain Products,2010,10,Hops (used as extracts),293914,524170214,4288532
+Pounds of Materials Used,Grain Products,2010,11,Malt and malt products,298251207,472906729,4146613431
+Pounds of Materials Used,Grain Products,2010,11,Corn and corn products,47348859,472906729,700751347
+Pounds of Materials Used,Grain Products,2010,11,Rice and rice products,53779401,472906729,713449319
+Pounds of Materials Used,Grain Products,2010,11,Barley and barley products,5235825,472906729,87693044
+Pounds of Materials Used,Grain Products,2010,11,Wheat and wheat products,1097679,472906729,22162591
+Pounds of Materials Used,Non-Grain Products,2010,11,Sugar and syrups,59184495,472906729,769069238
+Pounds of Materials Used,Non-Grain Products,2010,11,Hops (dry),7727370,472906729,90857470
+Pounds of Materials Used,Non-Grain Products,2010,11,Hops (used as extracts),281893,472906729,4288532
+Pounds of Materials Used,Grain Products,2010,12,Malt and malt products,285382073,452298472,4146613431
+Pounds of Materials Used,Grain Products,2010,12,Corn and corn products,48503335,452298472,700751347
+Pounds of Materials Used,Grain Products,2010,12,Rice and rice products,47504543,452298472,713449319
+Pounds of Materials Used,Grain Products,2010,12,Barley and barley products,12815197,452298472,87693044
+Pounds of Materials Used,Grain Products,2010,12,Wheat and wheat products,1588739,452298472,22162591
+Pounds of Materials Used,Non-Grain Products,2010,12,Sugar and syrups,49709103,452298472,769069238
+Pounds of Materials Used,Non-Grain Products,2010,12,Hops (dry),6540100,452298472,90857470
+Pounds of Materials Used,Non-Grain Products,2010,12,Hops (used as extracts),255382,452298472,4288532
+Pounds of Materials Used,Grain Products,2011,1,Malt and malt products,322480722,575290204,4003433125
+Pounds of Materials Used,Grain Products,2011,1,Corn and corn products,58632672,575290204,628920326
+Pounds of Materials Used,Grain Products,2011,1,Rice and rice products,108112318,575290204,747530033
+Pounds of Materials Used,Grain Products,2011,1,Barley and barley products,4705175,575290204,110948162
+Pounds of Materials Used,Grain Products,2011,1,Wheat and wheat products,1210137,575290204,23029222
+Pounds of Materials Used,Non-Grain Products,2011,1,Sugar and syrups,73793509,575290204,770916505
+Pounds of Materials Used,Non-Grain Products,2011,1,Hops (dry),6059066,575290204,106888010
+Pounds of Materials Used,Non-Grain Products,2011,1,Hops (used as extracts),296605,575290204,3823534
+Pounds of Materials Used,Grain Products,2011,2,Malt and malt products,307076591,491892902,4003433125
+Pounds of Materials Used,Grain Products,2011,2,Corn and corn products,53981943,491892902,628920326
+Pounds of Materials Used,Grain Products,2011,2,Rice and rice products,54287863,491892902,747530033
+Pounds of Materials Used,Grain Products,2011,2,Barley and barley products,4322047,491892902,110948162
+Pounds of Materials Used,Grain Products,2011,2,Wheat and wheat products,955671,491892902,23029222
+Pounds of Materials Used,Non-Grain Products,2011,2,Sugar and syrups,63374850,491892902,770916505
+Pounds of Materials Used,Non-Grain Products,2011,2,Hops (dry),7617974,491892902,106888010
+Pounds of Materials Used,Non-Grain Products,2011,2,Hops (used as extracts),275963,491892902,3823534
+Pounds of Materials Used,Grain Products,2011,3,Malt and malt products,363234183,589017608,4003433125
+Pounds of Materials Used,Grain Products,2011,3,Corn and corn products,61094976,589017608,628920326
+Pounds of Materials Used,Grain Products,2011,3,Rice and rice products,62041512,589017608,747530033
+Pounds of Materials Used,Grain Products,2011,3,Barley and barley products,11614373,589017608,110948162
+Pounds of Materials Used,Grain Products,2011,3,Wheat and wheat products,5019351,589017608,23029222
+Pounds of Materials Used,Non-Grain Products,2011,3,Sugar and syrups,74925793,589017608,770916505
+Pounds of Materials Used,Non-Grain Products,2011,3,Hops (dry),10736471,589017608,106888010
+Pounds of Materials Used,Non-Grain Products,2011,3,Hops (used as extracts),350949,589017608,3823534
+Pounds of Materials Used,Grain Products,2011,4,Malt and malt products,349781343,546957810,4003433125
+Pounds of Materials Used,Grain Products,2011,4,Corn and corn products,58628353,546957810,628920326
+Pounds of Materials Used,Grain Products,2011,4,Rice and rice products,53392697,546957810,747530033
+Pounds of Materials Used,Grain Products,2011,4,Barley and barley products,4768751,546957810,110948162
+Pounds of Materials Used,Grain Products,2011,4,Wheat and wheat products,1816659,546957810,23029222
+Pounds of Materials Used,Non-Grain Products,2011,4,Sugar and syrups,68297327,546957810,770916505
+Pounds of Materials Used,Non-Grain Products,2011,4,Hops (dry),9942341,546957810,106888010
+Pounds of Materials Used,Non-Grain Products,2011,4,Hops (used as extracts),330339,546957810,3823534
+Pounds of Materials Used,Grain Products,2011,5,Malt and malt products,352623620,549431795,4003433125
+Pounds of Materials Used,Grain Products,2011,5,Corn and corn products,50573951,549431795,628920326
+Pounds of Materials Used,Grain Products,2011,5,Rice and rice products,62118962,549431795,747530033
+Pounds of Materials Used,Grain Products,2011,5,Barley and barley products,5564462,549431795,110948162
+Pounds of Materials Used,Grain Products,2011,5,Wheat and wheat products,1721632,549431795,23029222
+Pounds of Materials Used,Non-Grain Products,2011,5,Sugar and syrups,66314234,549431795,770916505
+Pounds of Materials Used,Non-Grain Products,2011,5,Hops (dry),10076039,549431795,106888010
+Pounds of Materials Used,Non-Grain Products,2011,5,Hops (used as extracts),438895,549431795,3823534
+Pounds of Materials Used,Grain Products,2011,6,Malt and malt products,372541998,582433497,4003433125
+Pounds of Materials Used,Grain Products,2011,6,Corn and corn products,49399750,582433497,628920326
+Pounds of Materials Used,Grain Products,2011,6,Rice and rice products,69701464,582433497,747530033
+Pounds of Materials Used,Grain Products,2011,6,Barley and barley products,10363329,582433497,110948162
+Pounds of Materials Used,Grain Products,2011,6,Wheat and wheat products,2305971,582433497,23029222
+Pounds of Materials Used,Non-Grain Products,2011,6,Sugar and syrups,67178952,582433497,770916505
+Pounds of Materials Used,Non-Grain Products,2011,6,Hops (dry),10603566,582433497,106888010
+Pounds of Materials Used,Non-Grain Products,2011,6,Hops (used as extracts),338467,582433497,3823534
+Pounds of Materials Used,Grain Products,2011,7,Malt and malt products,350751002,547979190,4003433125
+Pounds of Materials Used,Grain Products,2011,7,Corn and corn products,47864835,547979190,628920326
+Pounds of Materials Used,Grain Products,2011,7,Rice and rice products,69787950,547979190,747530033
+Pounds of Materials Used,Grain Products,2011,7,Barley and barley products,6014579,547979190,110948162
+Pounds of Materials Used,Grain Products,2011,7,Wheat and wheat products,1523087,547979190,23029222
+Pounds of Materials Used,Non-Grain Products,2011,7,Sugar and syrups,62190400,547979190,770916505
+Pounds of Materials Used,Non-Grain Products,2011,7,Hops (dry),9514024,547979190,106888010
+Pounds of Materials Used,Non-Grain Products,2011,7,Hops (used as extracts),333313,547979190,3823534
+Pounds of Materials Used,Grain Products,2011,8,Malt and malt products,361924350,559865931,4003433125
+Pounds of Materials Used,Grain Products,2011,8,Corn and corn products,49085339,559865931,628920326
+Pounds of Materials Used,Grain Products,2011,8,Rice and rice products,72428017,559865931,747530033
+Pounds of Materials Used,Grain Products,2011,8,Barley and barley products,6775228,559865931,110948162
+Pounds of Materials Used,Grain Products,2011,8,Wheat and wheat products,1749667,559865931,23029222
+Pounds of Materials Used,Non-Grain Products,2011,8,Sugar and syrups,60003874,559865931,770916505
+Pounds of Materials Used,Non-Grain Products,2011,8,Hops (dry),7575266,559865931,106888010
+Pounds of Materials Used,Non-Grain Products,2011,8,Hops (used as extracts),324190,559865931,3823534
+Pounds of Materials Used,Grain Products,2011,9,Malt and malt products,312845217,518897236,4003433125
+Pounds of Materials Used,Grain Products,2011,9,Corn and corn products,47180399,518897236,628920326
+Pounds of Materials Used,Grain Products,2011,9,Rice and rice products,55188865,518897236,747530033
+Pounds of Materials Used,Grain Products,2011,9,Barley and barley products,32343039,518897236,110948162
+Pounds of Materials Used,Grain Products,2011,9,Wheat and wheat products,2260859,518897236,23029222
+Pounds of Materials Used,Non-Grain Products,2011,9,Sugar and syrups,61317581,518897236,770916505
+Pounds of Materials Used,Non-Grain Products,2011,9,Hops (dry),7462299,518897236,106888010
+Pounds of Materials Used,Non-Grain Products,2011,9,Hops (used as extracts),298977,518897236,3823534
+Pounds of Materials Used,Grain Products,2011,10,Malt and malt products,313380880,492957919,4003433125
+Pounds of Materials Used,Grain Products,2011,10,Corn and corn products,48090884,492957919,628920326
+Pounds of Materials Used,Grain Products,2011,10,Rice and rice products,50132872,492957919,747530033
+Pounds of Materials Used,Grain Products,2011,10,Barley and barley products,6773403,492957919,110948162
+Pounds of Materials Used,Grain Products,2011,10,Wheat and wheat products,1555618,492957919,23029222
+Pounds of Materials Used,Non-Grain Products,2011,10,Sugar and syrups,65478836,492957919,770916505
+Pounds of Materials Used,Non-Grain Products,2011,10,Hops (dry),7238838,492957919,106888010
+Pounds of Materials Used,Non-Grain Products,2011,10,Hops (used as extracts),306588,492957919,3823534
+Pounds of Materials Used,Grain Products,2011,11,Malt and malt products,303152329,472109150,4003433125
+Pounds of Materials Used,Grain Products,2011,11,Corn and corn products,53879230,472109150,628920326
+Pounds of Materials Used,Grain Products,2011,11,Rice and rice products,43496310,472109150,747530033
+Pounds of Materials Used,Grain Products,2011,11,Barley and barley products,5909830,472109150,110948162
+Pounds of Materials Used,Grain Products,2011,11,Wheat and wheat products,1297888,472109150,23029222
+Pounds of Materials Used,Non-Grain Products,2011,11,Sugar and syrups,55627592,472109150,770916505
+Pounds of Materials Used,Non-Grain Products,2011,11,Hops (dry),8455615,472109150,106888010
+Pounds of Materials Used,Non-Grain Products,2011,11,Hops (used as extracts),290356,472109150,3823534
+Pounds of Materials Used,Grain Products,2011,12,Malt and malt products,293640890,468655675,4003433125
+Pounds of Materials Used,Grain Products,2011,12,Corn and corn products,50507994,468655675,628920326
+Pounds of Materials Used,Grain Products,2011,12,Rice and rice products,46841203,468655675,747530033
+Pounds of Materials Used,Grain Products,2011,12,Barley and barley products,11793946,468655675,110948162
+Pounds of Materials Used,Grain Products,2011,12,Wheat and wheat products,1612682,468655675,23029222
+Pounds of Materials Used,Non-Grain Products,2011,12,Sugar and syrups,52413557,468655675,770916505
+Pounds of Materials Used,Non-Grain Products,2011,12,Hops (dry),11606511,468655675,106888010
+Pounds of Materials Used,Non-Grain Products,2011,12,Hops (used as extracts),238892,468655675,3823534
+Pounds of Materials Used,Grain Products,2012,1,Malt and malt products,315214803,520198745,4099141038
+Pounds of Materials Used,Grain Products,2012,1,Corn and corn products,61859978,520198745,683677592
+Pounds of Materials Used,Grain Products,2012,1,Rice and rice products,63568058,520198745,715986471
+Pounds of Materials Used,Grain Products,2012,1,Barley and barley products,5391781,520198745,124424106
+Pounds of Materials Used,Grain Products,2012,1,Wheat and wheat products,1319508,520198745,24872781
+Pounds of Materials Used,Non-Grain Products,2012,1,Sugar and syrups,62988309,520198745,897543431
+Pounds of Materials Used,Non-Grain Products,2012,1,Hops (dry),9562820,520198745,118842060
+Pounds of Materials Used,Non-Grain Products,2012,1,Hops (used as extracts),293488,520198745,4221145
+Pounds of Materials Used,Grain Products,2012,2,Malt and malt products,320430694,511320558,4099141038
+Pounds of Materials Used,Grain Products,2012,2,Corn and corn products,62631394,511320558,683677592
+Pounds of Materials Used,Grain Products,2012,2,Rice and rice products,54333308,511320558,715986471
+Pounds of Materials Used,Grain Products,2012,2,Barley and barley products,5493934,511320558,124424106
+Pounds of Materials Used,Grain Products,2012,2,Wheat and wheat products,1358318,511320558,24872781
+Pounds of Materials Used,Non-Grain Products,2012,2,Sugar and syrups,65344809,511320558,897543431
+Pounds of Materials Used,Non-Grain Products,2012,2,Hops (dry),1366949,511320558,118842060
+Pounds of Materials Used,Non-Grain Products,2012,2,Hops (used as extracts),361152,511320558,4221145
+Pounds of Materials Used,Grain Products,2012,3,Malt and malt products,366122047,596468564,4099141038
+Pounds of Materials Used,Grain Products,2012,3,Corn and corn products,62376094,596468564,683677592
+Pounds of Materials Used,Grain Products,2012,3,Rice and rice products,59022797,596468564,715986471
+Pounds of Materials Used,Grain Products,2012,3,Barley and barley products,15647530,596468564,124424106
+Pounds of Materials Used,Grain Products,2012,3,Wheat and wheat products,2817135,596468564,24872781
+Pounds of Materials Used,Non-Grain Products,2012,3,Sugar and syrups,79859286,596468564,897543431
+Pounds of Materials Used,Non-Grain Products,2012,3,Hops (dry),10288665,596468564,118842060
+Pounds of Materials Used,Non-Grain Products,2012,3,Hops (used as extracts),335010,596468564,4221145
+Pounds of Materials Used,Grain Products,2012,4,Malt and malt products,357106000,579781541,4099141038
+Pounds of Materials Used,Grain Products,2012,4,Corn and corn products,61313630,579781541,683677592
+Pounds of Materials Used,Grain Products,2012,4,Rice and rice products,57264320,579781541,715986471
+Pounds of Materials Used,Grain Products,2012,4,Barley and barley products,7634002,579781541,124424106
+Pounds of Materials Used,Grain Products,2012,4,Wheat and wheat products,2001345,579781541,24872781
+Pounds of Materials Used,Non-Grain Products,2012,4,Sugar and syrups,82481856,579781541,897543431
+Pounds of Materials Used,Non-Grain Products,2012,4,Hops (dry),11641934,579781541,118842060
+Pounds of Materials Used,Non-Grain Products,2012,4,Hops (used as extracts),338454,579781541,4221145
+Pounds of Materials Used,Grain Products,2012,5,Malt and malt products,373071360,610966657,4099141038
+Pounds of Materials Used,Grain Products,2012,5,Corn and corn products,66220273,610966657,683677592
+Pounds of Materials Used,Grain Products,2012,5,Rice and rice products,61702673,610966657,715986471
+Pounds of Materials Used,Grain Products,2012,5,Barley and barley products,7116069,610966657,124424106
+Pounds of Materials Used,Grain Products,2012,5,Wheat and wheat products,2141313,610966657,24872781
+Pounds of Materials Used,Non-Grain Products,2012,5,Sugar and syrups,87785168,610966657,897543431
+Pounds of Materials Used,Non-Grain Products,2012,5,Hops (dry),12583340,610966657,118842060
+Pounds of Materials Used,Non-Grain Products,2012,5,Hops (used as extracts),346461,610966657,4221145
+Pounds of Materials Used,Grain Products,2012,6,Malt and malt products,387306474,632637995,4099141038
+Pounds of Materials Used,Grain Products,2012,6,Corn and corn products,63113188,632637995,683677592
+Pounds of Materials Used,Grain Products,2012,6,Rice and rice products,59527958,632637995,715986471
+Pounds of Materials Used,Grain Products,2012,6,Barley and barley products,17104839,632637995,124424106
+Pounds of Materials Used,Grain Products,2012,6,Wheat and wheat products,2947584,632637995,24872781
+Pounds of Materials Used,Non-Grain Products,2012,6,Sugar and syrups,89443470,632637995,897543431
+Pounds of Materials Used,Non-Grain Products,2012,6,Hops (dry),12720422,632637995,118842060
+Pounds of Materials Used,Non-Grain Products,2012,6,Hops (used as extracts),474060,632637995,4221145
+Pounds of Materials Used,Grain Products,2012,7,Malt and malt products,363222892,603154578,4099141038
+Pounds of Materials Used,Grain Products,2012,7,Corn and corn products,62878256,603154578,683677592
+Pounds of Materials Used,Grain Products,2012,7,Rice and rice products,60381322,603154578,715986471
+Pounds of Materials Used,Grain Products,2012,7,Barley and barley products,9486054,603154578,124424106
+Pounds of Materials Used,Grain Products,2012,7,Wheat and wheat products,2062199,603154578,24872781
+Pounds of Materials Used,Non-Grain Products,2012,7,Sugar and syrups,92543919,603154578,897543431
+Pounds of Materials Used,Non-Grain Products,2012,7,Hops (dry),12188084,603154578,118842060
+Pounds of Materials Used,Non-Grain Products,2012,7,Hops (used as extracts),391852,603154578,4221145
+Pounds of Materials Used,Grain Products,2012,8,Malt and malt products,362799587,580246260,4099141038
+Pounds of Materials Used,Grain Products,2012,8,Corn and corn products,53320491,580246260,683677592
+Pounds of Materials Used,Grain Products,2012,8,Rice and rice products,65214228,580246260,715986471
+Pounds of Materials Used,Grain Products,2012,8,Barley and barley products,8622164,580246260,124424106
+Pounds of Materials Used,Grain Products,2012,8,Wheat and wheat products,2286719,580246260,24872781
+Pounds of Materials Used,Non-Grain Products,2012,8,Sugar and syrups,77156577,580246260,897543431
+Pounds of Materials Used,Non-Grain Products,2012,8,Hops (dry),10374025,580246260,118842060
+Pounds of Materials Used,Non-Grain Products,2012,8,Hops (used as extracts),472469,580246260,4221145
+Pounds of Materials Used,Grain Products,2012,9,Malt and malt products,336789908,544474357,4099141038
+Pounds of Materials Used,Grain Products,2012,9,Corn and corn products,50320517,544474357,683677592
+Pounds of Materials Used,Grain Products,2012,9,Rice and rice products,62119884,544474357,715986471
+Pounds of Materials Used,Grain Products,2012,9,Barley and barley products,16834020,544474357,124424106
+Pounds of Materials Used,Grain Products,2012,9,Wheat and wheat products,2676324,544474357,24872781
+Pounds of Materials Used,Non-Grain Products,2012,9,Sugar and syrups,65251144,544474357,897543431
+Pounds of Materials Used,Non-Grain Products,2012,9,Hops (dry),10180667,544474357,118842060
+Pounds of Materials Used,Non-Grain Products,2012,9,Hops (used as extracts),301893,544474357,4221145
+Pounds of Materials Used,Grain Products,2012,10,Malt and malt products,321542825,523396452,4099141038
+Pounds of Materials Used,Grain Products,2012,10,Corn and corn products,50852126,523396452,683677592
+Pounds of Materials Used,Grain Products,2012,10,Rice and rice products,59885904,523396452,715986471
+Pounds of Materials Used,Grain Products,2012,10,Barley and barley products,9353404,523396452,124424106
+Pounds of Materials Used,Grain Products,2012,10,Wheat and wheat products,1762481,523396452,24872781
+Pounds of Materials Used,Non-Grain Products,2012,10,Sugar and syrups,70185532,523396452,897543431
+Pounds of Materials Used,Non-Grain Products,2012,10,Hops (dry),9505007,523396452,118842060
+Pounds of Materials Used,Non-Grain Products,2012,10,Hops (used as extracts),309173,523396452,4221145
+Pounds of Materials Used,Grain Products,2012,11,Malt and malt products,295672895,486852168,4099141038
+Pounds of Materials Used,Grain Products,2012,11,Corn and corn products,44981825,486852168,683677592
+Pounds of Materials Used,Grain Products,2012,11,Rice and rice products,61082730,486852168,715986471
+Pounds of Materials Used,Grain Products,2012,11,Barley and barley products,7563555,486852168,124424106
+Pounds of Materials Used,Grain Products,2012,11,Wheat and wheat products,1709859,486852168,24872781
+Pounds of Materials Used,Non-Grain Products,2012,11,Sugar and syrups,64916501,486852168,897543431
+Pounds of Materials Used,Non-Grain Products,2012,11,Hops (dry),10621547,486852168,118842060
+Pounds of Materials Used,Non-Grain Products,2012,11,Hops (used as extracts),303256,486852168,4221145
+Pounds of Materials Used,Grain Products,2012,12,Malt and malt products,299861553,479210749,4099141038
+Pounds of Materials Used,Grain Products,2012,12,Corn and corn products,43809820,479210749,683677592
+Pounds of Materials Used,Grain Products,2012,12,Rice and rice products,51883289,479210749,715986471
+Pounds of Materials Used,Grain Products,2012,12,Barley and barley products,14176754,479210749,124424106
+Pounds of Materials Used,Grain Products,2012,12,Wheat and wheat products,1789996,479210749,24872781
+Pounds of Materials Used,Non-Grain Products,2012,12,Sugar and syrups,59586860,479210749,897543431
+Pounds of Materials Used,Non-Grain Products,2012,12,Hops (dry),7808600,479210749,118842060
+Pounds of Materials Used,Non-Grain Products,2012,12,Hops (used as extracts),293877,479210749,4221145
+Pounds of Materials Used,Grain Products,2013,1,Malt and malt products,326450615,530878866,3939110211
+Pounds of Materials Used,Grain Products,2013,1,Corn and corn products,50597106,530878866,592554950
+Pounds of Materials Used,Grain Products,2013,1,Rice and rice products,62177066,530878866,723547930
+Pounds of Materials Used,Grain Products,2013,1,Barley and barley products,7749970,530878866,144284274
+Pounds of Materials Used,Grain Products,2013,1,Wheat and wheat products,1537526,530878866,28885469
+Pounds of Materials Used,Non-Grain Products,2013,1,Sugar and syrups,72878590,530878866,923500958
+Pounds of Materials Used,Non-Grain Products,2013,1,Hops (dry),9164708,530878866,81078400
+Pounds of Materials Used,Non-Grain Products,2013,1,Hops (used as extracts),323285,530878866,3885117
+Pounds of Materials Used,Grain Products,2013,2,Malt and malt products,311283986,510043823,3939110211
+Pounds of Materials Used,Grain Products,2013,2,Corn and corn products,46499056,510043823,592554950
+Pounds of Materials Used,Grain Products,2013,2,Rice and rice products,61926310,510043823,723547930
+Pounds of Materials Used,Grain Products,2013,2,Barley and barley products,7486134,510043823,144284274
+Pounds of Materials Used,Grain Products,2013,2,Wheat and wheat products,1823446,510043823,28885469
+Pounds of Materials Used,Non-Grain Products,2013,2,Sugar and syrups,71244280,510043823,923500958
+Pounds of Materials Used,Non-Grain Products,2013,2,Hops (dry),9456485,510043823,81078400
+Pounds of Materials Used,Non-Grain Products,2013,2,Hops (used as extracts),324126,510043823,3885117
+Pounds of Materials Used,Grain Products,2013,3,Malt and malt products,340319408,564525451,3939110211
+Pounds of Materials Used,Grain Products,2013,3,Corn and corn products,47314812,564525451,592554950
+Pounds of Materials Used,Grain Products,2013,3,Rice and rice products,62869950,564525451,723547930
+Pounds of Materials Used,Grain Products,2013,3,Barley and barley products,15469983,564525451,144284274
+Pounds of Materials Used,Grain Products,2013,3,Wheat and wheat products,2721578,564525451,28885469
+Pounds of Materials Used,Non-Grain Products,2013,3,Sugar and syrups,85703037,564525451,923500958
+Pounds of Materials Used,Non-Grain Products,2013,3,Hops (dry),9754327,564525451,81078400
+Pounds of Materials Used,Non-Grain Products,2013,3,Hops (used as extracts),372356,564525451,3885117
+Pounds of Materials Used,Grain Products,2013,4,Malt and malt products,334351807,557414859,3939110211
+Pounds of Materials Used,Grain Products,2013,4,Corn and corn products,46416330,557414859,592554950
+Pounds of Materials Used,Grain Products,2013,4,Rice and rice products,63584763,557414859,723547930
+Pounds of Materials Used,Grain Products,2013,4,Barley and barley products,8355161,557414859,144284274
+Pounds of Materials Used,Grain Products,2013,4,Wheat and wheat products,2339352,557414859,28885469
+Pounds of Materials Used,Non-Grain Products,2013,4,Sugar and syrups,92273777,557414859,923500958
+Pounds of Materials Used,Non-Grain Products,2013,4,Hops (dry),9791137,557414859,81078400
+Pounds of Materials Used,Non-Grain Products,2013,4,Hops (used as extracts),302532,557414859,3885117
+Pounds of Materials Used,Grain Products,2013,5,Malt and malt products,353589770,593421947,3939110211
+Pounds of Materials Used,Grain Products,2013,5,Corn and corn products,53185970,593421947,592554950
+Pounds of Materials Used,Grain Products,2013,5,Rice and rice products,65774053,593421947,723547930
+Pounds of Materials Used,Grain Products,2013,5,Barley and barley products,9322039,593421947,144284274
+Pounds of Materials Used,Grain Products,2013,5,Wheat and wheat products,4781594,593421947,28885469
+Pounds of Materials Used,Non-Grain Products,2013,5,Sugar and syrups,96158421,593421947,923500958
+Pounds of Materials Used,Non-Grain Products,2013,5,Hops (dry),10286943,593421947,81078400
+Pounds of Materials Used,Non-Grain Products,2013,5,Hops (used as extracts),323157,593421947,3885117
+Pounds of Materials Used,Grain Products,2013,6,Malt and malt products,370101067,610150269,3939110211
+Pounds of Materials Used,Grain Products,2013,6,Corn and corn products,53527463,610150269,592554950
+Pounds of Materials Used,Grain Products,2013,6,Rice and rice products,64271218,610150269,723547930
+Pounds of Materials Used,Grain Products,2013,6,Barley and barley products,18971859,610150269,144284274
+Pounds of Materials Used,Grain Products,2013,6,Wheat and wheat products,3161620,610150269,28885469
+Pounds of Materials Used,Non-Grain Products,2013,6,Sugar and syrups,87459068,610150269,923500958
+Pounds of Materials Used,Non-Grain Products,2013,6,Hops (dry),12319034,610150269,81078400
+Pounds of Materials Used,Non-Grain Products,2013,6,Hops (used as extracts),338940,610150269,3885117
+Pounds of Materials Used,Grain Products,2013,7,Malt and malt products,367999200,606293647,3939110211
+Pounds of Materials Used,Grain Products,2013,7,Corn and corn products,49297406,606293647,592554950
+Pounds of Materials Used,Grain Products,2013,7,Rice and rice products,76426446,606293647,723547930
+Pounds of Materials Used,Grain Products,2013,7,Barley and barley products,9479272,606293647,144284274
+Pounds of Materials Used,Grain Products,2013,7,Wheat and wheat products,2159949,606293647,28885469
+Pounds of Materials Used,Non-Grain Products,2013,7,Sugar and syrups,89540845,606293647,923500958
+Pounds of Materials Used,Non-Grain Products,2013,7,Hops (dry),11044977,606293647,81078400
+Pounds of Materials Used,Non-Grain Products,2013,7,Hops (used as extracts),345552,606293647,3885117
+Pounds of Materials Used,Grain Products,2013,8,Malt and malt products,339968116,551237878,3939110211
+Pounds of Materials Used,Grain Products,2013,8,Corn and corn products,50568490,551237878,592554950
+Pounds of Materials Used,Grain Products,2013,8,Rice and rice products,66799703,551237878,723547930
+Pounds of Materials Used,Grain Products,2013,8,Barley and barley products,10069803,551237878,144284274
+Pounds of Materials Used,Grain Products,2013,8,Wheat and wheat products,1940771,551237878,28885469
+Pounds of Materials Used,Non-Grain Products,2013,8,Sugar and syrups,79896297,551237878,923500958
+Pounds of Materials Used,Non-Grain Products,2013,8,Hops (dry),1670049,551237878,81078400
+Pounds of Materials Used,Non-Grain Products,2013,8,Hops (used as extracts),324649,551237878,3885117
+Pounds of Materials Used,Grain Products,2013,9,Malt and malt products,303711377,496149924,3939110211
+Pounds of Materials Used,Grain Products,2013,9,Corn and corn products,51834721,496149924,592554950
+Pounds of Materials Used,Grain Products,2013,9,Rice and rice products,53400257,496149924,723547930
+Pounds of Materials Used,Grain Products,2013,9,Barley and barley products,19626718,496149924,144284274
+Pounds of Materials Used,Grain Products,2013,9,Wheat and wheat products,2861762,496149924,28885469
+Pounds of Materials Used,Non-Grain Products,2013,9,Sugar and syrups,62065299,496149924,923500958
+Pounds of Materials Used,Non-Grain Products,2013,9,Hops (dry),2339398,496149924,81078400
+Pounds of Materials Used,Non-Grain Products,2013,9,Hops (used as extracts),310392,496149924,3885117
+Pounds of Materials Used,Grain Products,2013,10,Malt and malt products,321371392,509178232,3939110211
+Pounds of Materials Used,Grain Products,2013,10,Corn and corn products,53528251,509178232,592554950
+Pounds of Materials Used,Grain Products,2013,10,Rice and rice products,54082902,509178232,723547930
+Pounds of Materials Used,Grain Products,2013,10,Barley and barley products,10271881,509178232,144284274
+Pounds of Materials Used,Grain Products,2013,10,Wheat and wheat products,1915107,509178232,28885469
+Pounds of Materials Used,Non-Grain Products,2013,10,Sugar and syrups,66002563,509178232,923500958
+Pounds of Materials Used,Non-Grain Products,2013,10,Hops (dry),1681113,509178232,81078400
+Pounds of Materials Used,Non-Grain Products,2013,10,Hops (used as extracts),325023,509178232,3885117
+Pounds of Materials Used,Grain Products,2013,11,Malt and malt products,275715285,431132317,3939110211
+Pounds of Materials Used,Grain Products,2013,11,Corn and corn products,41543251,431132317,592554950
+Pounds of Materials Used,Grain Products,2013,11,Rice and rice products,44402687,431132317,723547930
+Pounds of Materials Used,Grain Products,2013,11,Barley and barley products,7902110,431132317,144284274
+Pounds of Materials Used,Grain Products,2013,11,Wheat and wheat products,1331387,431132317,28885469
+Pounds of Materials Used,Non-Grain Products,2013,11,Sugar and syrups,58514321,431132317,923500958
+Pounds of Materials Used,Non-Grain Products,2013,11,Hops (dry),1440544,431132317,81078400
+Pounds of Materials Used,Non-Grain Products,2013,11,Hops (used as extracts),282732,431132317,3885117
+Pounds of Materials Used,Grain Products,2013,12,Malt and malt products,294248188,476420096,3939110211
+Pounds of Materials Used,Grain Products,2013,12,Corn and corn products,48242094,476420096,592554950
+Pounds of Materials Used,Grain Products,2013,12,Rice and rice products,47832575,476420096,723547930
+Pounds of Materials Used,Grain Products,2013,12,Barley and barley products,19579344,476420096,144284274
+Pounds of Materials Used,Grain Products,2013,12,Wheat and wheat products,2311377,476420096,28885469
+Pounds of Materials Used,Non-Grain Products,2013,12,Sugar and syrups,61764460,476420096,923500958
+Pounds of Materials Used,Non-Grain Products,2013,12,Hops (dry),2129685,476420096,81078400
+Pounds of Materials Used,Non-Grain Products,2013,12,Hops (used as extracts),312373,476420096,3885117
+Pounds of Materials Used,Grain Products,2014,1,Malt and malt products,315728713,511801186,3790022536
+Pounds of Materials Used,Grain Products,2014,1,Corn and corn products,60186876,511801186,592890219
+Pounds of Materials Used,Grain Products,2014,1,Rice and rice products,52099471,511801186,638817443
+Pounds of Materials Used,Grain Products,2014,1,Barley and barley products,8185386,511801186,164177906
+Pounds of Materials Used,Grain Products,2014,1,Wheat and wheat products,1372263,511801186,32480911
+Pounds of Materials Used,Non-Grain Products,2014,1,Sugar and syrups,72039259,511801186,862930319
+Pounds of Materials Used,Non-Grain Products,2014,1,Hops (dry),1890937,511801186,310576763
+Pounds of Materials Used,Non-Grain Products,2014,1,Hops (used as extracts),298281,511801186,3651664
+Pounds of Materials Used,Grain Products,2014,2,Malt and malt products,293750079,479898677,3790022536
+Pounds of Materials Used,Grain Products,2014,2,Corn and corn products,49718568,479898677,592890219
+Pounds of Materials Used,Grain Products,2014,2,Rice and rice products,48969378,479898677,638817443
+Pounds of Materials Used,Grain Products,2014,2,Barley and barley products,8893650,479898677,164177906
+Pounds of Materials Used,Grain Products,2014,2,Wheat and wheat products,2120033,479898677,32480911
+Pounds of Materials Used,Non-Grain Products,2014,2,Sugar and syrups,74414600,479898677,862930319
+Pounds of Materials Used,Non-Grain Products,2014,2,Hops (dry),1733845,479898677,310576763
+Pounds of Materials Used,Non-Grain Products,2014,2,Hops (used as extracts),298524,479898677,3651664
+Pounds of Materials Used,Grain Products,2014,3,Malt and malt products,335350528,553238307,3790022536
+Pounds of Materials Used,Grain Products,2014,3,Corn and corn products,53923554,553238307,592890219
+Pounds of Materials Used,Grain Products,2014,3,Rice and rice products,48705125,553238307,638817443
+Pounds of Materials Used,Grain Products,2014,3,Barley and barley products,20694786,553238307,164177906
+Pounds of Materials Used,Grain Products,2014,3,Wheat and wheat products,3621626,553238307,32480911
+Pounds of Materials Used,Non-Grain Products,2014,3,Sugar and syrups,86871712,553238307,862930319
+Pounds of Materials Used,Non-Grain Products,2014,3,Hops (dry),3719722,553238307,310576763
+Pounds of Materials Used,Non-Grain Products,2014,3,Hops (used as extracts),351254,553238307,3651664
+Pounds of Materials Used,Grain Products,2014,4,Malt and malt products,314317091,519534320,3790022536
+Pounds of Materials Used,Grain Products,2014,4,Corn and corn products,51063013,519534320,592890219
+Pounds of Materials Used,Grain Products,2014,4,Rice and rice products,55893495,519534320,638817443
+Pounds of Materials Used,Grain Products,2014,4,Barley and barley products,10091164,519534320,164177906
+Pounds of Materials Used,Grain Products,2014,4,Wheat and wheat products,2547858,519534320,32480911
+Pounds of Materials Used,Non-Grain Products,2014,4,Sugar and syrups,83132566,519534320,862930319
+Pounds of Materials Used,Non-Grain Products,2014,4,Hops (dry),2167689,519534320,310576763
+Pounds of Materials Used,Non-Grain Products,2014,4,Hops (used as extracts),321444,519534320,3651664
+Pounds of Materials Used,Grain Products,2014,5,Malt and malt products,332831907,550236675,3790022536
+Pounds of Materials Used,Grain Products,2014,5,Corn and corn products,59741914,550236675,592890219
+Pounds of Materials Used,Grain Products,2014,5,Rice and rice products,59209512,550236675,638817443
+Pounds of Materials Used,Grain Products,2014,5,Barley and barley products,11263219,550236675,164177906
+Pounds of Materials Used,Grain Products,2014,5,Wheat and wheat products,3267690,550236675,32480911
+Pounds of Materials Used,Non-Grain Products,2014,5,Sugar and syrups,81403402,550236675,862930319
+Pounds of Materials Used,Non-Grain Products,2014,5,Hops (dry),2173226,550236675,310576763
+Pounds of Materials Used,Non-Grain Products,2014,5,Hops (used as extracts),345805,550236675,3651664
+Pounds of Materials Used,Grain Products,2014,6,Malt and malt products,382399712,599251954,3790022536
+Pounds of Materials Used,Grain Products,2014,6,Corn and corn products,59290119,599251954,592890219
+Pounds of Materials Used,Grain Products,2014,6,Rice and rice products,47368927,599251954,638817443
+Pounds of Materials Used,Grain Products,2014,6,Barley and barley products,23906204,599251954,164177906
+Pounds of Materials Used,Grain Products,2014,6,Wheat and wheat products,4273103,599251954,32480911
+Pounds of Materials Used,Non-Grain Products,2014,6,Sugar and syrups,78715950,599251954,862930319
+Pounds of Materials Used,Non-Grain Products,2014,6,Hops (dry),2894437,599251954,310576763
+Pounds of Materials Used,Non-Grain Products,2014,6,Hops (used as extracts),403502,599251954,3651664
+Pounds of Materials Used,Grain Products,2014,7,Malt and malt products,370565836,581042127,3790022536
+Pounds of Materials Used,Grain Products,2014,7,Corn and corn products,47760795,581042127,592890219
+Pounds of Materials Used,Grain Products,2014,7,Rice and rice products,64828200,581042127,638817443
+Pounds of Materials Used,Grain Products,2014,7,Barley and barley products,11164504,581042127,164177906
+Pounds of Materials Used,Grain Products,2014,7,Wheat and wheat products,4202335,581042127,32480911
+Pounds of Materials Used,Non-Grain Products,2014,7,Sugar and syrups,79758226,581042127,862930319
+Pounds of Materials Used,Non-Grain Products,2014,7,Hops (dry),2423064,581042127,310576763
+Pounds of Materials Used,Non-Grain Products,2014,7,Hops (used as extracts),339167,581042127,3651664
+Pounds of Materials Used,Grain Products,2014,8,Malt and malt products,342497886,550652373,3790022536
+Pounds of Materials Used,Grain Products,2014,8,Corn and corn products,49539298,550652373,592890219
+Pounds of Materials Used,Grain Products,2014,8,Rice and rice products,58158328,550652373,638817443
+Pounds of Materials Used,Grain Products,2014,8,Barley and barley products,10774103,550652373,164177906
+Pounds of Materials Used,Grain Products,2014,8,Wheat and wheat products,3109619,550652373,32480911
+Pounds of Materials Used,Non-Grain Products,2014,8,Sugar and syrups,84424807,550652373,862930319
+Pounds of Materials Used,Non-Grain Products,2014,8,Hops (dry),1835895,550652373,310576763
+Pounds of Materials Used,Non-Grain Products,2014,8,Hops (used as extracts),312437,550652373,3651664
+Pounds of Materials Used,Grain Products,2014,9,Malt and malt products,346653525,554969588,3790022536
+Pounds of Materials Used,Grain Products,2014,9,Corn and corn products,46554596,554969588,592890219
+Pounds of Materials Used,Grain Products,2014,9,Rice and rice products,56748056,554969588,638817443
+Pounds of Materials Used,Grain Products,2014,9,Barley and barley products,25194159,554969588,164177906
+Pounds of Materials Used,Grain Products,2014,9,Wheat and wheat products,3802119,554969588,32480911
+Pounds of Materials Used,Non-Grain Products,2014,9,Sugar and syrups,71386473,554969588,862930319
+Pounds of Materials Used,Non-Grain Products,2014,9,Hops (dry),4289504,554969588,310576763
+Pounds of Materials Used,Non-Grain Products,2014,9,Hops (used as extracts),341156,554969588,3651664
+Pounds of Materials Used,Grain Products,2014,10,Malt and malt products,329412159,526428235,3790022536
+Pounds of Materials Used,Grain Products,2014,10,Corn and corn products,46194312,526428235,592890219
+Pounds of Materials Used,Grain Products,2014,10,Rice and rice products,54599783,526428235,638817443
+Pounds of Materials Used,Grain Products,2014,10,Barley and barley products,14289508,526428235,164177906
+Pounds of Materials Used,Grain Products,2014,10,Wheat and wheat products,1872895,526428235,32480911
+Pounds of Materials Used,Non-Grain Products,2014,10,Sugar and syrups,77825404,526428235,862930319
+Pounds of Materials Used,Non-Grain Products,2014,10,Hops (dry),1899541,526428235,310576763
+Pounds of Materials Used,Non-Grain Products,2014,10,Hops (used as extracts),334633,526428235,3651664
+Pounds of Materials Used,Grain Products,2014,11,Malt and malt products,272737485,433552868,3790022536
+Pounds of Materials Used,Grain Products,2014,11,Corn and corn products,38032693,433552868,592890219
+Pounds of Materials Used,Grain Products,2014,11,Rice and rice products,47373098,433552868,638817443
+Pounds of Materials Used,Grain Products,2014,11,Barley and barley products,10643784,433552868,164177906
+Pounds of Materials Used,Grain Products,2014,11,Wheat and wheat products,1345356,433552868,32480911
+Pounds of Materials Used,Non-Grain Products,2014,11,Sugar and syrups,61665023,433552868,862930319
+Pounds of Materials Used,Non-Grain Products,2014,11,Hops (dry),1492949,433552868,310576763
+Pounds of Materials Used,Non-Grain Products,2014,11,Hops (used as extracts),262480,433552868,3651664
+Pounds of Materials Used,Grain Products,2014,12,Malt and malt products,153777615,534941451,3790022536
+Pounds of Materials Used,Grain Products,2014,12,Corn and corn products,30884481,534941451,592890219
+Pounds of Materials Used,Grain Products,2014,12,Rice and rice products,44864070,534941451,638817443
+Pounds of Materials Used,Grain Products,2014,12,Barley and barley products,9077439,534941451,164177906
+Pounds of Materials Used,Grain Products,2014,12,Wheat and wheat products,946014,534941451,32480911
+Pounds of Materials Used,Non-Grain Products,2014,12,Sugar and syrups,11292897,534941451,862930319
+Pounds of Materials Used,Non-Grain Products,2014,12,Hops (dry),284055954,534941451,310576763
+Pounds of Materials Used,Non-Grain Products,2014,12,Hops (used as extracts),42981,534941451,3651664
+Pounds of Materials Used,Grain Products,2015,1,Malt and malt products,314189672,510427900,3669211565
+Pounds of Materials Used,Grain Products,2015,1,Corn and corn products,59759340,510427900,570241780
+Pounds of Materials Used,Grain Products,2015,1,Rice and rice products,52438465,510427900,603782820
+Pounds of Materials Used,Grain Products,2015,1,Barley and barley products,8728262,510427900,168839894
+Pounds of Materials Used,Grain Products,2015,1,Wheat and wheat products,1316582,510427900,32145753
+Pounds of Materials Used,Non-Grain Products,2015,1,Sugar and syrups,71798065,510427900,847629620
+Pounds of Materials Used,Non-Grain Products,2015,1,Hops (dry),1899000,510427900,310558359
+Pounds of Materials Used,Non-Grain Products,2015,1,Hops (used as extracts),298514,510427900,3611505
+Pounds of Materials Used,Grain Products,2015,2,Malt and malt products,292567431,478194615,3669211565
+Pounds of Materials Used,Grain Products,2015,2,Corn and corn products,49291032,478194615,570241780
+Pounds of Materials Used,Grain Products,2015,2,Rice and rice products,48975137,478194615,603782820
+Pounds of Materials Used,Grain Products,2015,2,Barley and barley products,9108543,478194615,168839894
+Pounds of Materials Used,Grain Products,2015,2,Wheat and wheat products,2060046,478194615,32145753
+Pounds of Materials Used,Non-Grain Products,2015,2,Sugar and syrups,74138605,478194615,847629620
+Pounds of Materials Used,Non-Grain Products,2015,2,Hops (dry),1754927,478194615,310558359
+Pounds of Materials Used,Non-Grain Products,2015,2,Hops (used as extracts),298894,478194615,3611505
+Pounds of Materials Used,Grain Products,2015,3,Malt and malt products,319448327,534014331,3669211565
+Pounds of Materials Used,Grain Products,2015,3,Corn and corn products,53588473,534014331,570241780
+Pounds of Materials Used,Grain Products,2015,3,Rice and rice products,48710754,534014331,603782820
+Pounds of Materials Used,Grain Products,2015,3,Barley and barley products,22013439,534014331,168839894
+Pounds of Materials Used,Grain Products,2015,3,Wheat and wheat products,3719861,534014331,32145753
+Pounds of Materials Used,Non-Grain Products,2015,3,Sugar and syrups,82468474,534014331,847629620
+Pounds of Materials Used,Non-Grain Products,2015,3,Hops (dry),3743541,534014331,310558359
+Pounds of Materials Used,Non-Grain Products,2015,3,Hops (used as extracts),321462,534014331,3611505
+Pounds of Materials Used,Grain Products,2015,4,Malt and malt products,310767436,514691858,3669211565
+Pounds of Materials Used,Grain Products,2015,4,Corn and corn products,50651219,514691858,570241780
+Pounds of Materials Used,Grain Products,2015,4,Rice and rice products,55895095,514691858,603782820
+Pounds of Materials Used,Grain Products,2015,4,Barley and barley products,9432668,514691858,168839894
+Pounds of Materials Used,Grain Products,2015,4,Wheat and wheat products,2543086,514691858,32145753
+Pounds of Materials Used,Non-Grain Products,2015,4,Sugar and syrups,82896506,514691858,847629620
+Pounds of Materials Used,Non-Grain Products,2015,4,Hops (dry),2184404,514691858,310558359
+Pounds of Materials Used,Non-Grain Products,2015,4,Hops (used as extracts),321444,514691858,3611505
+Pounds of Materials Used,Grain Products,2015,5,Malt and malt products,332384559,549040224,3669211565
+Pounds of Materials Used,Grain Products,2015,5,Corn and corn products,59463385,549040224,570241780
+Pounds of Materials Used,Grain Products,2015,5,Rice and rice products,59210512,549040224,603782820
+Pounds of Materials Used,Grain Products,2015,5,Barley and barley products,11006146,549040224,168839894
+Pounds of Materials Used,Grain Products,2015,5,Wheat and wheat products,3270150,549040224,32145753
+Pounds of Materials Used,Non-Grain Products,2015,5,Sugar and syrups,81171257,549040224,847629620
+Pounds of Materials Used,Non-Grain Products,2015,5,Hops (dry),2188410,549040224,310558359
+Pounds of Materials Used,Non-Grain Products,2015,5,Hops (used as extracts),345805,549040224,3611505
+Pounds of Materials Used,Grain Products,2015,6,Malt and malt products,383818029,601226092,3669211565
+Pounds of Materials Used,Grain Products,2015,6,Corn and corn products,58932810,601226092,570241780
+Pounds of Materials Used,Grain Products,2015,6,Rice and rice products,47366346,601226092,603782820
+Pounds of Materials Used,Grain Products,2015,6,Barley and barley products,24840171,601226092,168839894
+Pounds of Materials Used,Grain Products,2015,6,Wheat and wheat products,4325143,601226092,32145753
+Pounds of Materials Used,Non-Grain Products,2015,6,Sugar and syrups,78547713,601226092,847629620
+Pounds of Materials Used,Non-Grain Products,2015,6,Hops (dry),2991932,601226092,310558359
+Pounds of Materials Used,Non-Grain Products,2015,6,Hops (used as extracts),403948,601226092,3611505
+Pounds of Materials Used,Grain Products,2015,7,Malt and malt products,351222725,556244088,3669211565
+Pounds of Materials Used,Grain Products,2015,7,Corn and corn products,47503607,556244088,570241780
+Pounds of Materials Used,Grain Products,2015,7,Rice and rice products,64827600,556244088,603782820
+Pounds of Materials Used,Grain Products,2015,7,Barley and barley products,11059580,556244088,168839894
+Pounds of Materials Used,Grain Products,2015,7,Wheat and wheat products,4133710,556244088,32145753
+Pounds of Materials Used,Non-Grain Products,2015,7,Sugar and syrups,74805384,556244088,847629620
+Pounds of Materials Used,Non-Grain Products,2015,7,Hops (dry),2352314,556244088,310558359
+Pounds of Materials Used,Non-Grain Products,2015,7,Hops (used as extracts),339168,556244088,3611505
+Pounds of Materials Used,Grain Products,2015,8,Malt and malt products,326075404,530303120,3669211565
+Pounds of Materials Used,Grain Products,2015,8,Corn and corn products,49124855,530303120,570241780
+Pounds of Materials Used,Grain Products,2015,8,Rice and rice products,58190840,530303120,603782820
+Pounds of Materials Used,Grain Products,2015,8,Barley and barley products,11696242,530303120,168839894
+Pounds of Materials Used,Grain Products,2015,8,Wheat and wheat products,3015906,530303120,32145753
+Pounds of Materials Used,Non-Grain Products,2015,8,Sugar and syrups,80080228,530303120,847629620
+Pounds of Materials Used,Non-Grain Products,2015,8,Hops (dry),1807220,530303120,310558359
+Pounds of Materials Used,Non-Grain Products,2015,8,Hops (used as extracts),312425,530303120,3611505
+Pounds of Materials Used,Grain Products,2015,9,Malt and malt products,328674963,525012571,3669211565
+Pounds of Materials Used,Grain Products,2015,9,Corn and corn products,41626738,525012571,570241780
+Pounds of Materials Used,Grain Products,2015,9,Rice and rice products,48134917,525012571,603782820
+Pounds of Materials Used,Grain Products,2015,9,Barley and barley products,26802044,525012571,168839894
+Pounds of Materials Used,Grain Products,2015,9,Wheat and wheat products,3829592,525012571,32145753
+Pounds of Materials Used,Non-Grain Products,2015,9,Sugar and syrups,71270147,525012571,847629620
+Pounds of Materials Used,Non-Grain Products,2015,9,Hops (dry),4335014,525012571,310558359
+Pounds of Materials Used,Non-Grain Products,2015,9,Hops (used as extracts),339156,525012571,3611505
+Pounds of Materials Used,Grain Products,2015,10,Malt and malt products,305864536,487543360,3669211565
+Pounds of Materials Used,Grain Products,2015,10,Corn and corn products,41417962,487543360,570241780
+Pounds of Materials Used,Grain Products,2015,10,Rice and rice products,45050667,487543360,603782820
+Pounds of Materials Used,Grain Products,2015,10,Barley and barley products,13833433,487543360,168839894
+Pounds of Materials Used,Grain Products,2015,10,Wheat and wheat products,1568734,487543360,32145753
+Pounds of Materials Used,Non-Grain Products,2015,10,Sugar and syrups,77650579,487543360,847629620
+Pounds of Materials Used,Non-Grain Products,2015,10,Hops (dry),1826524,487543360,310558359
+Pounds of Materials Used,Non-Grain Products,2015,10,Hops (used as extracts),330925,487543360,3611505
+Pounds of Materials Used,Grain Products,2015,11,Malt and malt products,248702560,392128383,3669211565
+Pounds of Materials Used,Grain Products,2015,11,Corn and corn products,31612117,392128383,570241780
+Pounds of Materials Used,Grain Products,2015,11,Rice and rice products,38579400,392128383,603782820
+Pounds of Materials Used,Grain Products,2015,11,Barley and barley products,8852396,392128383,168839894
+Pounds of Materials Used,Grain Products,2015,11,Wheat and wheat products,1292617,392128383,32145753
+Pounds of Materials Used,Non-Grain Products,2015,11,Sugar and syrups,61470208,392128383,847629620
+Pounds of Materials Used,Non-Grain Products,2015,11,Hops (dry),1360528,392128383,310558359
+Pounds of Materials Used,Non-Grain Products,2015,11,Hops (used as extracts),258557,392128383,3611505
+Pounds of Materials Used,Grain Products,2015,12,Malt and malt products,155495923,527194754,3669211565
+Pounds of Materials Used,Grain Products,2015,12,Corn and corn products,27270242,527194754,570241780
+Pounds of Materials Used,Grain Products,2015,12,Rice and rice products,36403087,527194754,603782820
+Pounds of Materials Used,Grain Products,2015,12,Barley and barley products,11466970,527194754,168839894
+Pounds of Materials Used,Grain Products,2015,12,Wheat and wheat products,1070326,527194754,32145753
+Pounds of Materials Used,Non-Grain Products,2015,12,Sugar and syrups,11332454,527194754,847629620
+Pounds of Materials Used,Non-Grain Products,2015,12,Hops (dry),284114545,527194754,310558359
+Pounds of Materials Used,Non-Grain Products,2015,12,Hops (used as extracts),41207,527194754,3611505
