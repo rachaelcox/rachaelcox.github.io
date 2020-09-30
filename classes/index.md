@@ -4,7 +4,13 @@ title: Classes
 permalink: /classes/
 ---
 
-- Practical Approaches to Bioanalysis in R: [Summer 2020](/classes/IntroR_summer_2020.html)
-- Machine Learning in R:
-    * [Code Demo](poke_random_forest.html)
-    * [GitHub Repository](https://github.com/rachaelcox/pokemon_machine_learning_demo) 
+- Data Visualization in R (Code Along Webinar, September 2020):
+    * Blank Worksheet (6 Practice Problems) - [Rmd](/classes/files/dataviz_codealong.Rmd), [HTML](/classes/pages/dataviz_codealong.html)
+    * Practice Worksheet w/ Code Along Solutions (3 Practice Problems) - [Rmd](/classes/files/dataviz_codealong_practice.Rmd), [HTML](/classes/pages/dataviz_codealong_practice.html)
+    * Full Solutions [HTML](/classes/pages/dataviz_codealong_solutions.html)
+    * [GitHub Repository](https://github.com/rachaelcox/data_viz_demo)
+- Practical Approaches to Bioanalysis in R (4 Day Course, June 2020): 
+    * [Summer 2020 Class Website](/classes/IntroR_summer_2020.html)
+- Machine Learning in R (Code Along Seminar, December 2019):
+    * [Code Demo](/classes/pages/poke_random_forest.html)
+    * [GitHub Repository](https://github.com/rachaelcox/pokemon_machine_learning_demo)

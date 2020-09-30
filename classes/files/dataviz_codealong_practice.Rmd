@@ -1,0 +1,187 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4.5, fig.width=6)
+library(tidyverse) # ggplot2 library is contained within the tidyverse
+theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2
+library(ggthemes) # enables colorblind-friendly color palettes
+```
+# Code Along: Data Visualization with `ggplot2`
+### Hosted by the Graduate Students of Open Coding Hour
+
+This 1 hour webinar will focus on making three kinds of visualizations: time-series line graphs, bar charts, and distribution plots. For examples of other kinds of plots (in addition to data transformation vignettes), check the class website for the 4 day R course taught by myself and Cory DuPai: https://rachaelcox.github.io/classes/IntroR_summer_2020.html
+
+**September 30, 2020**
+
+## 1. Plotting x-y relationships (e.g. time series, correlations)
+
+We will use the `brewmats` dataset, which is sourced from the US Alcohol and Tobacco Tax and Trade Bureau (TBB, https://www.ttb.gov/beer/statistics), scraped by the TidyTuesday group and cleaned by me. The `brewmats` dataset contains the following variables:
+
+* `data_type` = denotes that all amounts of material used are given in pounds (lbs)
+* `material_type` = materials belong in one of two categories, grain (e.g., wheat) or non-grain (e.g., sugar)
+* `type` = specific material details (e.g., malt, corn, rice, barley, wheat, hops, sugar, etc
+* `year` = year the amount of materials used was recorded (2008-2015)
+* `month` = month the amount of materials used was recorded (1=January, 2=February, 3=March, etc)
+* `month_usage_by_type` = total amount of material usage by type per month (lbs) 
+* `month_sum_all_types` = total amount of material used for *all* types (lbs)
+* `year_sum_by_type` = total amount of material used by type per year
+
+<center>
+![Beer Components](whats-in-beer.jpg)
+</center>
+
+```{r}
+# download the `brewmats` dataset
+brewmats <- read_csv("https://rachaelcox.github.io/classes/datasets/brewmats.csv")
+```
+
+**Code Along:** Plot the total monthly usage of all brewing materials (`month_sum_all_types`) on the y-axis for every `month` in the dataset on the x-axis, as a line graph colored by `year` using `geom_line()`.
+
+```{r}
+# plot the variables as specified
+ggplot(brewmats, aes(x = month, y = month_sum_all_types,  # aes maps the variables
+                     group = year, color = year)) +
+  geom_line()  # calls the line graph
+
+# ggplot is interpreting the numerical variables as continuous
+# we use as.factor() to tell R that these variables are discrete
+ggplot(brewmats, aes(x = as.factor(month), y = month_sum_all_types,
+                     group = as.factor(year), color = as.factor(year))) +
+  geom_line() +
+  scale_color_colorblind()  # use a colorblind-friendly palette
+
+# clean it up and make it pretty
+ggplot(brewmats, aes(x = as.factor(month), y = month_sum_all_types,
+                     group = as.factor(year), color = as.factor(year))) +
+  geom_line(size = 1.5) +
+  scale_color_colorblind(name = "Year") +   # change legend title
+  xlab("Month") +   # rename x-axis
+  ylab("Monthly Material Usage (lbs)")   # rename y-axis
+```
+
+**Practice:** Plot the yearly usage (`year_sum_by_type`) of each type of brewing materials on the y-axis, for every `year` in the dataset on the x-axis, as a line graph colored by `type` using `geom_line()`. Remember to map `group = type` so that ggplot knows how which lines you want to connect.
+
+```{r}
+# your R code here
+# use the 'Code Along' section above as a jumping off point
+```
+
+## 2. Plotting amounts (e.g. bar graphs, heat maps)
+
+For this section, we will use the `mushrooms` dataset (obtained from Kaggle and cleaned by me), which contains the following information:
+
+* `class` = whether the mushroom is edible or poisonous
+* `cap_shape` = shape of the mushroom cap, e.g., bell, conical, convex, flat, etc
+* `cap_color` = color of the mushroom cap, e.g., brown, buff, cinnamon, gray, etc
+* `odor` = smell of the mushroom (almond, anise, creosote, fishy foul, musty, pungent, none)
+* `gill_spacing` = spacing between mushroom gills, aka the underside of the mushroom cap (close, crowded or distant)
+* `gill_size` = size of mushroom gills (broad or narrow)
+* `gill_color` = color of mushroom gills (black, brown, etc)
+* `stalk_shape` = shape of the mushroom stalk (enlarging or tapering)
+* `stalk_root` = type of stalk root (bulbous, club, cup, rooted, etc)
+* `veil_type` = type of veil on the mushroom (partial or universal)
+* `veil_color` = color of the veil (brown, orange, white or yellow)
+* `ring_number` = number of rings on the stalk of the mushroom (0, 1 or 2)
+* `ring_type` = description of the ring(s), if any, found on the stalk, e.g., flaring, large, pendant, etc
+* `spore_print_color` = color of spores collected on a sheet of paper as a print (black, brown, yellow, etc)
+* `population` = description of nearby mushrooms of the same species, if any; can be abundant, clustered, numerous, scattered, several, and solitary
+* `habitat` = where the mushroom was found (grasses, leaves, meadows, paths, urban, waste, woods)
+
+<center>
+![Mushroom Diagram](parts-of-a-mushroom.gif)
+</center>
+
+```{r}
+# download the `mushrooms` dataset
+mushrooms <- read_csv("https://rachaelcox.github.io/classes/datasets/mushrooms.csv")
+```
+
+**Code Along:** Plot a bar graph for counts of mushrooms found in each `habitat`, colored by `class` (edible or poisonous) using `geom_bar()`.
+
+```{r}
+# plot the variables as specified
+ggplot(mushrooms, aes(x = habitat, fill = class)) +  # note we need to use `fill =` instead of `color =` for this kind of plot
+  geom_bar()  # default bar position is "stack"
+
+# change bar positioning and fill colors
+ggplot(mushrooms, aes(x = habitat, fill = class)) +
+  geom_bar(position = "dodge") +  # change bar positions so they are side-by-side
+  scale_fill_brewer()  # change the default colors
+
+# make it pretty
+ggplot(mushrooms, aes(x = habitat, fill = class)) +
+  geom_bar(position = position_dodge(preserve = "single")) +  # fixing bar width requires this special function
+  scale_fill_brewer(palette = "Set1") +  # specifying `palette = "Set1"` sets a qualitative color palette
+  coord_flip()  # flips the x- and y-axes for better readability
+
+# add more information
+ggplot(mushrooms, aes(x = habitat, fill = class)) +
+  geom_bar(position = position_dodge(preserve = "single")) +   
+  scale_fill_brewer(palette = "Set1", direction = -1) +  # setting `direction = -1` reverses color assignment
+  coord_flip() +
+  facet_wrap(~population)  # displays habitat and class for each kind of population
+```
+
+**Practice:** Plot a bar graph for counts of mushrooms of each type of `odor`, colored by `class` (edible or poisonous) using `geom_bar()`. 
+
+```{r}
+# your R code here
+# use the 'Code Along' section above as a jumping off point
+```
+
+## 3. Plotting distributions (e.g., box plots, histograms, density plots)
+
+For this section, we will use the `wine` dataset (obtained from Kaggle and cleaned by me), which contains the following variables:
+
++ `type`: whether the wine is red or white
++ `quality`: median score between 0 and 10 as blindly graded by wine experts
++ `quality_grade`: quality category given to each rating based on distribution of ratings (low, med, high)
++ `alcohol`: the percent alcohol content of the wine (% by volume)
++ `alcohol_grade`: relative amount of alcohol compared to all wines (low, med, high)
++ `pH`: describes how acidic or basic a wine is on a scale from 0 (very acidic) to 14 (very basic); most wines are between 3-4 on the pH scale
++ `acidity_grade`: acidity intensity (low, med, higj)
++ `fixed_acidity`: most acids involved with wine or fixed or nonvolatile/do not evaporate readily (tartaric acid - g / dm^3)
++ `volatile_acidity`:  the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste (acetic acid - g / dm^3)
++ `citric_acid`: found in small quantities, citric acid can add freshness and flavor to wines (g / dm^3)
++ `residual_sugar`: the amount of sugar remaining after fermentation stops; it's rare to find wines with less than 1 gram/liter and wines with greater than 45 grams/liter are considered sweet (g / dm^3)
++ `chlorides`: the amount of salt in the wine (sodium chloride - g / dm^3)
++ `free_sulfur_dioxide`: the free form of SO2 exists in equilibrium between molecular SO2 (as a dissolved gas) and bisulfite ion; it prevents microbial growth and the oxidation of wine (mg / dm^3)
++ `total_sulfur_dioxide`: amount of free and bound forms of S02; in low concentrations, SO2 is mostly undetectable in wine, but at free SO2 concentrations over 50 ppm, SO2 becomes evident in the nose and taste of wine (mg / dm^3)
++ `density`: degree of consistency measured by mass per unit volume (g / cm^3)
++ `sulphates`: a wine additive which can contribute to sulfur dioxide gas (S02) levels, wich acts as an antimicrobial and antioxidant (potassium sulphate - g / dm^3)
+
+![Typical pH of Wine Types](wine_pH.jpg)
+
+```{r}
+# download the `wine` dataset
+wine <- read_csv("https://rachaelcox.github.io/classes/datasets/wine_features.csv")
+```
+
+**Code Along:** Plot the distribution of pH for each wine type (i.e., red or wine) by mapping `pH` to the x-axis, coloring by `type`, and calling `geom_density()`. Then, use `geom_boxplot()` to visualize the distribution of `pH` across `quality_grade`, again coloring by `type`.
+
+```{r}
+# plot the distribution of pH for red and white wine
+ggplot(wine, aes(x = pH, fill = type)) + # note we need to use `fill =` instead of `color =` for this kind of plot
+  geom_density()
+
+# make it pretty
+ggplot(wine, aes(x = pH, fill = type)) +
+  geom_density(alpha = 0.70) +  # reduce opacity of distributions to 70%
+  scale_fill_manual(values = c("#790000", "#9e934d"))  # specify custom colors
+
+# plot the distribution of pH for each quality grade for red and white wine
+ggplot(wine, aes(x = quality_grade, y = pH, fill = type)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("#790000", "#9e934d"))
+
+# make it pretty by reordering the x-axis
+ggplot(wine, aes(x = fct_relevel(quality_grade, c("low", "med", "high")), y = pH, fill = type)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("#790000", "#9e934d"))
+```
+
+**Practice:** Choose a numeric variable you are interested in. Plot its distribution relative to a categorical variable, e.g., `type`, `quality_grade`, `alcohol_grade` or `acidity_grade`. Use `geom_density()`, `geom_boxplot()`, and/or `geom_violin()`.
+
+```{r}
+# your R code here
+# use the 'Code Along' section above as a jumping off point
+```
