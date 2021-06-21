@@ -4,14 +4,15 @@ opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
 ```
 ## Day 1: Tidying data
 ### In-class worksheet
-**June 29, 2020**
+
+**June 21st, 2021**
 
 In this worksheet, we will use the library tidyverse:
 ```{r message=FALSE}
 library(tidyverse)
 ```
 
-## Tidying data (`pivot_longer()`, `pivot_wider()`)
+## Tidying data with `pivot_longer()`and `pivot_wider()`
 
 ### 1.1 Making tables longer
 
@@ -20,31 +21,28 @@ Consider the following two data sets, `male_haireyecolor` and `female_haireyecol
 ```{r message = FALSE}
 # download male data set
 male_haireyecolor <- read_csv("https://rachaelcox.github.io/classes/datasets/male_haireyecolor.csv")
-head(male_haireyecolor)
 
 # download female data set
 female_haireyecolor <- read_csv("https://rachaelcox.github.io/classes/datasets/female_haireyecolor.csv")
-head(female_haireyecolor)
 ```
 
-The data set is not tidy, because the columns `Brown`, `Blue`, `Hazel`, and `Green` are observations for a single variable, eye color. The following versions of the tables are tidy:
+Use the function `pivot_longer()` to rearrange both data sets such that there is one observation per row for each combination of hair and eye color. **Remember:** You can run `?pivot_longer` to pull up argument details and example usage.
 
 ```{r}
 # your R code here
 ```
 
+
 ### 1.2 Making tables wider
 
-Consider the following data set `persons`, which contains information about the sex, weight, and height of 200 individuals:
+Consider the following data set `persons`, which contains information about the sex, weight, and height of 200 individuals. Use `head()` to preview the data set; is it tidy?
 
 ```{r message = FALSE}
+# download persons data set
 persons <- read_csv("https://rachaelcox.github.io/classes/datasets/persons.csv")
-head(persons)
 ```
 
-Is this data set tidy? And can you rearrange it so that you have one column for subject, one for sex, one for weight, and one for height?
-
-The data set is not tidy, because neither `indicator` nor `value` are variables. The variables are `subject`, `sex`, `weight`, `height`. The following version of the table is tidy:
+Rearrange the `persons` data frame so that you have one column for subject, one for sex, one for weight, and one for height using the function `pivot_wider`. **Remember:** You can run `?pivot_wider` to pull up argument details and example usage.
 
 ```{r}
 # your R code here

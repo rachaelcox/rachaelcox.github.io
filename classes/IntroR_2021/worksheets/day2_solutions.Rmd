@@ -5,10 +5,10 @@ library(tidyverse) # ggplot2 library is contained within the tidyverse
 theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2
 library(ggthemes) # enables colorblind-friendly color palettes
 ```
-## Day 2: Data Visualization with ggplot2
-### In-class worksheet 2
+## Day 2: Data visualization
+### In-class worksheet, solutions
 
-**June 30, 2020**
+**June 22nd, 2021**
 
 ## 1. Plotting x-y relationships
 
@@ -17,7 +17,7 @@ library(ggthemes) # enables colorblind-friendly color palettes
 We will work with the `iris` data set available in R. This data set gives the measurements in centimeters of the variables sepal length, sepal width, petal length and petal width for 50 flowers from each of 3 species of iris. The species are *Iris setosa*, *Iris versicolor*, and *Iris virginica*:
 
 ```{r}
-# view the first several rows of the iris dataset
+# view the first several rows of the iris data set
 head(iris)
 ```
 
@@ -29,7 +29,7 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
   geom_point()
 ```
 
-Now, do the same plot but facet by species instead of coloring using `facet_wrap()`.
+Now, do the same plot but facet by species using `facet_wrap()`.
 
 ```{r} 
 # plot petal length vs sepal length, faceted by species
@@ -43,7 +43,7 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
 The `omp` data set contains a subset of DNA microarray data measuring the differential expression of *E. coli* outer membrane proteins (omp) in nutrient-limited chemostatic cultures. In this particular experiment, the medium is glucose-limited. The `gene` column denotes one 8 genes that code for outer membrane proteins, `time_min` denotes the time point sampled in minutes, and `au` denotes the change in gene expression detected by the microarray chip (arbitrary units).
 
 ```{r}
-# download the `omp` dataset
+# download the `omp` data set
 omp <- read_csv("https://rachaelcox.github.io/classes/datasets/ecoli_omp_expression.csv")
 head(omp)
 ```
@@ -59,7 +59,7 @@ ggplot(omp, aes(x = time_min, y = au, color = gene)) +
 Now, make the same plot but make the size of the lines thicker by specifying the `size` argument inside of `geom_line()`. Use `scale_color_colorblind()` to convert the legend colors to a colorblind-friendly palette. Use `xlab()` and `ylab` to give the figure pretty labels.
 
 ```{r}
-# plot the expression of each gene over time
+# plot the expression of each gene over time & make it pretty
 ggplot(omp, aes(x = time_min, y = au, color = gene)) +
   geom_line(size = 2) +
   scale_color_colorblind() +
@@ -74,7 +74,7 @@ ggplot(omp, aes(x = time_min, y = au, color = gene)) +
 The `bacteria` data set contains data from tests of the presence of the bacterium *H. influenzae* in children with otitis media in the Northern Territory of Australia. We are interested in two columns of this data set: `presence` reports the presence (y) or absence (n) of the bacterium, `treatment` reports the treatment, which was placebo, drug, or drug+ (drug plus high adherence).
 
 ```{r}
-# download the `bacteria` dataset
+# download the `bacteria` data set
 bacteria <- read_csv("https://rachaelcox.github.io/classes/datasets/bacteria.csv")
 head(bacteria)
 ```
@@ -87,6 +87,7 @@ ggplot(bacteria, aes(x = treatment, fill = presence)) +
 ```
 
 Now modify the plot so that bars representing the absolute number of cases with or without the bacterium are shown side-by-side. Use `scale_fill_brewer()` to change the plot colors. Hint: This requires the argument `position='dodge'` in `geom_bar()`.
+
 ```{r }
 ggplot(bacteria, aes(x = treatment, fill = presence)) + 
   geom_bar(position = 'dodge') +
@@ -136,7 +137,7 @@ ggplot(dandelion, aes(x = condition, y = transcript_dandelion, fill = log2_foldc
 
 ### 3.1 Boxplots, violin plots
 
-Using the `biopsy` dataset, make side-by-side boxplots of `clump for the three species of iris. The geom you need to use is `geom_boxplot()`.
+Using the `biopsy` data set, make side-by-side boxplots of `clump_thickness` for each `outcome`. The geom you need to use is `geom_boxplot()`.
 
 ```{r}
 # download the biopsy data set
@@ -174,6 +175,10 @@ ggplot(iris, aes(x = Sepal.Length)) +
 # even wider bins
 ggplot(iris, aes(x = Sepal.Length)) + 
   geom_histogram(binwidth = 0.4)
+
+# divide all observations by a set # of bins
+ggplot(iris, aes(x = Sepal.Length)) + 
+  geom_histogram(bins = 10)
 ```
 
 Instead of `geom_histogram()`, now use `geom_density()` and fill the area under the curves by species identity.
@@ -192,7 +197,7 @@ ggplot(iris, aes(x = Sepal.Length, fill = Species)) +
 
 ## 4. Layering geoms
 
-For the `iris` data set, make a plot of the 2d distribution of petal length vs. sepal length, by making an x-y plot that shows the individual data points as well as contour lines indicating the density of points in a given spatial region.
+**Bonus challenge:** For the `iris` data set, make a plot of the 2d distribution of petal length vs. sepal length, by making an x-y plot that shows the individual data points as well as contour lines indicating the density of points in a given spatial region.
 
 ```{r}
 ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) + 

@@ -17,9 +17,11 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
   * [https://gsafcomp01.ccbb.utexas.edu/](https://gsafcomp01.ccbb.utexas.edu/)
   * [https://gsafcomp02.ccbb.utexas.edu/](https://gsafcomp02.ccbb.utexas.edu/)
 
+These compute servers (aka PODs) are managed by the Biomedical Research Computing Facility. PODs have powerful hardware for handling large data sets, come with many bioinformatics tools pre-installed, are regularly backed up, and feature web-based integrated development environments (IDEs) for both Python and R. You can find out more information about setting up a POD for your own research [here](https://research.utexas.edu/cbrs/cores/cbb/computing-resources/) and [here](https://wikis.utexas.edu/display/RCTFusers). 
+
 ------
 
-### Day 1: Introduction to R and the tidyverse ecosystem
+### Day 1: Introduction to R
 * Slides (R basics): [day1.pdf](/classes/IntroR_2021/slides/day1.pdf)
 * Slides (Tidyverse intro): [tidy_intro.pdf](/classes/IntroR_2021/slides/tidy_intro.pdf)
 * You can download R from here: [https://cran.r-project.org/](https://cran.r-project.org/)
@@ -29,14 +31,12 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 * In-class worksheet 1 (R basics):
     - [R Markdown](/classes/IntroR_2021/worksheets/day1.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day1.html)
-    - [HTML, Solutions](/classes/IntroR_2021/worksheets/day1_solutions.html)
     - [Test dataset](/classes/datasets/mushrooms_small.csv)
 * In-class worksheet 2 (Tidying data):
     - [R Markdown](/classes/IntroR_2021/worksheets/tidying.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/tidying.html)
-    - [HTML, Solutions](/classes/IntroR_2021/worksheets/tidying_solutions.html)
 
-### Day 2: Data visualization with ggplot2
+### Day 2: Data visualization
 * Slides: [day2.pdf](/classes/IntroR_2021/slides/day2.pdf)
 * Tidyverse style guide: [https://style.tidyverse.org/index.html](https://style.tidyverse.org/index.html)
 * Tidyverse website, `ggplot2` vignettes: [https://ggplot2.tidyverse.org/](https://ggplot2.tidyverse.org/)
@@ -46,9 +46,8 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day2.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day2.html)
-    - [HTML, Solutions](/classes/IntroR_2021/worksheets/day2_solutions.html)
 
-### Day 3: Data transformation with dplyr
+### Day 3: Data wrangling
 * Slides: [day3.pdf](/classes/IntroR_2021/slides/day3.pdf)
 * Tidyverse website, `dplyr` vignettes: [https://dplyr.tidyverse.org/](https://dplyr.tidyverse.org/)
 * Animated visualizations of different join() functions:
@@ -59,6 +58,11 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day3.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day3.html)
-    - [HTML, Solutions](/classes/IntroR_2021/worksheets/day3_solutions.html)
 
-### Day 4: Statistical analysis and machine learning in R
+### Day 4: Data analysis
+* Slides: [day4.pdf](/classes/IntroR_2021/slides/day4.pdf)
+* Visualizing principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
+* Visualizing k-means clustering: [https://www.naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+* In-class worksheet:
+    - [R Markdown](/classes/IntroR_2021/worksheets/day4.Rmd)
+    - [HTML](/classes/IntroR_2021/worksheets/day4.html)
