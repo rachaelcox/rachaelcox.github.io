@@ -31,11 +31,12 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * In-class worksheet 1 (R basics):
     - [R Markdown](/classes/IntroR_2021/worksheets/day1.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day1.html)
-    - [HTML, solutions](/classes/IntroR_2021/worksheets/day1_solutions.html)
+    - [HTML, Solutions](/classes/IntroR_2021/worksheets/day1_solutions.html)
     - [Test dataset](/classes/datasets/mushrooms_small.csv)
 * In-class worksheet 2 (Tidying data):
     - [R Markdown](/classes/IntroR_2021/worksheets/tidying.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/tidying.html)
+    - [HTML, Solutions](/classes/IntroR_2021/worksheets/tidying_solutions.html)
 
 ### Day 2: Data visualization
 * Slides: [day2.pdf](/classes/IntroR_2021/slides/day2.pdf)
@@ -47,6 +48,8 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day2.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day2.html)
+    - [R Markdown, Partial Solutions](/classes/IntroR_2021/worksheets/day2_solutions_partial.Rmd)
+    - [HTML, Partial Solutions](/classes/IntroR_2021/worksheets/day2_solutions_partial.html)
 
 ### Day 3: Data wrangling
 * Slides: [day3.pdf](/classes/IntroR_2021/slides/day3.pdf)
