@@ -31,6 +31,7 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * In-class worksheet 1 (R basics):
     - [R Markdown](/classes/IntroR_2021/worksheets/day1.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day1.html)
+    - [HTML, solutions](/classes/IntroR_2021/worksheets/day1_solutions.html)
     - [Test dataset](/classes/datasets/mushrooms_small.csv)
 * In-class worksheet 2 (Tidying data):
     - [R Markdown](/classes/IntroR_2021/worksheets/tidying.Rmd)
