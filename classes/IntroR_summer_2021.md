@@ -43,6 +43,7 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * Tidyverse style guide: [https://style.tidyverse.org/index.html](https://style.tidyverse.org/index.html)
 * Tidyverse website, `ggplot2` vignettes: [https://ggplot2.tidyverse.org/](https://ggplot2.tidyverse.org/)
 * Guide to all functions available in ggplot2: [https://ggplot2.tidyverse.org/reference/](https://ggplot2.tidyverse.org/reference/#section-aesthetics)
+* Default colors that R recognizes: [List of all strings with example output](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
 * Guide to interactive plots using ggplotly: [https://plot.ly/ggplot2/user-guide/](https://plot.ly/ggplot2/user-guide/)
 * Optimize your data viz for your data type: [https://serialmentor.com/dataviz/directory-of-visualizations.html](https://serialmentor.com/dataviz/directory-of-visualizations.html)
 * In-class worksheet:

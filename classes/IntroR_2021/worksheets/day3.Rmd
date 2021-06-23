@@ -51,7 +51,7 @@ Now, using `bind_rows()` combine the two new data frames together.
 
 Another valid way to do this is with `rbind()`; the difference is that `rbind()` requires data frames with absolutely identifical column names to ensure a clean concatenation, whereas `bind_rows()` isn't so picky.
 
-**Bonus challenge:** Plot the distribution of z-scores (`PSM_zscore`) for your combined data frame. Color by experiment. Your choice of geom; see Section 3 of yesterday's worksheet for plotting distributions. Plot horizontal lines at a z-score values of 1.6 and -1.6, corresponding to roughly a 5% false discovery rate (`geom_hline` or `geom_vline` will accomplish this).
+**Bonus challenge:** Plot the distribution of z-scores (`PSM_zscore`) for your combined data frame. Color by experiment. Your choice of geom; see Section 3 of yesterday's worksheet for plotting distributions. Plot horizontal lines at the critical z-score value of 1.6, corresponding to a roughly 5% false positive rate (or p-value = 0.05) cutoff for a one-sided test (`geom_hline` or `geom_vline` will accomplish this).
 
 ```{r}
 # your R code here
@@ -87,7 +87,7 @@ In biological data analysis, we're often most interested in a specific subset of
 
 Perform the following operations to pare down the combined APMS data frame. Use the pipe (%>%) to chain data operations together and save the results to a new data frame in a single step:
 
-1. Filter the combined and annotated APMS data frame (generated in the previous step) to only contain observations with `PSM_zscore` > 1.6 to pull out statistically significant interactors with the proteins dnai2 and heatr2 (use the `filter()` function).
+1. Filter the combined and annotated APMS data frame (generated in the previous step) to only contain observations with `PSM_zscore` > 1.6 (p ~ 0.05) to pull out proteins significantly interacting with dnai2 and heatr2 (use the `filter()` function).
 2. Then, in the same line of code, pipe (`%>%`) into `select()` to extract only the columns named `ID`, `bait`, `PSM_log2fc`, and `PSM_zscore`.
 3. Finally, again in the same line of code, pipe (`%>%`) into `arrange()` to re-sort the data frame to descend by `PSM_zscore` (i.e., highest z-scores should be at the top).
 
@@ -95,7 +95,7 @@ Perform the following operations to pare down the combined APMS data frame. Use 
 # your R code here
 ```
 
-Plot another bar plot, the same way we made the plot in Section 2.3; compare the distribution of functional categories for the most significant proteins versus the unfiltered data set depicted in Section 2.3. **Challenge:** Reorder the bar plots so that the functional categories with the highest counts are grouped together using `fct_infreq()`.
+Plot another bar plot, the same way we made the plot in Section 2.3; compare the distribution of functional categories for the most significant proteins versus the unfiltered data set depicted in Section 2.3. **Bonus challenge:** Reorder the bar plots so that the functional categories with the highest counts are grouped together using `fct_infreq()`.
 
 ```{r fig.width=6}
 # your R code here

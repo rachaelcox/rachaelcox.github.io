@@ -426,7 +426,7 @@ head(frog_heatr2)</code></pre>
 <p>Now, using <code>bind_rows()</code> combine the two new data frames together.</p>
 <pre class="r"><code># your R code here</code></pre>
 <p>Another valid way to do this is with <code>rbind()</code>; the difference is that <code>rbind()</code> requires data frames with absolutely identifical column names to ensure a clean concatenation, whereas <code>bind_rows()</code> isn’t so picky.</p>
-<p><strong>Bonus challenge:</strong> Plot the distribution of z-scores (<code>PSM_zscore</code>) for your combined data frame. Color by experiment. Your choice of geom; see Section 3 of yesterday’s worksheet for plotting distributions. Plot horizontal lines at a z-score values of 1.6 and -1.6, corresponding to roughly a 5% false discovery rate (<code>geom_hline</code> or <code>geom_vline</code> will accomplish this).</p>
+<p><strong>Bonus challenge:</strong> Plot the distribution of z-scores (<code>PSM_zscore</code>) for your combined data frame. Color by experiment. Your choice of geom; see Section 3 of yesterday’s worksheet for plotting distributions. Plot horizontal lines at the critical z-score value of 1.6, corresponding to a roughly 5% false positive rate (or p-value = 0.05) cutoff for a one-sided test (<code>geom_hline</code> or <code>geom_vline</code> will accomplish this).</p>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 <div id="joining-an-experiment-table-with-an-annotation-table" class="section level3">
@@ -457,12 +457,12 @@ head(frog_annotations)</code></pre>
 <p>In biological data analysis, we’re often most interested in a specific subset of data–usually scores above some threshold (p-values, z-scores, fold changes in gene expression) or the behavior of a specific gene/protein family relative to time or different conditions.</p>
 <p>Perform the following operations to pare down the combined APMS data frame. Use the pipe (%&gt;%) to chain data operations together and save the results to a new data frame in a single step:</p>
 <ol style="list-style-type: decimal">
-<li>Filter the combined and annotated APMS data frame (generated in the previous step) to only contain observations with <code>PSM_zscore</code> &gt; 1.6 to pull out statistically significant interactors with the proteins dnai2 and heatr2 (use the <code>filter()</code> function).</li>
+<li>Filter the combined and annotated APMS data frame (generated in the previous step) to only contain observations with <code>PSM_zscore</code> &gt; 1.6 (p ~ 0.05) to pull out proteins significantly interacting with dnai2 and heatr2 (use the <code>filter()</code> function).</li>
 <li>Then, in the same line of code, pipe (<code>%&gt;%</code>) into <code>select()</code> to extract only the columns named <code>ID</code>, <code>bait</code>, <code>PSM_log2fc</code>, and <code>PSM_zscore</code>.</li>
 <li>Finally, again in the same line of code, pipe (<code>%&gt;%</code>) into <code>arrange()</code> to re-sort the data frame to descend by <code>PSM_zscore</code> (i.e., highest z-scores should be at the top).</li>
 </ol>
 <pre class="r"><code># your R code here</code></pre>
-<p>Plot another bar plot, the same way we made the plot in Section 2.3; compare the distribution of functional categories for the most significant proteins versus the unfiltered data set depicted in Section 2.3. <strong>Challenge:</strong> Reorder the bar plots so that the functional categories with the highest counts are grouped together using <code>fct_infreq()</code>.</p>
+<p>Plot another bar plot, the same way we made the plot in Section 2.3; compare the distribution of functional categories for the most significant proteins versus the unfiltered data set depicted in Section 2.3. <strong>Bonus challenge:</strong> Reorder the bar plots so that the functional categories with the highest counts are grouped together using <code>fct_infreq()</code>.</p>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 <div id="aggregating-data-group_by-summarize-arrange" class="section level2">
