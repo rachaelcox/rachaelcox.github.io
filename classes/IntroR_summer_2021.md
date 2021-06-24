@@ -4,12 +4,12 @@ title:  "Introduction to R for Biologists, Summer 2021"
 date:   2021-06-18 00:00:01
 ---
 
-This is the homepage for the introductory R course offered by the Big Data in Biology Summer School through the Center for Biomedical Research Support. All lecture slides, Zoom recordings, and class worksheets will be posted here. More information regarding summer school courses can be found [here](https://research.utexas.edu/cbrs/classes/big-data-in-biology-summer-school/2021-summer-school/).
+This is the homepage for the introductory R course offered by the Big Data in Biology Summer School through the Center for Biomedical Research Support. All lecture slides, coding worksheets and coding worksheet solutions will be posted here. Zoom recordings will be distributed to the class via email. More information regarding summer school courses can be found [here](https://research.utexas.edu/cbrs/classes/big-data-in-biology-summer-school/2021-summer-school/).
 
 ------
 
 #### Class information
-**Zoom meeting (see email for password):**
+**Zoom meeting link:**
   * Meeting ID: 946 0259 4373
   * [https://utexas.zoom.us/j/93659263033](https://utexas.zoom.us/j/94602594373)
 
@@ -21,7 +21,7 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 
 ------
 
-### Day 1: Introduction to R
+### Day 1: Introduction to R programming & the Tidyverse
 * Slides (R basics): [day1.pdf](/classes/IntroR_2021/slides/day1.pdf)
 * Slides (Tidyverse intro): [tidy_intro.pdf](/classes/IntroR_2021/slides/tidy_intro.pdf)
 * You can download R from here: [https://cran.r-project.org/](https://cran.r-project.org/)
@@ -37,8 +37,11 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
     - [R Markdown](/classes/IntroR_2021/worksheets/tidying.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/tidying.html)
     - [HTML, Solutions](/classes/IntroR_2021/worksheets/tidying_solutions.html)
+* Blank R Markdown project notebook template:
+    - [R Markdown](/classes/files/template.Rmd)
+    - [HTML](/classes/files/template.html)
 
-### Day 2: Data visualization
+### Day 2: Data visualization with ggplot2
 * Slides: [day2.pdf](/classes/IntroR_2021/slides/day2.pdf)
 * Tidyverse style guide: [https://style.tidyverse.org/index.html](https://style.tidyverse.org/index.html)
 * Tidyverse website, `ggplot2` vignettes: [https://ggplot2.tidyverse.org/](https://ggplot2.tidyverse.org/)
@@ -49,10 +52,9 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day2.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day2.html)
-    - [R Markdown, Partial Solutions](/classes/IntroR_2021/worksheets/day2_solutions_partial.Rmd)
-    - [HTML, Partial Solutions](/classes/IntroR_2021/worksheets/day2_solutions_partial.html)
+    - [HTML, Solutions](/classes/IntroR_2021/worksheets/day2_solutions.html)
 
-### Day 3: Data wrangling
+### Day 3: Data manipulation & analysis with dplyr
 * Slides: [day3.pdf](/classes/IntroR_2021/slides/day3.pdf)
 * Tidyverse website, `dplyr` vignettes: [https://dplyr.tidyverse.org/](https://dplyr.tidyverse.org/)
 * Animated visualizations of different join() functions:
@@ -63,11 +65,14 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day3.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day3.html)
+    - [R Markdown, Partial Solutions](/classes/IntroR_2021/worksheets/day3_solutions_partial.Rmd)
+    - [HTML, Partial Solutions](/classes/IntroR_2021/worksheets/day3_solutions_partial.html)
 
-### Day 4: Data analysis
+### Day 4: Data science & statistics in R
 * Slides: [day4.pdf](/classes/IntroR_2021/slides/day4.pdf)
-* Visualizing principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
-* Visualizing k-means clustering: [https://www.naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+* Interactive visualization of principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
+* Interactive visualization of k-means clustering: [https://www.naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+* Towards Data Science article: [The 5 clustering
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day4.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day4.html)
