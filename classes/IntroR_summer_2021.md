@@ -70,9 +70,16 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 
 ### Day 4: Statistics & advanced data analysis
 * Slides: [day4.pdf](/classes/IntroR_2021/slides/day4.pdf)
-* Interactive visualization of principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
-* Interactive visualization of k-means clustering: [https://www.naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
-* Towards Data Science article: [The 5 Clustering Algorithms Data Scientists Need to Know](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
+* Hypothesis testing:
+    - Choosing a test statistic: [http://www.biostathandbook.com/testchoice.html](http://www.biostathandbook.com/testchoice.html)
+    - Generalizable hypothesis testing using infer/tidymodels packages: [https://www.andrewheiss.com/blog/2018/12/05/test-any-hypothesis/](https://www.andrewheiss.com/blog/2018/12/05/test-any-hypothesis/)
+* Principal component analysis (PCA):
+    - Good step-by-step walkthrough of PCA calculations: [https://builtin.com/data-science/step-step-explanation-principal-component-analysis](https://builtin.com/data-science/step-step-explanation-principal-component-analysis)
+    - Interactive visualization of principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
+    - Interactive visualization of eigenvectors/eigenvalues if you really want to dig in: [http://setosa.io/ev/eigenvectors-and-eigenvalues/](http://setosa.io/ev/eigenvectors-and-eigenvalues/)
+* Clustering:
+    - Interactive visualization of k-means clustering: [https://www.naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+    - Towards Data Science article: [The 5 Clustering Algorithms Data Scientists Need to Know](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day4.Rmd)
-    - [HTML](/classes/IntroR_2021/worksheets/day4.html)
+    - [HTML, Partial Solutions](/classes/IntroR_2021/worksheets/day4_solutions_partial.html)

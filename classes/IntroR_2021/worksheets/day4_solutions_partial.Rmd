@@ -1,0 +1,265 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=5)
+library(tidyverse) # ggplot2 library is contained within the tidyverse
+theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2
+library(ggthemes) # enables colorblind-friendly color palettes
+library(patchwork) # required to arrange plots side-by-side
+library(grid) # required to draw arrows
+library(tidymodels) # imports tidy-compatible functions for hypothesis testing
+```
+## Day 4: Statistics & advanced data analysis
+### In-class worksheet, solutions
+
+**June 24th, 2021**
+
+## 1. Hypothesis testing
+
+Ideally a hypothesis test should proceed in 4 steps:
+
+1. Decide on an effect you are interested in, design an appropriate experiment, and pick a test statistic.
+2. Frame your null hypothesis -- what does your null distribution look like? Is it a one-sided or two-sided hypothesis? If necessary, calculate your null distribution.
+3. Collect the data and compute the test statistic.
+4. Compute p-values for your test statistic, decide if it falls above or below your threshold.
+
+### 1.1 t-test
+
+The most commonly used test in biology might be the t-test, which is useful for determining if there is a significant difference between your control and test cases (e.g., treated and untreated samples).
+
+The `PlantGrowth` data set contains yields (as measured by the dried weight of plants in the `weight` column) obtained under a control and two different treatment conditions. Plot the distribution of plant `weight` measurements for each condition using `geom_violin` and formulate a hypothesis.
+
+```{r}
+# your R code here
+```
+
+The plot shows that many "trt1" data points overlap with the control, while "trt2" might be significantly different. Formally evaluate this conclusion using the `t.test()` function by first comparing the "ctrl" to "trt1" in the `group` column, and then comparing "ctrl" to "trt2".
+
+```{r}
+# your R code here
+```
+
+When we set `var.equal = TRUE`, we're making a simplifying assumption that the two groups we're comparing have equal or near equal variance. You can set `var.equal = FALSE` to remove this assumption, and R will perform Welch's t-test instead. How does the p-value change?
+
+The `tidyverse` also contains a function called `t_test()` for setting up this test with tidy input/output.
+
+```{r}
+# your R code here
+```
+
+### 1.2 p-values and false discovery rate
+
+The p-value is the end result uniting all hypothesis tests. Built-in statistical tests in R such as `t.test()` (or `t_test()` in the tidyverse) generally calculate this value for you. However, depending on the experiment and the size of the data, we might find it easier to manually compute our own test statistics and resulting p-values.
+
+We will use the APMS data analyzed yesterday to demonstrate this. These data have a manually computed z-score for each observed protein. This paper contains the exact equation used to calculate the `PSM_zscore` column: https://elifesciences.org/articles/58662
+
+```{r}
+# download the APMS data for dnai2
+dnai2_apms <- read_csv("https://rachaelcox.github.io/classes/datasets/frog_heatr2_dnai2_annotated.csv") %>%
+  filter(bait == "dnai2") %>%
+  select(XENLA_GeneNames, matches("*PSM*"))
+head(dnai2_apms)
+```
+
+To calculate p-values and create a new column containing those p-values, we will use a combination of the `mutate()` function from the tidyverse and the `pnorm()` function built into R. If we want to specify that this is a one-sided test, we need to include the argument `lower.tail = FALSE`. For visualization purposes, lets also create a new column that labels each point as either "significant" or "not significant" based on a 0.05 significance level.
+
+```{r}
+# your R code here
+```
+
+If we threshold the data at a 95% confidence interval, our results indicate that there are 144 "significant" interactors that we are 95% confident in. Let's visualize the raw PSM counts on a log-log plot in the control versus the experiment. If we color by our new `significance` column, we can see where each "significant" point lies on the distribution.
+
+```{r}
+# your R code here
+```
+
+Looking at this plot, a lot of proteins we're calling "significant" lie directly along the edge of the "background proteins." Since we are performing 1,685 hypothesis tests (i.e. "is this protein interacting with dnai2"), **at least** one of these is likely to be a false positive. To correct for this, we use the `p.adjust()` function built into R. There are a number of ways to correct for the multiple tests problem, spanning from extremely conservative (e.g. Bonferroni) to less conservative (e.g. Benjamini-Hochberg). We will specify the argument `method = "BH"` to indicate we want to use the Benjamini-Hochberg method. Lets also create a new column called `signif_corrected` that labels each point as either "significant" or "not significant" based on a **0.05 false discovery threshold**.
+
+```{r}
+# your R code here
+```
+
+```{r}
+# your R code here
+```
+
+Now, do the same for the `heatr2_apms` data.
+
+```{r}
+# download the APMS data for heatr2
+heatr2_apms <- read_csv("https://rachaelcox.github.io/classes/datasets/frog_heatr2_dnai2_annotated.csv") %>%
+  filter(bait == "heatr2") %>%
+  select(XENLA_GeneNames, matches("*PSM*"))
+head(heatr2_apms)
+```
+
+Step 1: Calculate p-values from the test statistic (in this case, the z-score).
+
+```{r}
+# your R code here
+```
+
+Step 2: Visualize how many results are called "significant" at a **5% false positive rate**.
+
+```{r}
+# your R code here
+```
+
+Step 3: Calculate the false discovery rate using the Benjamini-Hochberg method.
+
+```{r}
+# your R code here
+```
+
+Step 4: Visualize how many results are called "significant" at a **5% false discovery rate**.
+
+```{r}
+# your R code here
+```
+
+## 2. Principal Component Analysis (PCA)
+
+The iris dataset has four measurements per observational unit (iris plant):
+
+```{r}
+head(iris)
+```
+
+If we want to find out which characteristics are most distinguishing between iris plants, we have to make many individual plots and hope we can see distinguishing patterns:
+
+```{r fig.height=4, fig.width=10}
+p1 <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + 
+  geom_point() +
+  scale_color_colorblind()
+
+p2 <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +
+  geom_point() +
+  scale_color_colorblind()
+
+p3 <- ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+  geom_point() +
+  scale_color_colorblind()
+
+p4 <- ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
+  geom_point() +
+  scale_color_colorblind()
+
+p1 + p2 + p3 + p4 + plot_layout(ncol = 2) # arrange in a grid
+```
+
+In this particular case, it seems that petal length and petal width are most distinct for the three species. Principal Components Analysis (PCA) allows us to systematically discover such patterns, and it works also when there are many more variables than just four.
+
+The basic steps in PCA are to (i) prepare a data frame that holds only the numerical columns of interest, (ii) scale the data to 0 mean and unit variance, and (iii) do the PCA with the function prcomp():
+```{r}
+pca <- iris %>% 
+  select(-Species) %>%  # remove Species column
+  scale() %>%           # scale to 0 mean and unit variance
+  prcomp()              # perform `pca`
+
+# now display the results from the PCA analysis
+pca
+```
+
+The main output for PCA are the standard deviations and rotation matrix. However, we're most interested in the principal component (PC#) data, available as `pca$x`:
+
+```{r}
+head(pca$x)
+```
+
+But since we removed the categorical `Species` column in order to scale the matrix, we have lost that information. First, we need to add it back onto the data frame using the `data.frame()` function we discussed in day 1:
+
+```{r}
+pca_data <- data.frame(pca$x, Species = iris$Species)
+head(pca_data)
+```
+
+And now we can plot as usual:
+
+```{r}
+ggplot(pca_data, aes(x = PC1, y = PC2, 
+                     color = Species)) + 
+  geom_point() +
+  scale_color_colorblind()
+```
+
+In the above plot, the species are much better separated. Now, if we look at the rotation matrix, we can learn which of the 4 flower measurements for each species most contributes to the variation between species (i.e., how much each variable contributes to each principle component).
+
+```{r}
+head(pca$rotation)
+```
+
+It's most useful to plot this information using arrows, which let us visualize the magnitude of contribution to each PC:
+
+```{r}
+# capture the rotation matrix in a data frame
+rotation_data <- data.frame(pca$rotation, 
+                            variable = row.names(pca$rotation))
+
+# define a nice arrow style
+arrow_style <- arrow(length = unit(0.05, "inches"),
+                     type = "closed")
+
+# now plot, using geom_segment() for arrows and geom_text() for labels
+ggplot(rotation_data) + 
+  geom_segment(aes(xend = PC1, yend = PC2), 
+               x = 0, y = 0, arrow = arrow_style) + 
+  geom_text(aes(x = PC1, y = PC2, 
+                label = variable), 
+            hjust = 0, 
+            size = 3, 
+            color = "#b80058") + 
+  xlim(-1., 1.25) + 
+  ylim(-1., 1.) +
+  coord_fixed() # fix aspect ratio to 1:1
+```
+
+We can now see clearly that Petal.Length, Petal.Width, and Sepal.Length all contribute to PC1, and Sepal.Width dominates PC2.
+
+Finally, we want to look at the percent variance explained. The prcomp() function gives us standard deviations (stored in pca$sdev). To convert them into percent variance explained, we square them and then divide by the sum over all squared standard deviations:
+
+```{r}
+percent <- 100*pca$sdev^2 / sum(pca$sdev^2)
+percent
+```
+
+The first component explains 73% of the variance, the second 23%, the third 4% and the last 0.5%. We can visualize these results nicely in a bar plot:
+
+```{r}
+perc_data <- data.frame(percent = percent, PC = 1:length(percent))
+
+ggplot(perc_data, aes(x = PC, y = percent)) + 
+  geom_col() + 
+  geom_text(aes(label = round(percent, 2)), size = 4, vjust = -0.5) + 
+  ylim(0, 80)
+```
+
+### Try it yourself
+
+Now do it yourself using the `wine_features` data set. The data set wine_features contains 6497 rows describing various chemical attributes of red and white wine (indicated by the `type` column) and each wine’s relative quality (indicated by the `quality` column) on a scale of 3 to 9 as graded by experts performing a blind taste test. Chemical attributes recorded for each wine include `fixed_acidity`, `volatile_acidity`, `citric_acid`, `residual_sugar`, `chlorides`, `free_sulfur_dioxide`, `total_sulfur_dioxide`, `density`, `pH`, `sulphates`, `alcohol`.
+
+```{r}
+wine_features <- 
+  read_csv("https://rachaelcox.github.io/classes/datasets/wine_features.csv") %>%
+  mutate(type = as.factor(type)) %>%
+  select(-quality_grade, -alcohol_grade, -acidity_grade)
+```
+
+Step 1: Remove categorical variable `type` from the `wine_features` data frame, scale the data around 0, then use `prcomp()` to perform PCA. Reattach `type` to the transformed PC values made available `pca$x`. **Hint:** Refer to example above for code.
+```{r}
+# your R code here
+```
+
+Step 2: Make a scatter plot of PC2 vs PC1, coloring by `type`.
+```{r}
+# your R code here
+```
+
+Step 3: Convert the rotation matrix to a data frame, and then plot the rotation data using arrows with `geom_segment()` and `geom_text()`. **Hint:** Refer to example above for code.
+```{r}
+# your R code here
+```
+
+Step 4: Evaluate how much of the variance is explained by PC1 and PC2.
+
+```{r}
+# your R code here
+```
