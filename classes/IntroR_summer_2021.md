@@ -68,11 +68,11 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
     - [R Markdown, Partial Solutions](/classes/IntroR_2021/worksheets/day3_solutions_partial.Rmd)
     - [HTML, Partial Solutions](/classes/IntroR_2021/worksheets/day3_solutions_partial.html)
 
-### Day 4: Data science & statistics in R
+### Day 4: Statistics & advanced data analysis
 * Slides: [day4.pdf](/classes/IntroR_2021/slides/day4.pdf)
 * Interactive visualization of principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
 * Interactive visualization of k-means clustering: [https://www.naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
-* Towards Data Science article: [The 5 clustering
+* Towards Data Science article: [The 5 Clustering Algorithms Data Scientists Need to Know](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day4.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day4.html)
