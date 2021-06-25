@@ -65,14 +65,13 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day3.Rmd)
     - [HTML](/classes/IntroR_2021/worksheets/day3.html)
-    - [R Markdown, Partial Solutions](/classes/IntroR_2021/worksheets/day3_solutions_partial.Rmd)
-    - [HTML, Partial Solutions](/classes/IntroR_2021/worksheets/day3_solutions_partial.html)
+    - [HTML, Solutions](/classes/IntroR_2021/worksheets/day3_solutions.html)
 
 ### Day 4: Statistics & advanced data analysis
 * Slides: [day4.pdf](/classes/IntroR_2021/slides/day4.pdf)
 * Hypothesis testing:
     - Choosing a test statistic: [http://www.biostathandbook.com/testchoice.html](http://www.biostathandbook.com/testchoice.html)
-    - Generalizable hypothesis testing using infer/tidymodels packages: [https://www.andrewheiss.com/blog/2018/12/05/test-any-hypothesis/](https://www.andrewheiss.com/blog/2018/12/05/test-any-hypothesis/)
+    - Generalized hypothesis testing using infer/tidymodels packages: [https://www.andrewheiss.com/blog/2018/12/05/test-any-hypothesis/](https://www.andrewheiss.com/blog/2018/12/05/test-any-hypothesis/)
 * Principal component analysis (PCA):
     - Good step-by-step walkthrough of PCA calculations: [https://builtin.com/data-science/step-step-explanation-principal-component-analysis](https://builtin.com/data-science/step-step-explanation-principal-component-analysis)
     - Interactive visualization of principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
@@ -82,4 +81,5 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
     - Towards Data Science article: [The 5 Clustering Algorithms Data Scientists Need to Know](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2021/worksheets/day4.Rmd)
-    - [HTML, Partial Solutions](/classes/IntroR_2021/worksheets/day4_solutions_partial.html)
+    - [HTML](/classes/IntroR_2021/worksheets/day4.html)
+    - [HTML, Solutions](/classes/IntroR_2021/worksheets/day4_solutions.html)

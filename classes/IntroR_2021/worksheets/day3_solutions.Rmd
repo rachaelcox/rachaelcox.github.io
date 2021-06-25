@@ -5,7 +5,7 @@ library(ggthemes) # enables colorblind-friendly color palettes
 library(tidyverse)
 theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2
 ```
-## Day 3: Data wrangling
+## Day 3: Data manipulation & analysis
 ### In-class worksheet
 
 **June 23rd, 2021**
@@ -133,10 +133,16 @@ ggplot(filtered_df, aes(x = fct_rev(fct_infreq(OG_category_annotation)),
 
 ## 3. Aggregating data (`group_by()`, `summarize()`, `arrange()`)
 
-To find broad patterns in big data sets, we can use the `group_by()` and `summarize()` functions to get summary information for groups of variables. For instance, the `bait` column has two groups: dnai2 and heatr2. The `OG_category_annotations` column has 22 groups if you count the "NA" values resulting from unannotated genes. Use `select()` and `unique()` to look at the unique values (groups) in the columns `bait` and `OG_category_annotations`.
+To find broad patterns in big data sets, we can use the `group_by()` and `summarize()` functions to get summary information for groups of variables. For instance, the `bait` column has two groups: dnai2 and heatr2. The `OG_category_annotations` column has 22 groups if you count the "NA" values resulting from unannotated genes. Use `select()` and `unique()` to look at the unique values (groups) in the columns `bait` and `OG_category_annotation`.
 
 ```{r}
-# your R code here
+filtered_df %>% 
+  select(bait) %>% 
+  unique()
+
+filtered_df %>%
+  select(OG_category_annotation) %>%
+  unique()
 ```
 
 When you `group_by()` a variable, you are collapsing all the information for the unique values associated with that variable. Then, we use `summarize()` to extract information associated with the collapsed information.
@@ -144,17 +150,27 @@ When you `group_by()` a variable, you are collapsing all the information for the
 We want to learn the functional categories for the proteins that are most signficantly measured to be interacting with both dnai2 and heatr2. To do this, code the following steps (as a chain of functions connected by `%>%`):
 
 1. Use `group_by()` to group both the `bait` and `OG_category_annotation` columns
-2. Use `summarize()` to create a new column called `mean_zscore` that calculates the mean z-score for all the proteins in each category.
-3. Use `arrange()` to sort the data frame by `bait` and then by `mean_zscore` to get top hits.
+2. Use `summarize()` to create a new column called `joint_zscore` that calculates a **weighted** z-score for all the proteins in each category. The equation for this is:
+    - `sum(PSM_zscore)/sqrt(length(PSM_zscore))` # sum of all z-scores divided by the number of observations per group
+3. Use `arrange()` to sort the data frame by `bait` and then by `joint_zscore` to get top hits.
 
 ```{r}
-# your R code here
+summary_df <- filtered_df %>%
+  group_by(bait, OG_category_annotation) %>%
+  summarize(joint_zscore = sum(PSM_zscore)/sqrt(length(PSM_zscore))) %>%
+  arrange(desc(joint_zscore))
 ```
 
 Plot a bar chart for the functional categories, but this time put z-score on the y-axis instead of counts. Since you're specifying the `y = ` argument, you'll have to use `geom_col()` instead of `geom_bar()`.
 
 ```{r fig.width=6}
-# your R code here
+ggplot(summary_df, aes(x = OG_category_annotation,
+                       y = joint_zscore, fill = bait)) +
+  geom_col() +
+  xlab("") +
+  coord_flip() +
+  facet_wrap(~bait) +
+  scale_fill_viridis_d(option = "E", begin = 0.2, end = 0.8)
 ```
 
 ## 4. If that was easy...
@@ -173,17 +189,31 @@ The problem is that `pivot_wider()` does not like to put data into the same row 
 We can avoid this issue by adding a `row` column that is repeated among the three groups. This column simply counts rows within each group, from 1 to 50 in this particular data set. This trick forces the data from the same rows for different species into one row. (That means, rows 1 of setosa, versicolor, and virginica get combined, then rows 2, and so on.)
 
 ```{r}
-# your R code here
+iris %>%
+  select(Sepal.Length, Species) %>% 
+  group_by(Species) %>%
+  mutate(row = 1:n()) %>%
+  pivot_wider(names_from = "Species", 
+              values_from = "Sepal.Length")
 ```
 
 (At the end, if you want, you can delete this column again:)
 
 ```{r}
-# your R code here
+iris %>%
+  select(Sepal.Length, Species) %>% 
+  group_by(Species) %>%
+  mutate(row = 1:n()) %>%
+  pivot_wider(names_from = "Species", 
+              values_from = "Sepal.Length") %>%
+  select(-row)
 ```
 
 **Bonus challenge:** For the data set `diamonds` from the ggplot2 package, create a table displaying the mean price for each combination of cut and clarity. Then use `pivot_wider()` to rearrange this table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).
 
 ```{r}
-# your R code here
+price_by_cut <-
+  diamonds %>%
+  group_by(cut, clarity) %>% 
+  summarize(mean.price = mean(price))
 ```

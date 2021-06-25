@@ -375,8 +375,8 @@ summary {
 </div>
 
 
-<div id="day-3-data-wrangling" class="section level2">
-<h2>Day 3: Data wrangling</h2>
+<div id="day-3-data-manipulation-analysis" class="section level2">
+<h2>Day 3: Data manipulation &amp; analysis</h2>
 <div id="in-class-worksheet" class="section level3">
 <h3>In-class worksheet</h3>
 <p><strong>June 23rd, 2021</strong></p>
@@ -454,27 +454,30 @@ head(frog_annotations)</code></pre>
 </div>
 <div id="subsetting-data-filter-select" class="section level2">
 <h2>2. Subsetting data (<code>filter()</code>, <code>select()</code>)</h2>
-<p>In biological data analysis, we’re often most interested in a specific subset of data–usually scores above some threshold (p-values, z-scores, fold changes in gene expression) or the behavior of a specific gene/protein family relative to time or different conditions.</p>
+<p>In biological data analysis, we’re often most interested in a specific subset of data–usually scores above some threshold (p-values, z-scores, fold changes in gene expression) or the behavior of a specific gene/protein family relative to time or different conditions..</p>
 <p>Perform the following operations to pare down the combined APMS data frame. Use the pipe (%&gt;%) to chain data operations together and save the results to a new data frame in a single step:</p>
 <ol style="list-style-type: decimal">
 <li>Filter the combined and annotated APMS data frame (generated in the previous step) to only contain observations with <code>PSM_zscore</code> &gt; 1.6 (p ~ 0.05) to pull out proteins significantly interacting with dnai2 and heatr2 (use the <code>filter()</code> function).</li>
-<li>Then, in the same line of code, pipe (<code>%&gt;%</code>) into <code>select()</code> to extract only the columns named <code>ID</code>, <code>bait</code>, <code>PSM_log2fc</code>, and <code>PSM_zscore</code>.</li>
+<li>Then, in the same line of code, pipe (<code>%&gt;%</code>) into <code>select()</code> to extract only the columns named <code>ID</code>, <code>bait</code>, <code>PSM_log2fc</code>, <code>PSM_zscore</code>, <code>OG_category_annotation</code>.</li>
 <li>Finally, again in the same line of code, pipe (<code>%&gt;%</code>) into <code>arrange()</code> to re-sort the data frame to descend by <code>PSM_zscore</code> (i.e., highest z-scores should be at the top).</li>
 </ol>
 <pre class="r"><code># your R code here</code></pre>
-<p>Plot another bar plot, the same way we made the plot in Section 2.3; compare the distribution of functional categories for the most significant proteins versus the unfiltered data set depicted in Section 2.3. <strong>Bonus challenge:</strong> Reorder the bar plots so that the functional categories with the highest counts are grouped together using <code>fct_infreq()</code>.</p>
+<p>Plot another bar plot, the same way we made the plot in Section 1.3; compare the distribution of functional categories for the most significant proteins versus the unfiltered data set depicted in Section 1.3. <strong>Bonus challenge:</strong> Reorder the bar plots so that the functional categories with the highest counts are grouped together using <code>fct_infreq()</code>.</p>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 <div id="aggregating-data-group_by-summarize-arrange" class="section level2">
 <h2>3. Aggregating data (<code>group_by()</code>, <code>summarize()</code>, <code>arrange()</code>)</h2>
-<p>To find broad patterns in big data sets, we can use the <code>group_by()</code> and <code>summarize()</code> functions to get summary information for groups of variables. For instance, the <code>bait</code> column has two groups: dnai2 and heatr2. The <code>OG_category_annotations</code> column has 22 groups if you count the “NA” values resulting from unannotated genes. Use <code>select()</code> and <code>unique()</code> to look at the unique values (groups) in the columns <code>bait</code> and <code>OG_category_annotations</code>.</p>
+<p>To find broad patterns in big data sets, we can use the <code>group_by()</code> and <code>summarize()</code> functions to get summary information for groups of variables. For instance, the <code>bait</code> column has two groups: dnai2 and heatr2. The <code>OG_category_annotations</code> column has 22 groups if you count the “NA” values resulting from unannotated genes. Use <code>select()</code> and <code>unique()</code> to look at the unique values (groups) in the columns <code>bait</code> and <code>OG_category_annotation</code>.</p>
 <pre class="r"><code># your R code here</code></pre>
 <p>When you <code>group_by()</code> a variable, you are collapsing all the information for the unique values associated with that variable. Then, we use <code>summarize()</code> to extract information associated with the collapsed information.</p>
 <p>We want to learn the functional categories for the proteins that are most signficantly measured to be interacting with both dnai2 and heatr2. To do this, code the following steps (as a chain of functions connected by <code>%&gt;%</code>):</p>
 <ol style="list-style-type: decimal">
 <li>Use <code>group_by()</code> to group both the <code>bait</code> and <code>OG_category_annotation</code> columns</li>
-<li>Use <code>summarize()</code> to create a new column called <code>mean_zscore</code> that calculates the mean z-score for all the proteins in each category.</li>
-<li>Use <code>arrange()</code> to sort the data frame by <code>bait</code> and then by <code>mean_zscore</code> to get top hits.</li>
+<li>Use <code>summarize()</code> to create a new column called <code>joint_zscore</code> that calculates a <strong>weighted</strong> z-score for all the proteins in each category. The equation for this is:
+<ul>
+<li><code>sum(PSM_zscore)/sqrt(length(PSM_zscore))</code> # sum of all z-scores divided by the number of observations per group</li>
+</ul></li>
+<li>Use <code>arrange()</code> to sort the data frame by <code>bait</code> and then by <code>joint_zscore</code> to get top hits.</li>
 </ol>
 <pre class="r"><code># your R code here</code></pre>
 <p>Plot a bar chart for the functional categories, but this time put z-score on the y-axis instead of counts. Since you’re specifying the <code>y =</code> argument, you’ll have to use <code>geom_col()</code> instead of <code>geom_bar()</code>.</p>
@@ -482,7 +485,7 @@ head(frog_annotations)</code></pre>
 </div>
 <div id="if-that-was-easy" class="section level2">
 <h2>4. If that was easy…</h2>
-<p><strong>Bonus challenge:</strong> Take the sepal lengths from the <code>iris</code> data set and put them into a wide table so that is one data column per species. You might be tempted to do this with the following code, which however doesn’t work. Can you explain why?</p>
+<p><strong>Bonus challenge:</strong> Take the sepal lengths from the <code>iris</code> data set and put them into a wide table so that is one data column per species. You might be tempted to do this with the following code, which however doesn’t work. Can you figure out why?</p>
 <pre class="r"><code># If you remove the # signs in the lines below you will get an error; this code doesn&#39;t work
 # iris %&gt;% 
 #   select(Sepal.Length, Species) %&gt;%
