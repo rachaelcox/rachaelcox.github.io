@@ -9,7 +9,8 @@ This is the homepage for the introductory R course offered by the Center for Bio
 ------
 
 ### Course information
-**Time:** November 3rd, 2021, 9am-12pm
+**Time:** 9am-12pm | November 3rd, 2021
+
 **Zoom meeting link:**
   * Meeting ID: 989 2156 8617
   * [https://utexas.zoom.us/j/98921568617](https://utexas.zoom.us/j/98921568617)
