@@ -3,7 +3,8 @@ layout: page
 title: Classes
 permalink: /classes/
 ---
-
+- **Introduction to R** (Half Day Course, November 2021):
+    * [Fall 2021 Class Website](/classes/IntroR_fall_2021.html)
 - **Introduction to R for Biologists** (4 Day Course, June 2021):
     * [Summer 2021 Class Website](/classes/IntroR_summer_2021.html)
 - **GitHub Workshop** (Code Along Webinar, March 2021):
