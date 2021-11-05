@@ -64,7 +64,6 @@ msleep_filt
 ```{r}
 # your R code here
 ```
-Tigers, jaguars, and lions sleep >= 4 hours and weigh >= 100kg.
 
 ## 2. Data aggregation (`group_by()` and `summarize()`)
 
@@ -108,8 +107,6 @@ The number of insectivores sampled is fairly small compared to the other types o
 # your R code here
 ```
 
-There are 16 herbivores, 2 omnivores, 1 carnivore and 3 NAs within the Rodentia subsample.
-
 ## 3. Data visualization
 
 Arguably the Tidyverse is the most used and well-known for its data visualization package, `ggplot2`. Its syntax is similar to but distinct from other `tidyverse` packages. In our previous examples using `dplyr`, we chained functions together using the pipe (`%>%`). When making a ggplot, we *layer* plot functions using the plus sign (`+`). Continuing to use the `msleep` data set, let's visualize the relationship between mammal `bodywt` and `sleep_total`.
@@ -137,6 +134,7 @@ ggplot(msleep, aes(x = bodywt, y = sleep_total, color = vore)) +
   geom_point() +
   scale_x_log10()
 ```
+
 Next, we can apply a number of layers to the plot to make it publication ready. The layer `labs()` will allow us to change the legends, we can specify point size inside `geom_point()`, and we can manually set our desired color palette. Additionally, we can pre-filter NAs from our data set before passing the data to `ggplot`. Note that the `dplyr::filter` function pipes into `ggplot()`, and therefore we do not have to specify the data set as our first argument to the `ggplot()` function.
 
 ```{r}
