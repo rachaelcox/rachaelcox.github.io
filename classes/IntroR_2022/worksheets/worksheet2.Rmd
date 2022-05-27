@@ -1,0 +1,167 @@
+```{r global_options, include=FALSE}
+library(knitr) # enables knit output formatting
+  opts_chunk$set(fig.align="center", fig.height=3, fig.width=4) # format knit output
+library(tidyverse) # contains ggplot2, dplyr, tidyr, readr, stringr, etc
+  theme_set(theme_bw(base_size = 12)) # set default plot theme for ggplot2
+  options(scipen=10000) # force ggplot2 not to use scientific notation
+```
+## Introduction to R
+### In-class worksheet #2
+
+**November 3rd, 2021**
+
+There are many external packages that computational scientists rely on for data analysis (e.g., `DESeq2` for RNA-seq processing), but perhaps one of the most important is the `tidyverse` library. The `tidyverse` library is a collection of R packages made for streamlining interactive data analysis. Most of the core functions are designed to interact with tabular data in a "tidy" format, where there is 1 column per variable and and 1 row per observation (see slides for examples). Though there are many packages within the `tidyverse`, we're going to focus on two of the most commonly used: `dplyr` for data manipulation, and `ggplot` for data visualization.
+
+---------------------------------------------
+
+## 1. Data extraction (`select()`, `filter()`)
+
+Given a large and/or complicated data set, we may only be interested in examining a few variables or conditions. We will use the built-in `msleep` data set to demonstrate how to subset data. Run the code chunk below to take a glance at the data.
+
+```{r}
+head(msleep)
+```
+
+The `msleep` data set contains sleep cycle data for a number of mammals, in addition to information related to each mammals' diet, taxonomic classification, conservation status, body weight, and brain weight. Let's say we are only interested in in the `name` and `sleep_total` variables for each mammal.
+
+We can extract these columns with the `select()` function, and then save the result to a new data frame called `msleep_subset`:
+
+```{r}
+# extract the "name" and "sleep_total" columns
+msleep_subset <- msleep %>%
+  select(name, sleep_total)
+```
+
+Let's say we want to know which mammals in these data sleep for less than 8 hours per day. To obtain this information, we need to use `filter()` to extract the rows where `sleep_total` is less than 8. Notice that, in this example, I do not assign the result to a new data frame, and thus the result of the function is not "saved" (i.e., only displayed on the console or inline output).
+
+```{r}
+# filter subsetted msleep data for mammals that
+# sleep less than 8 hours
+msleep_subset %>%
+  filter(sleep_total < 8)
+```
+
+One of the best features of the `tidyverse` is that it encourages piping, which is a process that executes multiple functions at once on a data set. This feature can save us many, many lines of codes while still maintaining excellent readability. Referring to the above example, we can chain both steps together using `%>%`, also known as the `tidyverse` pipe:
+
+```{r}
+msleep_filt <- msleep %>%
+  select(name, sleep_total) %>%
+  filter(sleep_total < 8)
+msleep_filt
+```
+
+**Problem Set #1:**
+
+1. Take the `msleep` data set and use `select()` to extract the columns `name`, `vore`, and `awake`. Assign it to a new data frame called `msleep_new`.
+2. Filter the result from `msleep_new` such that `awake` is less than 8.
+
+```{r}
+# your R code here
+```
+
+**Challenge Problem:** If that was easy... Which carnivores have total sleep greater than or equal to 4 hours and recorded body weight greater than or equal to 100 kg?
+
+```{r}
+# your R code here
+```
+
+## 2. Data aggregation (`group_by()` and `summarize()`)
+
+Most of the time, our goal is to learn something about the relationships between the variables in our data set. For instance, the `msleep` data set samples a diversity of mammals and their sleeping habits. For instance, does average time slept vary by diet? With `group_by` and `summarize`, we can do a quick investigation.
+
+```{r}
+# calculate the mean and median sleep total
+# for each type of diet
+msleep %>%
+  group_by(vore) %>%
+  summarize(median_sleep = median(sleep_total),
+            mean_sleep = mean(sleep_total))
+```
+
+Note the way I've structured the above code. At the beginning, the data set we're manipulating is on the first line, and each subsequent function the data passes through gets a new line/identation. Though not functionally necessary, styling your R/tidyverse code this way greatly improves readability. Readability of your code should ALWAYS be __high priority__.
+
+We can also probe potential biases in our data set--for example, the sample size for each of the diets in question.
+
+```{r}
+# add a calculation for the # of mammals sampled per diet
+msleep %>%
+  group_by(vore) %>%
+  summarize(median_sleep = median(sleep_total),
+            mean_sleep = mean(sleep_total),
+            count = n())
+```
+
+The number of insectivores sampled is fairly small compared to the other types of diets. 
+
+**Problem Set #2:**
+
+1. How does the median body weight of mammals vary by diet? Using the `msleep` data set, again `group_by()` the `vore` column and `summarize()` the `median()` of `bodywt`.
+
+```{r}
+# your R code here
+```
+
+**Challenge Problem:** If that was easy... How many species within the order "Rodentia" have carnivore, herbivore, and omnivore diets respectively? **Hint:** This will require using the `filter()` function first, before `group_by()` and `summarize()`.
+
+```{r}
+# your R code here
+```
+
+## 3. Data visualization
+
+Arguably the Tidyverse is the most used and well-known for its data visualization package, `ggplot2`. Its syntax is similar to but distinct from other `tidyverse` packages. In our previous examples using `dplyr`, we chained functions together using the pipe (`%>%`). When making a ggplot, we *layer* plot functions using the plus sign (`+`). Continuing to use the `msleep` data set, let's visualize the relationship between mammal `bodywt` and `sleep_total`.
+
+```{r}
+# plot total sleep vs body weight for each mammal
+ggplot(msleep, aes(x = bodywt, y = sleep_total)) +
+  geom_point()
+```
+
+It looks like there might be correlation between body mass and time spent asleep. However, most of the data points are bunched up at small values of `bodywt`. We can add an additional layer, `scale_x_log10()`, to better visualize these samples.
+
+```{r}
+# convert x-axis to log scale
+ggplot(msleep, aes(x = bodywt, y = sleep_total)) +
+  geom_point() +
+  scale_x_log10()
+```
+
+Another feature of `ggplot()` is the ability to color, shape, or size points by other variables in the data set. Earlier, we were interested in the correlation between diet and sleep total. Now, we'll visualize the diet variable on the same plot with color.
+
+```{r}
+# color the points by diet
+ggplot(msleep, aes(x = bodywt, y = sleep_total, color = vore)) +
+  geom_point() +
+  scale_x_log10()
+```
+
+Next, we can apply a number of layers to the plot to make it publication ready. The layer `labs()` will allow us to change the legends, we can specify point size inside `geom_point()`, and we can manually set our desired color palette. Additionally, we can pre-filter NAs from our data set before passing the data to `ggplot`. Note that the `dplyr::filter` function pipes into `ggplot()`, and therefore we do not have to specify the data set as our first argument to the `ggplot()` function.
+
+```{r}
+# make it pretty
+msleep %>%
+  filter(!is.na(vore)) %>% 
+  ggplot(aes(x = bodywt, y = sleep_total, color = vore)) +
+    geom_point(size = 3) +
+    scale_x_log10() +
+    labs(x = "Body weight (kg)", y = "Total time asleep (hr)", color = "Diet") +
+    scale_color_manual(values = c("#E69F00", "#56B4E9", "#009E73","#F0E442", "#0072B2", 
+                                  "#D55E00", "#CC79A7", "#999999"))
+```
+
+**Problem Set #3:**
+
+1. Plot the relationship between REM sleep and brain weight using `ggplot` and `geom_point`. Specify the x-axis as `brainwt` and the y-axis as `sleep_rem`.
+2. Convert the x-axis to a log scale using `scale_x_log10()`.
+3. Color the points by specifying `color = vore`.
+4. Rename the axes labels using `labs()`.
+
+```{r}
+# your R code here
+```
+
+**Challenge Problem:** If that was easy... For all the samples within the "Rodentia" order, plot the distribution of body weight by diet using `geom_boxplot()`. **Hint:** You'll need to `filter()` the data before passing it to `ggplot()`.
+
+```{r}
+# your R code here
+```
