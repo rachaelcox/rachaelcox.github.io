@@ -7,8 +7,12 @@ date:   2022-06-01 00:00:01
 This is the homepage for the introductory R course offered by the Big Data in Biology Summer School through the Center for Biomedical Research Support. All lecture slides, coding worksheets and coding worksheet solutions will be posted here. More information regarding summer school courses can be found [here](https://research.utexas.edu/cbrs/classes/big-data-in-biology-summer-school/2022-summer-school/).
 
 ------
+### Course information
+**Time:** 1:30PM - 4:30PM
+**Dates:** May 31st - June 3rd
+**Location:** [FNT 1.104](https://utdirect.utexas.edu/apps/campus/buildings/nlogon/maps/UTM/fnt/)
 
-#### Class compute servers (see email for password)
+**Class compute servers (see email for your account & password):**
   * [https://gsafcomp01.ccbb.utexas.edu/](https://gsafcomp01.ccbb.utexas.edu/)
   * [https://gsafcomp02.ccbb.utexas.edu/](https://gsafcomp02.ccbb.utexas.edu/)
 
@@ -16,7 +20,7 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 
 ------
 
-### Day 1: Introduction to R programming & the Tidyverse
+### **Day 1: Introduction to R programming & the Tidyverse**
 * Slides (R basics): [day1.pdf](/classes/IntroR_2022/slides/day1.pdf)
 * Slides (Tidyverse intro): [tidy_intro.pdf](/classes/IntroR_2022/slides/tidy_intro.pdf)
 * You can download R from here: [https://cran.r-project.org/](https://cran.r-project.org/)
@@ -34,19 +38,18 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
     - [R Markdown](/classes/files/template.Rmd)
     - [HTML](/classes/files/template.html)
 
-### Day 2: Data visualization with ggplot2
+### **Day 2: Data visualization with ggplot2**
 * Slides: [day2.pdf](/classes/IntroR_2022/slides/day2.pdf)
 * Tidyverse style guide: [https://style.tidyverse.org/index.html](https://style.tidyverse.org/index.html)
 * Tidyverse website, `ggplot2` vignettes: [https://ggplot2.tidyverse.org/](https://ggplot2.tidyverse.org/)
 * Guide to all functions available in ggplot2: [https://ggplot2.tidyverse.org/reference/](https://ggplot2.tidyverse.org/reference/#section-aesthetics)
 * Default colors that R recognizes: [List of all strings with example output](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
-* Guide to interactive plots using ggplotly: [https://plot.ly/ggplot2/user-guide/](https://plot.ly/ggplot2/user-guide/)
 * Optimize your data viz for your data type: [https://serialmentor.com/dataviz/directory-of-visualizations.html](https://serialmentor.com/dataviz/directory-of-visualizations.html)
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2022/worksheets/day2.Rmd)
     - [HTML](/classes/IntroR_2022/worksheets/day2.html)
 
-### Day 3: Data manipulation & analysis with dplyr
+### **Day 3: Data manipulation & analysis with dplyr**
 * Slides: [day3.pdf](/classes/IntroR_2022/slides/day3.pdf)
 * Tidyverse website, `dplyr` vignettes: [https://dplyr.tidyverse.org/](https://dplyr.tidyverse.org/)
 * Animated visualizations of different join() functions:
@@ -58,7 +61,7 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
     - [R Markdown](/classes/IntroR_2022/worksheets/day3.Rmd)
     - [HTML](/classes/IntroR_2022/worksheets/day3.html)
 
-### Day 4: Advanced data visualization with plotly & ggraph
+### Day 4: **Advanced data visualization with ggplotly & ggraph**
 * Slides: [day4.pdf](/classes/IntroR_2022/slides/day4.pdf)
 * Guide to interactive plots using ggplotly: [https://plot.ly/ggplot2/user-guide/](https://plot.ly/ggplot2/user-guide/)
 * In-class worksheet:
