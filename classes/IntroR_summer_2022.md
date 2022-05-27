@@ -8,8 +8,8 @@ This is the homepage for the introductory R course offered by the Big Data in Bi
 
 ------
 ### Course information
-**Time:** 1:30PM - 4:30PM
-**Dates:** May 31st - June 3rd
+**Time:** 1:30PM - 4:30PM | May 31st - June 3rd
+
 **Location:** [FNT 1.104](https://utdirect.utexas.edu/apps/campus/buildings/nlogon/maps/UTM/fnt/)
 
 **Class compute servers (see email for your account & password):**
