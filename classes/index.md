@@ -3,10 +3,12 @@ layout: page
 title: Classes
 permalink: /classes/
 ---
+- **Introduction to R for Biologists** (4 Day Course, May/June 2022):
+    * [Summer 2022 Class Website](/classes/IntroR_summer_2022.html)
 - **Introduction to R** (Half Day Course, November 2021):
     * [Fall 2021 Class Website](/classes/IntroR_fall_2021.html)
 - **Introduction to R for Biologists** (4 Day Course, June 2021):
-    * [Summer 2021 Class Website](/classes/IntroR_summer_2021.html)
+    * [Summer 2021 Class Website](/classes/IntroRsummer2021.html)
 - **GitHub Workshop** (Code Along Webinar, March 2021):
     * [GitHub Repository](https://github.com/rachaelcox/OCH_git_workshop)
 - **Data Visualization in R** (Code Along Webinar, September 2020):
@@ -15,7 +17,7 @@ permalink: /classes/
     * [Full Worksheet Solutions, HTML](/classes/pages/dataviz_codealong_solutions.html)
     * [GitHub Repository](https://github.com/rachaelcox/data_viz_demo)
 - **Practical Approaches to Bioanalysis in R** (4 Day Course, June 2020): 
-    * [Summer 2020 Class Website](/classes/IntroR_summer_2020.html)
+    * [Summer 2020 Class Website](/classes/IntroRsummer2020.html)
 - **Machine Learning in R** (Code Along Seminar, December 2019):
     * [Code Demo](/classes/pages/poke_random_forest.html)
     * [GitHub Repository](https://github.com/rachaelcox/pokemon_machine_learning_demo)
