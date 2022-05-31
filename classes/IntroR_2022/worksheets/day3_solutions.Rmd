@@ -8,7 +8,7 @@ theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2
 ## Day 3: Data manipulation & analysis
 ### In-class worksheet
 
-**June 23rd, 2021**
+**June 2nd, 2022**
 
 ## 1. Row/column addition (`mutate()`, `bind_rows()`, `left_join()`)
 
