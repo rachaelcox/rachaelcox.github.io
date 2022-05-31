@@ -1,0 +1,49 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+## Day 1: Tidying data
+### In-class worksheet
+
+**June 1st, 2022**
+
+In this worksheet, we will use the library tidyverse:
+```{r message=FALSE}
+library(tidyverse)
+```
+
+## Tidying data with `pivot_longer()`and `pivot_wider()`
+
+### 1.1 Making tables longer
+
+Consider the following two data sets, `male_haireyecolor` and `female_haireyecolor`. The data sets record the occurrence of hair and eye color phenotype combinations in a class of statistics students. Use `head()` to preview these data sets; are they tidy?
+
+```{r message = FALSE}
+# download male data set
+male_haireyecolor <- read_csv("https://rachaelcox.github.io/classes/datasets/male_haireyecolor.csv")
+
+# download female data set
+female_haireyecolor <- read_csv("https://rachaelcox.github.io/classes/datasets/female_haireyecolor.csv")
+```
+
+Use the function `pivot_longer()` to rearrange both data sets such that there is one observation per row for each combination of hair and eye color. **Remember:** You can run `?pivot_longer` to pull up argument details and example usage.
+
+```{r}
+# your R code here
+```
+
+
+### 1.2 Making tables wider
+
+Consider the following data set `persons`, which contains information about the sex, weight, and height of 200 individuals. Use `head()` to preview the data set; is it tidy?
+
+```{r message = FALSE}
+# download persons data set
+persons <- read_csv("https://rachaelcox.github.io/classes/datasets/persons.csv")
+```
+
+Rearrange the `persons` data frame so that you have one column for subject, one for sex, one for weight, and one for height using the function `pivot_wider`. **Remember:** You can run `?pivot_wider` to pull up argument details and example usage.
+
+```{r}
+# your R code here
+```

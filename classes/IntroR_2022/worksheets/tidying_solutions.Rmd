@@ -1,0 +1,76 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+## Day 1: Tidying data
+### In-class worksheet, solutions
+
+**June 1st, 2022**
+
+In this worksheet, we will use the library tidyverse:
+```{r message=FALSE}
+library(tidyverse)
+```
+
+## Tidying data with `pivot_longer()`and `pivot_wider()`
+
+### 1.1 Making tables longer
+
+Consider the following two data sets, `male_haireyecolor` and `female_haireyecolor`. The data sets record the occurrence of hair and eye color phenotype combinations in a class of statistics students. Use `head()` to preview these data sets; are they tidy?
+
+```{r message = FALSE}
+# download male data set
+male_haireyecolor <- read_csv("https://rachaelcox.github.io/classes/datasets/male_haireyecolor.csv")
+head(male_haireyecolor)
+
+# download female data set
+female_haireyecolor <- read_csv("https://rachaelcox.github.io/classes/datasets/female_haireyecolor.csv")
+head(female_haireyecolor)
+```
+
+The data set is not tidy, because the columns `Brown`, `Blue`, `Hazel`, and `Green` are observations for a single variable, eye color. The following versions of the tables are tidy:
+
+```{r}
+# pivot all columns except the column `Hair`
+male_colors_tidy <- male_haireyecolor %>%
+  pivot_longer(-Hair, names_to = "EyeColor", values_to = "Count")
+head(male_colors_tidy)
+
+# pivot all columns except the column `Hair`
+female_colors_tidy <- female_haireyecolor %>%
+  pivot_longer(-Hair, names_to = "EyeColor", values_to = "Count")
+head(female_colors_tidy)
+```
+
+There is another syntax that specifies a range of columns that also works:
+
+```{r}
+# pivot all columns in the range of `Brown` to `Green`
+male_colors_tidy <- male_haireyecolor %>%
+  pivot_longer(Brown:Green, names_to = "EyeColor", values_to = "Count")
+head(male_colors_tidy)
+
+# pivot all columns except the column `Hair`
+female_colors_tidy <- female_haireyecolor %>%
+  pivot_longer(Brown:Green, names_to = "EyeColor", values_to = "Count")
+head(female_colors_tidy)
+```
+
+### 1.2 Making tables wider
+
+Consider the following data set `persons`, which contains information about the sex, weight, and height of 200 individuals:
+
+```{r message = FALSE}
+persons <- read_csv("https://rachaelcox.github.io/classes/datasets/persons.csv")
+head(persons)
+```
+
+Is this data set tidy? And can you rearrange it so that you have one column for subject, one for sex, one for weight, and one for height?
+
+The data set is not tidy, because neither `indicator` nor `value` are variables. The variables are `subject`, `sex`, `weight`, `height`. The following version of the table is tidy:
+
+```{r}
+persons %>%
+  pivot_wider(names_from = "indicator", values_from = "value") %>%
+  head()
+```
