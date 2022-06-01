@@ -62,9 +62,10 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
     - [R Markdown](/classes/IntroR_2022/worksheets/day3.Rmd)
     - [HTML](/classes/IntroR_2022/worksheets/day3.html)
 
-### Day 4: **Advanced data visualization with ggplotly & ggraph**
-* Slides: [day4.pdf](/classes/IntroR_2022/slides/day4.pdf)
+### Day 4: **Machine learning & advanced data visualization**
+* Slides: [day4.pdf](/classes/IntroR_2022/slides/.pdf)
 * Guide to interactive plots using ggplotly: [https://plot.ly/ggplot2/user-guide/](https://plot.ly/ggplot2/user-guide/)
+* Caret documentation: [http://topepo.github.io/caret/index.html](http://topepo.github.io/caret/index.html)
 * In-class worksheet:
-    - [R Markdown](/classes/IntroR_2022/worksheets/day4.Rmd)
-    - [HTML](/classes/IntroR_2022/worksheets/day4.html)
+    - [R Markdown](/classes/IntroR_2022/worksheets/.Rmd)
+    - [HTML](/classes/IntroR_2022/worksheets/.html)
