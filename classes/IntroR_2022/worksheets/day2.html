@@ -201,14 +201,18 @@ head(iris)</code></pre>
 ## 4          4.6         3.1          1.5         0.2  setosa
 ## 5          5.0         3.6          1.4         0.2  setosa
 ## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
-<p>Using ggplot, make a scatter plot of petal length vs. sepal length for the three species; the function you need for this is <code>geom_point()</code>.</p>
+<ol style="list-style-type: decimal">
+<li>Using ggplot, make a scatter plot of petal length vs. sepal length for the three species; the function you need for this is <code>geom_point()</code> and you will need to specify <code>color = Species</code> inside of <code>aes()</code>.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
-<p>Now, do the same plot but facet by species using <code>facet_wrap()</code>.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Do the same plot but facet by <code>Species</code> using <code>facet_wrap()</code>.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 <div id="time-series" class="section level3">
 <h3>1.2 Time series</h3>
-<p>The <code>omp</code> data set contains a subset of DNA microarray data measuring the differential expression of <em>E. coli</em> outer membrane proteins (omp) in nutrient-limited chemostatic cultures. In this particular experiment, the medium is glucose-limited. The <code>gene</code> column denotes one 8 genes that code for outer membrane proteins, <code>time_min</code> denotes the time point sampled in minutes, and <code>au</code> denotes the change in gene expression detected by the microarray chip (arbitrary units).</p>
+<p>The <code>omp</code> data set contains a subset of DNA microarray data measuring the differential expression of <em>E. coli</em> outer membrane proteins (omp) in nutrient-limited chemostatic cultures. In this particular experiment, the media is glucose-limited. The <code>gene</code> column denotes 8 genes that code for outer membrane proteins, <code>time_min</code> denotes the time point sampled in minutes, and <code>au</code> denotes the change in gene expression detected by the microarray chip (arbitrary units of fluorescence intensity).</p>
 <pre class="r"><code># download the `omp` data set
 omp &lt;- read_csv(&quot;https://rachaelcox.github.io/classes/datasets/ecoli_omp_expression.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
@@ -227,9 +231,15 @@ omp &lt;- read_csv(&quot;https://rachaelcox.github.io/classes/datasets/ecoli_omp
 ## 4 ompA        60 -0.23
 ## 5 ompC         5 -0.48
 ## 6 ompC        15 -0.56</code></pre>
-<p>Plot the expression of each gene over time using <code>geom_line()</code>, coloring each line by gene. Notice anything off about this plot?</p>
+<ol style="list-style-type: decimal">
+<li>Plot the expression of each gene over time using <code>geom_line()</code>, coloring each line by gene. Notice anything off about this plot?</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
-<p>Now, make the same plot but make the size of the lines thicker by specifying the <code>size</code> argument inside of <code>geom_line()</code>. Use <code>scale_color_colorblind()</code> to convert the legend colors to a colorblind-friendly palette. Use <code>xlab()</code> and <code>ylab</code> to give the figure pretty labels.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Make the same plot but make the size of the lines thicker by specifying the <code>size</code> argument inside of <code>geom_line()</code>.</li>
+<li>Use <code>scale_color_colorblind()</code> to convert the legend colors to a colorblind-friendly palette.</li>
+<li>Use <code>xlab()</code> and <code>ylab</code> to give the figure pretty labels.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 </div>
@@ -259,16 +269,25 @@ bacteria &lt;- read_csv(&quot;https://rachaelcox.github.io/classes/datasets/bact
 ## 4 y        p     hi       11 X01   placebo  
 ## 5 y        a     hi        0 X02   drug+    
 ## 6 y        a     hi        2 X02   drug+</code></pre>
-<p>Using <code>geom_bar()</code>, make a bar plot that shows the absolute number of cases with or without the bacterium, stacked on top of each other, for each treatment.</p>
+<ol style="list-style-type: decimal">
+<li>Using <code>geom_bar()</code>, make a bar plot with the <code>treatment</code> column on the x-axis, assigning the <code>presence</code> column to the <code>fill</code> argument to visualize the number of patients with and without bacteria for each type of treatment.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
-<p>Now modify the plot so that bars representing the absolute number of cases with or without the bacterium are shown side-by-side. Use <code>scale_fill_brewer()</code> to change the plot colors. Hint: This requires the argument <code>position='dodge'</code> in <code>geom_bar()</code>.</p>
+<p>Notice that, by default, <code>geom_bar()</code> stacks the counts for each class of <code>presence</code> on top of each other. Now:</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Modify the plot so that bars indicating the patients with or without the bacterium are shown side-by-side. Hint: This requires the argument <code>position='dodge'</code> in <code>geom_bar()</code>.</li>
+<li>Use <code>scale_fill_brewer()</code> to change the plot colors.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
-<p>Now modify the plot so that bars represent the relative number of cases with or without the bacterium. What is the appropriate <code>position</code> option in <code>geom_bar()</code> to achieve this effect? Use <code>?geom_bar</code> to find out. Also, try setting an alternative color palette for <code>scale_fill_brewer()</code> to use by specifying the <code>type</code> and <code>palette</code> arguments (see <code>?scale_fill_brewer</code> for details).</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Modify the plot so that bars represent the relative number of cases with or without the bacterium. What is the appropriate <code>position</code> option in <code>geom_bar()</code> to achieve this effect? Use <code>?geom_bar</code> to find out.</li>
+<li>Apply an alternative color palette for <code>scale_fill_brewer()</code> to use by specifying the <code>type</code> and <code>palette</code> arguments (see <code>?scale_fill_brewer</code> for details).</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 <div id="heat-maps" class="section level3">
 <h3>2.2 Heat maps</h3>
-<p>The <code>dandelion</code> data set contains RNA-seq reads for a subset of genes differentially expressed in response to five conditions. Plot a heat map using <code>geom_tile</code> where each condition is on the x-axis and each gene (either <code>transcript_dandelion</code> or <code>loci_arabidopsis</code>) is on the y-axis. Fill the color of the heat map by the <code>log2_foldchange</code> value. Use <code>scale_fill_distiller()</code> to specify a continuous <strong>diverging</strong> color palette.</p>
+<p>The <code>dandelion</code> data set contains RNA-seq reads for a subset of genes differentially expressed in response to five conditions.</p>
 <pre class="r"><code># download the dandelion differential expression data set
 dandelion &lt;- read_csv(&quot;https://rachaelcox.github.io/classes/datasets/dandelion_diffexp_tidy.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
@@ -294,9 +313,16 @@ dandelion &lt;- read_csv(&quot;https://rachaelcox.github.io/classes/datasets/dan
 ## 6 DN42754_c0_g1_i1     167.    1.28 AT5G67060        Transcription f~
 ## # ... with 3 more variables: gene_names_primary &lt;chr&gt;, condition &lt;chr&gt;,
 ## #   log2_foldchange &lt;dbl&gt;</code></pre>
+<ol style="list-style-type: decimal">
+<li>Plot a heat map using <code>geom_tile</code> where each condition is on the x-axis and each gene (either <code>transcript_dandelion</code> or <code>loci_arabidopsis</code>) is on the y-axis.</li>
+<li>Fill the color of the heat map using the <code>log2_foldchange</code> column. Use <code>scale_fill_distiller()</code> to specify a continuous <strong>diverging</strong> color palette.</li>
+</ol>
 <p><em>(Note that I have told R Markdown to make a larger figure, by starting the code block with</em> <code>{r fig.height=6, fig.width=10}</code> <em>instead of</em> <code>{r}</code><em>, because the default figure size is too narrow to show the resulting axes and map.)</em></p>
 <pre class="r"><code># your R code here</code></pre>
-<p>Make the same plot again, but rotate the text on the x-axis so they aren't mashing into each other. Try a different color palette this time.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Make the same plot again, but rotate the text on the x-axis so they aren't mashing into each other.</li>
+<li>Apply a different color palette this time. You can use a different palette within <code>scale_fill_distiller()</code> (see <code>?scale_fill_distiller</code>) or you can use a different continuous color function, such as <code>scale_fill_viridis_c()</code> or <code>scale_fill_gradient()</code>.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 </div>
@@ -304,7 +330,9 @@ dandelion &lt;- read_csv(&quot;https://rachaelcox.github.io/classes/datasets/dan
 <h2>3. Plotting distributions</h2>
 <div id="boxplots-violin-plots" class="section level3">
 <h3>3.1 Boxplots, violin plots</h3>
-<p>Using the <code>biopsy</code> data set, make side-by-side boxplots of <code>clump_thickness</code> for each <code>outcome</code>. The geom you need to use is <code>geom_boxplot()</code>.</p>
+<ol style="list-style-type: decimal">
+<li>Using the <code>biopsy</code> data set, make side-by-side boxplots of <code>clump_thickness</code> for each <code>outcome</code>. The geom you need to use is <code>geom_boxplot()</code>.</li>
+</ol>
 <pre class="r"><code># download the biopsy data set
 biopsy &lt;- read_csv(&quot;https://rachaelcox.github.io/classes/datasets/biopsy.csv&quot;)</code></pre>
 <pre><code>## Parsed with column specification:
@@ -333,16 +361,30 @@ biopsy &lt;- read_csv(&quot;https://rachaelcox.github.io/classes/datasets/biopsy
 ## # ... with 6 more variables: epithelial_cell_size &lt;dbl&gt;, bare_nuclei &lt;dbl&gt;,
 ## #   bland_chromatin &lt;dbl&gt;, normal_nucleoli &lt;dbl&gt;, mitoses &lt;dbl&gt;, outcome &lt;chr&gt;</code></pre>
 <pre class="r"><code># your R code here</code></pre>
-<p>Now, make the same plot again, instead using <code>geom_violin()</code>. What do you notice?</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Make the same plot again, instead using <code>geom_violin()</code>. How are the violin plots different from the boxplots?</li>
+</ol>
+<pre class="r"><code># your R code here</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Add a layer to your code that creates side-by-side plots of <code>clump_thickness</code> distribution for each value of <code>mitoses</code> using the <code>facet_wrap()</code> function.</li>
+<li>Try this with and without specifying the <code>ncol = 3</code> argument inside of the <code>facet_wrap()</code> function.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 <div id="histograms-density-plots" class="section level3">
 <h3>3.2 Histograms, density plots</h3>
-<p>Make a histogram plot of sepal lengths in the <code>iris</code> data set, using the default histogram settings. Then make two more such plots, with different bin widths. Use <code>geom_histogram()</code>. You can change the bin width by specifying the argument <code>binwidth =</code> or <code>bins =</code>. See <code>?geom_histogram</code> for more information.</p>
+<ol style="list-style-type: decimal">
+<li>Make a histogram plot of sepal lengths in the <code>iris</code> data set, using the default histogram settings. Use <code>geom_histogram()</code>.</li>
+<li>Make two more such plots, with different bin widths. You can change the bin width by specifying the argument <code>binwidth =</code> or <code>bins =</code>. See <code>?geom_histogram</code> for more information.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
-<p>Instead of <code>geom_histogram()</code>, now use <code>geom_density()</code> and fill the area under the curves by species identity.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Now use <code>geom_density()</code> and fill the area under the curves by species identity.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
-<p>Now make the areas under the curve partially transparent, so the overlap of the various distributions becomes clearly visible.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Make the areas under the curve partially transparent using the <code>alpha</code> argument inside of <code>geom_density()</code>, so the overlap of the various distributions becomes clearly visible.</li>
+</ol>
 <pre class="r"><code># your R code here</code></pre>
 </div>
 </div>
