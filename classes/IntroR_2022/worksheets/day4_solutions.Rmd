@@ -224,7 +224,7 @@ panel_tagged
 
 ## 2. Supervised classification
 
-In the previous section, we used PCA to investigate how different categories of data are described by variables in the data, and the relative contribution of each of those variables. 
+In the previous section, we used PCA to investigate how different categories of data are described by variables in the data, and the relative contribution of each of those variables. Now, we are going to put that variance to the test and see if we are able to use these chemical features of `wine` to predict whether a given wine is red or white.
 
 ### 2.0 Test & training data
 
@@ -242,7 +242,7 @@ wine_test <- wine[-train_indices, ] # get test data
 
 ### 2.1 Logistic regression
 
-If you have sufficiently descriptive data, a logistic regression or "generalized linear model" (GLM) should be your go to model for straightforward binary classification problems. The built in GLM function in R works extremely well (as it should, R is known for it's built-in statistical tools) for this task, and is what we will demonstrate today. We will use logistic regression to see if we are able to use the variables in the `wine` data set to predict whether a given wine is red or white.
+If you have sufficiently descriptive data, a logistic regression or "generalized linear model" (GLM) should be your go to model for straightforward binary classification problems. The built-in GLM function in R works extremely well for this task, and is one of the ML tools we will demonstrate today. Let's see if a GLM can predict if a wine is red or white from it's chemical properties.
 
 ```{r}
 # model to use: type ~ volatile_acidity + total_sulfur_dioxide + alcohol + density

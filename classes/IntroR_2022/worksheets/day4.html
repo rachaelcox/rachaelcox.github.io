@@ -465,7 +465,7 @@ pal_wine &lt;- c(&quot;#790000&quot;, &quot;#9e934d&quot;)</code></pre>
 </div>
 <div id="supervised-classification" class="section level2">
 <h2>2. Supervised classification</h2>
-<p>In the previous section, we used PCA to investigate how different categories of data are described by variables in the data, and the relative contribution of each of those variables.</p>
+<p>In the previous section, we used PCA to investigate how different categories of data are described by variables in the data, and the relative contribution of each of those variables. Now, we are going to put that variance to the test and see if we are able to use these chemical features of <code>wine</code> to predict whether a given wine is red or white.</p>
 <div id="test-training-data" class="section level3">
 <h3>2.0 Test &amp; training data</h3>
 <p>Before implementing any supervised classification pipeline, the data must be split into test and training sets. The model is built on the training set, and then the performance of the model is assessed on the test set. Typical splits fall around 60-80% training data, 20-40% test data. Let’s do that now with the same <code>wine</code> data set we performed PCA on.</p>
@@ -479,7 +479,7 @@ wine_test &lt;- wine[-train_indices, ] # get test data</code></pre>
 </div>
 <div id="logistic-regression" class="section level3">
 <h3>2.1 Logistic regression</h3>
-<p>If you have sufficiently descriptive data, a logistic regression or “generalized linear model” (GLM) should be your go to model for straightforward binary classification problems. The built in GLM function in R works extremely well (as it should, R is known for it’s built-in statistical tools) for this task, and is what we will demonstrate today. We will use logistic regression to see if we are able to use the variables in the <code>wine</code> data set to predict whether a given wine is red or white.</p>
+<p>If you have sufficiently descriptive data, a logistic regression or “generalized linear model” (GLM) should be your go to model for straightforward binary classification problems. The built-in GLM function in R works extremely well for this task, and is one of the ML tools we will demonstrate today. Let’s see if a GLM can predict if a wine is red or white from it’s chemical properties.</p>
 <pre class="r"><code># model to use: type ~ volatile_acidity + total_sulfur_dioxide + alcohol + density
 glm_out &lt;- glm(factor(type) ~ volatile_acidity + total_sulfur_dioxide + alcohol + density,
                      data = wine_train, 
