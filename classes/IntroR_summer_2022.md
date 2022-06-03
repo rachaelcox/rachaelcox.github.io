@@ -68,6 +68,7 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * Slides: [day4.pdf](/classes/IntroR_2022/slides/day4.pdf)
 * Guide to interactive plots using ggplotly: [https://plot.ly/ggplot2/user-guide/](https://plot.ly/ggplot2/user-guide/)
 * Guide to `ggrepel` for dynamic labeling: [https://ggrepel.slowkow.com/index.html](https://ggrepel.slowkow.com/index.html)
+* Guide to making panels using `patchwork`: [https://patchwork.data-imaginist.com/](https://patchwork.data-imaginist.com/)
 * Interactive visualization of principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
 * Caret documentation: [http://topepo.github.io/caret/index.html](http://topepo.github.io/caret/index.html)
 * ROC animations: [https://github.com/dariyasydykova/open_projects/tree/master/ROC_animation](https://github.com/dariyasydykova/open_projects/tree/master/ROC_animation)
