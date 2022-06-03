@@ -1,0 +1,345 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggthemes) # enables colorblind-friendly color palettes
+library(tidyverse)
+theme_set(theme_bw(base_size = 12)) # set the default plot theme for the ggplot2
+library(ggrepel) # for labeling data points dynamically
+library(plotly) # for generating interactive plots
+library(patchwork) # for generating figure panels
+
+# install.packages("plotROC")  ## uncomment this line to install this package
+library(plotROC) # loads the the geom_roc() layer
+
+# install.packages("caret")  ## uncomment this line to install this package
+library(caret)
+
+# install.packages("MLeval")  ## uncomment this line to install this package
+library(MLeval)
+```
+## Day 4: Machine learning & advanced data visualization
+### In-class worksheet
+
+**June 3nd, 2022**
+
+There are two primary types of machine learning: unsupervised learning (unlabeled data) and supervised learning (labeled data). Within those two broad categories, there are myriad algorithms and strategies you can choose from depending on your data and your goals. For the sake of practicality, we will learn how to execute a few of the most common strategies in bioinformatics and data science in general: dimensionality reduction and classification.
+
+## Dimensionality reduction
+
+### 1.1 Principal component analysis
+
+The basic steps in PCA are to (1) prepare a data frame that holds only the numerical columns of interest, (2) scale the data to 0 mean and unit variance, and (3) do the PCA with the function `prcomp()`. I will demonstrate this now with the `iris` dataset.
+
+```{r}
+pca <- iris %>% 
+  select(-Species) %>%   # remove Species column
+  scale() %>%            # scale to 0 mean and unit variance
+  prcomp()               # do PCA
+
+# display the results from the PCA analysis
+pca
+```
+
+As we can see, these data don’t tell us to which species which observation belongs. We have to add the species information back in, and then plot as usual:
+
+```{r}
+# add species information back into PCA data
+pca_data <- data.frame(pca$x, Species = iris$Species)
+head(pca_data)
+
+# PCA plot
+ggplot(pca_data, aes(x = PC1, y = PC2, color = Species)) + 
+  geom_point() +
+  scale_color_colorblind()
+```
+
+Now, we are interested in learning how much each variable contributes to each principal component. This information comes from the rotation matrix, which is accessed with `pca$rotation` and can be visualized with arrows using `geom_segment()` and `geom_text_repel()` from the `ggrepel` package.
+
+```{r}
+# capture the rotation matrix in a data frame
+rotation_data <- data.frame(
+  pca$rotation, 
+  variable = row.names(pca$rotation))
+
+# define an arrow style
+arrow_style <- arrow(
+  length = unit(0.05, "inches"),
+  type = "closed")
+
+# now plot, using geom_segment() for arrows and ggrepel() for labels
+ggplot(rotation_data) + 
+  geom_segment(aes(xend = PC1, yend = PC2), 
+               x = 0, y = 0, arrow = arrow_style) + 
+  geom_text_repel(aes(x = PC1, y = PC2, label = variable),
+                  color = "#3C5488",
+                  nudge_x = 0.1,
+                  segment.size = 0) + 
+  xlim(-1., 1.25) + 
+  ylim(-1., 1.) +
+  coord_fixed() # fix aspect ratio to 1:1
+```
+
+Finally, we want to look at the percent variance explained. The `prcomp()` function gives us standard deviations (stored in `pca$sdev`). To convert them into percent variance explained, we square them and then divide by the sum over all squared standard deviations.
+
+```{r}
+# calculate variance
+percent <- 100*pca$sdev^2 / sum(pca$sdev^2)
+percent
+```
+
+The first component explains 73% of the variance, the second 23%, the third 4% and the last 0.5%. We can visualize these results nicely in a bar plot:
+
+```{r}
+# put calculation in a data frame
+perc_data <- data.frame(percent = percent, PC = 1:length(percent))
+
+# plot explained variance per PC
+ggplot(perc_data, aes(x = PC, y = percent)) + 
+  geom_col() + 
+  geom_text(aes(label = round(percent, 2)), 
+            size = 4, vjust = -0.5) + 
+  ylim(0, 80)
+```
+
+Now, perform these same steps using the `wine` data set. This data set contains 6497 rows describing various chemical attributes of red and white wine (indicated by the type column) and each wine’s relative quality (indicated by the quality/quality_grade column) on a scale of 3 to 9 as graded by experts performing a blind taste test. Chemical attributes recorded for each wine include `fixed_acidity`, `volatile_acidity`, `citric_acid`, `residual_sugar`, `chlorides`, `free_sulfur_dioxide`, `total_sulfur_dioxide`, `density`, `pH`, `sulphates`, `alcohol`.
+
+```{r message = FALSE}
+# download the wine data set
+wine <- read_csv("https://rachaelcox.github.io/classes/datasets/wine_features.csv") %>%
+  select(-matches("*grade"))
+
+# custom colors for plotting
+pal_wine <- c("#790000", "#9e934d")
+```
+
+Follow these steps to execute a PCA on the `wine` data set:
+
+1. Prepare the data frame so that it contains only numerical columns.
+2. Standardize the data by scaling to 0 mean and unit variance.
+3. Perform PCA with function `prcomp()`.
+
+```{r}
+pca <- wine %>% 
+  select(-type) %>%      # remove type column
+  scale() %>%            # scale to 0 mean and unit variance
+  prcomp()               # do PCA
+
+# display the results from the PCA analysis
+pca
+```
+
+Next, visualize the results of your PCA.
+
+1. Plot a scatter plot of PC2 vs PC1 using `geom_point()`. **Note:** First, you will need to re-combine your PCA results with the `type` column.
+
+```{r}
+# add species information back into PCA data
+pca_data <- data.frame(pca$x, type = wine$type)
+head(pca_data)
+
+# PCA plot
+ggplot(pca_data, aes(x = PC1, y = PC2, color = type)) + 
+  geom_point(alpha = 0.5, size = 2) +
+  scale_color_manual(values = pal_wine)
+```
+
+2. Plot the relative contribution of each variable to each principal component using `geom_segment()`. **Note:** First, you will need to capture the rotation matrix in a data frame.
+
+```{r}
+# capture the rotation matrix in a data frame
+rotation_data <- data.frame(
+  pca$rotation, 
+  variable = row.names(pca$rotation))
+
+# now plot, using geom_segment() for arrows and ggrepel() for labels
+ggplot(rotation_data) + 
+  geom_segment(aes(xend = PC1, yend = PC2), 
+               x = 0, y = 0, arrow = arrow_style) + 
+  geom_text_repel(aes(x = PC1, y = PC2, label = variable),
+                  color = pal_wine[1],
+                  segment.size = 0,
+                  size = 3,
+                  nudge_x = 0.06,
+                  nudge_y = 0.001) + 
+  xlim(-0.75, 1.25) + 
+  ylim(-0.75, 1) +
+  coord_fixed() # fix aspect ratio to 1:1
+```
+
+3. Plot the percent of variance explained by each principal component using `geom_col()`.
+
+```{r}
+# calculate variance
+percent <- 100*pca$sdev^2 / sum(pca$sdev^2)
+percent
+
+# put calculation in a data frame
+perc_data <- data.frame(percent = percent, PC = 1:length(percent))
+
+# plot explained variance per PC
+ggplot(perc_data, aes(x = PC, y = percent)) + 
+  geom_col() + 
+  geom_text(aes(label = round(percent, 2)), 
+            size = 4, vjust = -0.5) + 
+  ylim(0, 80)
+```
+
+**Bonus challenge:** Create a panel of your PCA plots using the `patchwork` package. On your panel, label your plots with "A", "B", and "C" tags. In order to pass your plots to `patchwork`, you will need to assign your `ggplot` objects to variables.
+
+```{r fig.height=3.5, fig.width=7}
+# PC2 vs PC1 plot
+plot1 <- ggplot(pca_data, aes(x = PC1, y = PC2, color = type)) + 
+  geom_point(alpha = 0.5, size = 2) +
+  scale_color_manual(values = pal_wine)
+
+# rotation matrix
+plot2 <- ggplot(rotation_data) + 
+  geom_segment(aes(xend = PC1, yend = PC2), 
+               x = 0, y = 0, arrow = arrow_style) + 
+  geom_text_repel(aes(x = PC1, y = PC2, label = variable),
+                  color = pal_wine[1],
+                  segment.size = 0,
+                  size = 3,
+                  nudge_x = 0.06,
+                  nudge_y = 0.001) + 
+  xlim(-0.75, 1.25) + 
+  ylim(-0.75, 1) +
+  coord_fixed() # fix aspect ratio to 1:1
+
+# variance captures
+plot3 <- ggplot(perc_data, aes(x = PC, y = percent)) + 
+  geom_col() + 
+  geom_text(aes(label = round(percent, 2)), 
+            size = 4, vjust = -0.5) + 
+  ylim(0, 80)
+
+# plot as a panel
+panel <- plot1 / (plot2 + plot3)
+panel
+
+# add plot tags
+panel_tagged <- panel + plot_annotation(tag_levels = 'A')
+panel_tagged
+```
+
+## 2. Supervised classification
+
+In the previous section, we used PCA to investigate how different categories of data are described by variables in the data, and the relative contribution of each of those variables. 
+
+### 2.0 Test & training data
+
+Before implementing any supervised classification pipeline, the data must be split into test and training sets. The model is built on the training set, and then the performance of the model is assessed on the test set. Typical splits fall around 60-80% training data, 20-40% test data. Let's do that now with the same `wine` data set we performed PCA on.
+
+```{r}
+set.seed(13) # set the seed to make the "random" partition reproductible
+train_fraction <- 0.6 # fraction of data for training purposes
+train_size <- floor(train_fraction * nrow(wine)) # number of observations in training set
+train_indices <- sample(1:nrow(wine), size = train_size)
+
+wine_train <- wine[train_indices, ] # get training data
+wine_test <- wine[-train_indices, ] # get test data
+```
+
+### 2.1 Logistic regression
+
+If you have sufficiently descriptive data, a logistic regression or "generalized linear model" (GLM) should be your go to model for straightforward binary classification problems. The built in GLM function in R works extremely well (as it should, R is known for it's built-in statistical tools) for this task, and is what we will demonstrate today. We will use logistic regression to see if we are able to use the variables in the `wine` data set to predict whether a given wine is red or white.
+
+```{r}
+# model to use: type ~ volatile_acidity + total_sulfur_dioxide + alcohol + density
+glm_out <- glm(factor(type) ~ volatile_acidity + total_sulfur_dioxide + alcohol + density,
+                     data = wine_train, 
+                     family = binomial)
+
+summary(glm_out)
+```
+
+```{r}
+# results data frame for training data
+wine_train_glm <- data.frame(
+  predictor = predict(glm_out, wine_train),
+  known_truth = wine_train$type,
+  model = "training"
+)
+
+# results data frame for test data
+wine_test_glm <- data.frame(
+  predictor = predict(glm_out, wine_test),
+  known_truth = wine_test$type,
+  model = "test"
+)
+
+# combining data frames with results
+wine_combined <- rbind(wine_train_glm, wine_test_glm)
+
+# create a density plot that shows how the linear predictor separates the two wine types in the test data
+ggplot(wine_test_glm, aes(x = predictor, fill = factor(known_truth))) +
+  geom_density(alpha = 0.5) +
+  scale_fill_manual(values = pal_wine)
+
+# visualize the performance of the model
+p <- ggplot(wine_combined, aes(d = known_truth, m = predictor, color = model)) +
+  geom_roc(n.cuts = 0) +
+  coord_fixed() +
+  scale_color_manual(values = pal_wine)
+p
+
+# we can also calculate the area of the curve (AUC) to have a numeric representation of the performance of our model
+calc_auc(p)
+
+# but we've lost the name of our groups!
+# here is how we add them back
+model_names <- unique(wine_combined$model)
+model_info <- data.frame(
+  model_names,
+  group = order(model_names))
+
+left_join(model_info, calc_auc(p)) %>%
+  select(-group, -PANEL) %>%
+  arrange(desc(AUC))
+
+```
+
+### 2.2 Random forest classifier
+
+While more of a "black box" than a logistic regression, random forest classifiers are powerful algorithms for biological data. This is due to a number of advantages in their inherent behavior, such as:
+
+* Not making any statistical assumptions about the independence or collinearity of data
+* Robust to outliers and overfitting
+* Random features tend to produce good output
+
+With that being said, RFCs take significantly longer to run and the results are not as intuitive to assess in comparison to GLMs. Thus, it's a good idea to think of RFCs as a "bear trap" and a GLM as a "mouse trap." What are you trying to capture with your data? It's possible to catch a mouse with a bear trap, but doing so is overkill!
+
+Additionally, with any machine learning model, we need some kind of assurance that the model has extracted most of the patterns from the data correctly. We need to make sure that its not picking up too much noise, i.e., the model has low bias and variance. This process is known as validation. We didn't do this with our GLM (though we could have), but we will demosntrate it here. To figure out how well our classifier will generalize to an independent/unseen dataset, we’ll use the cross validation parameters specified by the `fitControl` variable below, which is then passed to the `train()` function.
+
+```{r}
+# load caret library
+library(caret)
+
+# designate validation method
+fitControl <- trainControl(method = "cv", summaryFunction = twoClassSummary, 
+                           savePredictions = T, classProbs = T)
+
+
+# fit a model using the random forest algorithm
+rf_out <- train(type ~ ., data = wine_train, method = "rf",
+                trControl = fitControl)
+rf_out
+
+# evaluate feature important
+rf_feat_importance <- varImp(rf_out)
+ggplot(rf_feat_importance)
+```
+
+Similarly to our GLM, we want to assess the performance of the model. We can extract the ROC info from the `caret` model with the following code:
+
+```{r}
+# select a parameter setting
+selectedIndices <- rf_out$pred$mtry == 2
+head(rf_out$pred[selectedIndices, ])
+
+# plot the ROC curve
+rf_plot <- ggplot(rf_out$pred[selectedIndices, ], 
+            aes(m=white, d=factor(obs, levels = c("red", "white")))) + 
+  geom_roc(n.cuts=0)
+rf_plot
+```
