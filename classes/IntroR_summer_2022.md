@@ -75,4 +75,4 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2022/worksheets/day4.Rmd)
     - [HTML](/classes/IntroR_2022/worksheets/day4.html)
-    - [HTML](/classes/IntroR_2022/worksheets/day4_solutions.html)
+    - [HTML, Solutions](/classes/IntroR_2022/worksheets/day4_solutions.html)
