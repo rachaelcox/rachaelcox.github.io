@@ -66,7 +66,7 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 
 ### **Day 4: Machine learning & advanced data visualization**
 * Slides: [day4.pdf](/classes/IntroR_2022/slides/day4.pdf)
-* Guide to interactive plots using ggplotly: [https://plot.ly/ggplot2/user-guide/](https://plot.ly/ggplot2/user-guide/)
+* Guide to interactive plots using `ggplotly`: [https://plot.ly/ggplot2/user-guide/](https://plot.ly/ggplot2/user-guide/)
 * Guide to `ggrepel` for dynamic labeling: [https://ggrepel.slowkow.com/index.html](https://ggrepel.slowkow.com/index.html)
 * Guide to making panels using `patchwork`: [https://patchwork.data-imaginist.com/](https://patchwork.data-imaginist.com/)
 * Interactive visualization of principal component analysis (PCA): [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
@@ -75,3 +75,4 @@ These compute servers (aka PODs) are managed by the Biomedical Research Computin
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2022/worksheets/day4.Rmd)
     - [HTML](/classes/IntroR_2022/worksheets/day4.html)
+    - [HTML](/classes/IntroR_2022/worksheets/day4_solutions.html)
