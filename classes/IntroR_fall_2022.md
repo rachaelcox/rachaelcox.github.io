@@ -10,7 +10,8 @@ This is the homepage for the introductory R course offered by the Center for Bio
 
 ### Course information
 **Time:** 9am-12pm | November 7th, 2022
-**Location:** NHB 4.202 [map](http://shorturl.at/cDES1)
+
+**Location:** NHB 4.202 ([map](http://shorturl.at/cDES1))
 
 **Class compute servers (see email for password):**
   * [https://gsafcomp01.ccbb.utexas.edu/](https://gsafcomp01.ccbb.utexas.edu/)
