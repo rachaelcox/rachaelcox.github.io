@@ -3,6 +3,8 @@ layout: page
 title: Classes
 permalink: /classes/
 ---
+- **Introduction to R** (Half Day Course, November 2022):
+    * [Fall 2022 Class Website](/classes/IntroR_fall_2022.html)
 - **Introduction to R for Biologists** (4 Day Course, May/June 2022):
     * [Summer 2022 Class Website](/classes/IntroR_summer_2022.html)
 - **Introduction to R** (Half Day Course, November 2021):
