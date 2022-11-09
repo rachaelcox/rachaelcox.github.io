@@ -29,6 +29,7 @@ This is the homepage for the introductory R course offered by the Center for Bio
 * In-class worksheet 1 (R basics):
     - [R Markdown](/classes/IntroR_2022/worksheets/worksheet1_reference.Rmd)
     - [HTML](/classes/IntroR_2022/worksheets/worksheet1_reference.html)
+    - [HTML, Solutions](/classes/IntroR_2022/worksheets/worksheet1_solutions.html)
     - [Test dataset](/classes/datasets/mushrooms_small.csv)
 * Blank R Markdown project notebook template:
     - [R Markdown](/classes/files/template.Rmd)
@@ -45,3 +46,4 @@ This is the homepage for the introductory R course offered by the Center for Bio
 * In-class worksheet:
     - [R Markdown](/classes/IntroR_2022/worksheets/worksheet2_reference.Rmd)
     - [HTML](/classes/IntroR_2022/worksheets/worksheet2_reference.html)
+    - [HTML, Solutions](/classes/IntroR_2022/worksheets/worksheet2_solutions.html)
