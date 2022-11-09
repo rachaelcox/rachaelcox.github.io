@@ -1,0 +1,290 @@
+```{r global_options, include=FALSE}
+library(knitr) # enables knit output formatting
+  opts_chunk$set(fig.align="center", fig.height=3, fig.width=4) # format knit output
+library(tidyverse) # contains ggplot2, dplyr, tidyr, readr, stringr, etc
+  theme_set(theme_bw(base_size = 12)) # set default plot theme for ggplot2
+  options(scipen=10000) # force ggplot2 not to use scientific notation
+library(ggthemes) # enable colorblind-friendly palette
+```
+## Introduction to R
+### In-class worksheet #2, solutions
+
+**November 9th, 2022**
+
+There are many external packages that computational scientists rely on for data analysis (e.g., `DESeq2` for RNA-seq processing), but perhaps one of the most important is the `tidyverse` library. The `tidyverse` library is a collection of R packages made for streamlining interactive data analysis. Most of the core functions are designed to interact with tabular data in a "tidy" format, where there is 1 column per variable and and 1 row per observation (see slides for examples). Though there are many packages within the `tidyverse`, we're going to focus on two of the most commonly used: `dplyr` for data manipulation, and `ggplot` for data visualization.
+
+---------------------------------------------
+
+## 1. Data extraction (`select()`, `filter()`)
+
+Given a large, complicated, and/or messy data set, we may only be interested in examining a few variables or conditions. We will use the `biotech` data set to demonstrate how to subset data. 
+
+Run the code chunk below to load and take a glance at the data.
+
+```{r}
+biotech <- read_csv("https://rachaelcox.github.io/classes/datasets/salary_data.csv")
+head(biotech)
+```
+
+The `biotech` data set was pulled from a survey distributed on the Reddit forum **r/biotech** in 2022, where 450 participants answered questions regarding their role, compensation, level of education and location as it relates to their employment in the biotechnology industry. Let's say we are only interested in salary, education level, and location of each individual. To see all of the column names present in the data frame, we can use the `names()` function:
+
+```{r}
+names(biotech)
+```
+
+The columns that correspond to salary, education level, and location are `annual_base_salary`, `highest_achieved_formal_education`, and `location`, respectively. We can extract these columns with the `select()` function, and then save the result to a new data frame called `biotech_subset`:
+
+```{r}
+# extract the "location", "annual_base_salary" and "highest_achieved_formal_education" columns
+biotech_subset <- biotech %>%
+  select(location, annual_base_salary,
+         highest_achieved_formal_education)
+```
+
+Then, let's say, we're interested in looking at individuals with jobs in the Bay Area. To obtain this information, we need to use `filter()` to extract the rows where `location` is equal to "Bay Area", or `location == "Bay Area"`. Notice that, in this example, I do not assign the result to a new data frame, and thus the result of the function is not "saved" (i.e., only displayed on the console or inline output).
+
+```{r}
+# filter subset biotech data for individuals working in the Bay Area
+biotech_subset %>%
+  filter(location == "Bay Area")
+```
+
+One of the best features of the `tidyverse` is that it encourages piping, which is a process that executes multiple functions at once on a data set. This feature can save us many, many lines of codes while still maintaining excellent readability. Referring to the above example, we can chain both steps together using `%>%`, also known as the `tidyverse` pipe:
+
+```{r}
+biotech_filtered <- biotech %>%
+  select(location, annual_base_salary,
+         highest_achieved_formal_education) %>%
+  filter(location == "Bay Area")
+```
+
+**Problem Set #1:**
+
+1. Take the `biotech` data set and use `select()` to extract the columns `location`, `highest_achieved_formal_education`, and `annual_base_salary`, `biotech_sub_industry`, and `approximate_company_size`. Assign it to a new data frame called `my_biotech`.
+2. Filter the `my_biotech` dataframe such that you only keep rows where `annual_base_salary` is more than $75,000.
+
+```{r}
+# extract the "location", "annual_base_salary", "highest_achieved_formal_education", "biotech_sub_industry", and "approximate_company_size" columns 
+my_biotech <- biotech %>%
+  select(location, annual_base_salary,
+         highest_achieved_formal_education,
+         biotech_sub_industry, approximate_company_size)
+
+# filter my_biotech so it only contains individuals with base salary 
+my_biotech %>%
+  filter(annual_base_salary > 75000)
+```
+
+**Challenge Problem:** If that was easy... How many individuals have a salary greater than or equal to $105,000 **and** work in the "subindustries" of "Academia/Research"?
+
+```{r}
+# execute multiple mutually inclusive filters with '&'
+rich_profs <- biotech %>%
+  select(location, annual_base_salary,
+         biotech_sub_industry) %>%
+  filter(biotech_sub_industry == "Academia/Research" & annual_base_salary >= 105000)
+rich_profs
+```
+
+Eight **r/biotech** Reddit users work in academia and have a salary >= $105,000. They live in the Bay Area (3), Boston Metro Area (3), San Diego (1) and Seattle (1).
+
+## 2. Data aggregation (`group_by()` and `summarize()`)
+
+Most of the time, our goal is to learn something about the relationships between the variables in our data set. For instance, the `biotech` data set samples a diversity of Reddit users working in the biotechnology industry; how much does the average salary vary across level of education? With `group_by` and `summarize`, we can do a quick investigation.
+
+```{r}
+# calculate the mean and median salary
+# for each level of education
+biotech %>%
+  group_by(highest_achieved_formal_education) %>%
+  summarize(median_salary = median(annual_base_salary),
+            mean_salary = mean(annual_base_salary))
+```
+
+Note the way I've structured the above code. At the beginning, the data set we're manipulating is on the first line, and each subsequent function the data passes through gets a new line/indentation. Though not functionally necessary, styling your R/tidyverse code this way greatly improves readability. __Readability of your code should ALWAYS be high priority.__
+
+We can also probe potential biases in our data set--for example, the sample size for each of the levels of education we probed above.
+
+```{r}
+# add a calculation for the # of individuals per level of education
+biotech %>%
+  group_by(highest_achieved_formal_education) %>%
+  summarize(median_salary = median(annual_base_salary),
+            mean_salary = mean(annual_base_salary),
+            count = n())
+```
+
+The number of respondents with a high school eduction and professional school education are very low compared to the other categories.
+
+**Problem Set #2:**
+
+1. How does the mean salary vary by location? Using the `biotech` data set again, use `group_by()` on the `location` column and `summarize()` the `mean()` of `annual_base_salary`.
+
+```{r}
+# calculate the mean
+biotech %>%
+  group_by(location) %>%
+  summarize(mean_salary = mean(annual_base_salary)) %>%
+  arrange(desc(mean_salary))
+```
+
+**Challenge Problem:** If that was easy... For individuals working in the Boston Metro Area, what is the mean salary for the different types `biotech_sub_industry` and `highest_achieved_formal_education`? Include a column that calculates the sample size of each group.
+
+**Hint:** This will require using the `filter()` function first to just get rows corresponding to the Boston Metro Area, followed by a `group_by()` of multiple variables, and then finally `summarize()`.
+
+```{r}
+biotech %>%
+  filter(location == "Boston Metro Area") %>%
+  group_by(highest_achieved_formal_education, biotech_sub_industry) %>% 
+  summarize(mean_salary = mean(annual_base_salary),
+            count = n()) %>%
+  arrange(desc(mean_salary))
+```
+
+## 3. Data visualization
+
+Arguably the Tidyverse is the most used and well-known for its data visualization package, `ggplot2`. Its syntax is similar to but distinct from other `tidyverse` packages. In our previous examples using `dplyr`, we chained functions together using the pipe (`%>%`). When making a ggplot, we *layer* plot functions using a plus sign (`+`). Continuing to use the `biotech` data set, let's visualize the relationship between years of experience in the biotechnology industry and annual base salary.
+
+```{r}
+# plot annual base salary vs years of experience
+ggplot(biotech, aes(x = years_of_experience, 
+                    y = annual_base_salary)) +
+  geom_point()
+```
+
+It looks like there might be correlation between years of experience and compensation, but it's pretty noisy. Based on our preliminary analyses, the biggest contributors to variance are likely level of education and location. We can separate this plot into a grid of scatter plots for each category using `facet_wrap()`.
+
+```{r}
+# generate a separate scatter plot for each level of education
+ggplot(biotech, aes(x = years_of_experience, 
+                    y = annual_base_salary)) +
+  geom_point() +
+  facet_wrap(~highest_achieved_formal_education)
+```
+
+Another feature of `ggplot()` is the ability to color, shape, or size points by other variables in the data set. In the previous plot, we were interested in the correlation between base salary and years of experience. Now, we'll visualize the `approximate_company_size` variable on the same plot using the `color` aesthetic. Since the default colors used by `ggplot` are not colorblind-friendly, we'll add a layer that changes the point colors to a palette that is.
+
+```{r fig.width=8, fig.height=4}
+# change the color of points to reflect size of employer organization
+ggplot(biotech, aes(x = years_of_experience, 
+                    y = annual_base_salary,
+                    color = approximate_company_size)) +
+  geom_point() +
+  facet_wrap(~highest_achieved_formal_education) +
+  scale_color_colorblind()
+```
+
+One extremely common task I often run into is the re-ordering of legend variables. For ease of interpretation, we want the company size ranges to either ascend or descend in order. This is not automatically implemented by R because the ranges are considered a "character" or "string" data type, so R therefor does not recognize the values as numbers that can be ordered. However, we can manually override this ordering using `fct_relevel`.
+
+The first step in this process is to create a vector that specifies the desired order:
+```{r}
+# specify the categories in the desired order
+desired_order <- c("1-50", "50-200", 
+                   "200-1000", "1000-5000", "5000+")
+```
+
+Next, we can use `mutate()` to change the data type of the column to a manually ordered "factor" column and pass that directly to ggplot. Note that the results of the `mutate()` function pipes into `ggplot()`, and therefore we do not have to specify the data set as our first argument to the `ggplot()` function.
+
+```{r fig.width=8, fig.height=4}
+# make plot with reordered legend variables
+biotech %>%
+  mutate(
+    approximate_company_size = fct_relevel(
+      approximate_company_size, desired_order)
+    ) %>%
+    ggplot(., aes(x = years_of_experience, 
+                      y = annual_base_salary,
+                      color = approximate_company_size)) +
+    geom_point() +
+    facet_wrap(~highest_achieved_formal_education) +
+    scale_color_colorblind()
+```
+
+Finally, we can apply a number of layers to the plot to make it publication ready. The layer `labs()` will allow us to change the legends, and we can specify point size and degree of point opacity inside `geom_point()`. Additionally, we can pre-filter NAs from our data set before passing the data to `ggplot` using the `filter()` function.
+
+```{r fig.width=8, fig.height=4}
+# make it pretty
+biotech %>%
+  mutate(
+    approximate_company_size = fct_relevel(
+      approximate_company_size, desired_order)
+    ) %>%
+  filter(!is.na(approximate_company_size)) %>%
+    ggplot(., aes(x = years_of_experience, 
+                      y = annual_base_salary,
+                      color = approximate_company_size)) +
+    geom_point(size = 2, alpha = 0.8) +
+    facet_wrap(~highest_achieved_formal_education) +
+    scale_color_colorblind() +
+    labs(x = "Years of Experience", y = "Base salary",
+         color = "Company Size")
+```
+
+**Problem Set #3:**
+
+1. Filter the `biotech` data to contain only the following, and then assign it to a new data frame:
+    - Individuals working in the Bay Area & the Boston Metro Area (e.g., create a filter for the `location` column)
+    - Individuals working for pharmaceutical companies (e.g., create a filter for the `biotech_sub_industry` column)
+2. Make a scatter plot with `years_of_experience` on the x-axis and `annual_base_salary` on the y-axis.
+3. Color the points by the `highest_achieved_formal_education` column.
+4. Change the color of the points to a colorblind-friendly palette.
+5. Rename the axes labels using `labs()`.
+**Bonus:** Change the shape of the points to reflect the `company_details` column.
+
+```{r fig.width=8, fig.height=4}
+# make filtered data set
+filtered_df <- biotech %>%
+  filter(location %in% c("Bay Area", "Boston Metro Area")) %>%
+  filter(biotech_sub_industry == "Pharmaceutical")
+
+# generate plot for pharma workers
+ggplot(filtered_df, aes(x = years_of_experience, 
+                        y = annual_base_salary, 
+                        color = highest_achieved_formal_education,
+                        shape = company_details)) +
+  geom_point(size = 3, alpha = 0.8) +
+  scale_color_manual(values = c("#E69F00", "#56B4E9", "#009E73",
+                     "#0072B2", "#D55E00", "#CC79A7")) +
+  labs(x = "Years of Experience", y = "Base salary",
+       color = "Education", shape = "Organization\tType")
+```
+
+**Challenge Problem:** If that was easy...
+
+1. Filter the `biotech` data to contain only:
+    - The top 3 locations with the most data points.
+    - Only individuals with Bachelor's, Master's and Doctorate's degrees.
+2. Make a density plot showing the distribution of salaries for each level of education (hint: assign `x = annual_base_salary`, `fill = highest_achieved_formal_education`, and then use `geom_density()`).
+3. Use `facet_wrap()` with location to make a grid of 3 density distribution plots.
+4. Change the default colors and reduce the opacity of the density distributions to visualize the overlaps.
+5. Move the legend position to the top of the plot.
+
+```{r fig.width=8, fig.height=4}
+# find the top 3 locations with most data points
+top3 <- biotech %>%
+  group_by(location) %>%
+  tally() %>%
+  top_n(3, wt = n)
+
+target_education <- c("Bachelor's Degree or Equivalent",
+         "Master's Degree or Equivalent",
+         "Ph.D or Equivalent")
+
+# generate plot
+biotech %>%
+  filter(location %in% top3$location) %>%
+  filter(highest_achieved_formal_education %in% target_education) %>%
+  mutate(   # make education labels wrap
+    edu_pretty = str_wrap(
+      highest_achieved_formal_education,
+      width = 20)) %>%
+  ggplot(., aes(x = annual_base_salary,
+                fill = edu_pretty)) +
+  geom_density(alpha = 0.75) +
+  facet_wrap(~location) +  # make a plot for each location
+  scale_fill_manual(values = c("#E69F00", "#56B4E9", "#009E73",
+                     "#0072B2", "#D55E00", "#CC79A7")) +
+  labs(x = "Base salary", y = "Density",
+       fill = "Education") +
+  theme(legend.position = "top")  # move legend to top
+```

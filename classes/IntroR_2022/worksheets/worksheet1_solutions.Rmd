@@ -1,0 +1,225 @@
+```{r global_options, include=FALSE}
+library(knitr)
+library(tidyverse)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=4)
+```
+## Introduction to R
+### In-class worksheet #1, solutions
+
+**November 3rd, 2021**
+
+Computational analyses require methods and notes to be recorded the same way you would for wet lab experiments. An excellent way to do this is via R Markdown documents. R Markdown documents are documents that combine text, R code, and R code output, and figures. They are a great way to produce self-contained and documented statistical analyses.
+
+In this first worksheet, you will learn how to do some basic markdown editing in addition to the basic use of variables and functions in R. After you have made a change to the document, press "Knit HTML" in R Studio and see what kind of a result you get. **Note:** You may have to disable pop-ups to get this to work; moreover, if the document contains any erroneous code (e.g., typos), you will get an error that prevents the knit. You can bypass this by debugging the code or commenting it out with a `#`.
+
+---------------------------------------------
+
+## 1. Basic Markdown
+
+Below I have demonstrated some basic R Markdown features, as described [here.](http://rmarkdown.rstudio.com/authoring_basics.html) In your own work, you can use Markdown syntax to organize your coding notebook.
+
+This text is **bold.**
+
+This text is *in italics.*
+
+This is a numbered list:
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+A bulleted list:
+
+- Item 1
+- Item 2
+- Item 3
+
+A nested list:
+
+1. Item 1
+    - Item 1.1. Note that 4 spaces are required for the nesting to work properly.
+    - Item 1.2
+2. Item 2
+
+Block quote:
+
+> "Science is magic that works." --- Kurt Vonnegut
+
+## 2. Embedding R code
+
+R code embedded in R chunks will be executed and the output will be shown.
+
+```{r}
+# R code is embedded into this chunk
+# when we start a line with '#', that tells R not to interpret the line as code
+# this is called commenting code, and documents its purpose
+
+# the code below assigns integers to the variables 'x' and 'y'
+x <- 7  
+y <- 1029
+
+# we can perform operations with variables
+z <- x * y
+z
+
+# this is a string assigned to the variable 'my_name'
+my_name <- "Rachael"
+
+# we can create vectors of integers and strings
+nums <- c(4, 8, 3, 6, 9)
+fruits <- c("strawberries", "bananas", "apples", "peaches", "mangos")
+
+# and combine them into a table using the data.frame() function
+grocery_list <- data.frame(fruits, nums)
+grocery_list
+
+# there are a number of ways to extract specific information from a table
+# for instance, selecting the first column:
+grocery_list[1]
+grocery_list['fruits']
+select(grocery_list, fruits)
+
+# the following code also targets the first column, but extracts the information in a different way
+# can you spot the difference?
+grocery_list$fruits
+```
+
+**Problem Set #1:**
+
+1. Assign integers to variables (demonstrated in the above code block).
+2. Assign some strings to variables.
+3. Make a vector of strings containing your top 5 favorite foods.
+4. Make a vector containing 5 numbers.
+5. Combine the two vectors you created in the previous step into one data frame.
+6. Call the first column of the data frame that you create.
+
+```{r}
+# assigning integers to variables
+fav_num <- 6
+second_fav_num <- 13
+some_new_num <- second_fav_num / fav_num
+
+# assigning strings to variables
+fav_enzyme <- "cyclooxygenase"
+
+# creating a vector of strings
+fav_foods <- c("sashimi", "dumplings", "jambalaya", "tacos", "pizza")
+fav_foods
+
+# creating a vector of integers
+random_nums <- c(6, 13, 21, 51, 63)
+random_nums
+
+# combining vectors into a dataframe
+new_df <- data.frame(fav_foods, random_nums)
+new_df
+
+# calling a column in a dataframe
+new_df$fav_foods
+```
+
+## 3. Built-in functions and data sets
+
+A function is statement internally (i.e., "under the hood") coded to perform a specific task. For instance, the `head()` function displays the first several rows of a data frame or values in a vector.
+
+R comes with many built-in functions and data sets. Type `data()` in the console to look at a list of all available data sets. Type `?iris` in the console for more information about this specific data set. __Important: You can ask for help with any built-in data set or function by typing `?<function>` in the console; for example, `?head` or `?summary`.__ 
+
+You can take a glance at the `iris` data set using the `head()` function. Run the code chunk below to test this. 
+
+```{r}
+# preview the first few rows a data frame
+head(iris)
+```
+
+You can also use the `summary()` function to see the summary statistics of a data set at a glance.
+
+```{r}
+# look at summary statistics for the iris data set
+summary(iris)
+```
+
+You can see the column names of `iris` from the code output above. We can perform calculations on this data set using a number of functions built into R. See the example below, which calculates the median of the `Sepal.Length` column.
+
+```{r}
+# calculate median sepal length across all species of iris
+median(iris$Sepal.Length)
+```
+**Problem Set #2:**
+
+1. Calculate the mean of the `Petal.Length` column using the `mean()` function. 
+2. Calculate the range of the `Petal.Width` column using the `range()` function.
+
+```{r}
+# calculate the mean of the `Petal.Length` column in the `iris` dataset
+mean(iris$Petal.Length)
+
+# calculate the range of the `Petal.Width` column in the `iris` dataset
+range(iris$Petal.Width)
+```
+
+## 4. Reading and writing files
+
+There are several ways to upload data into your R environment. We covered one way in Part 1 of the worksheet: manual entry. However, this is clearly not feasible for big data sets--more often, we want to read in a file containing our data. Also, we tend to modify data frames and save them to a new file. 
+
+**Problem Set #3:**
+
+1. Download the test data set `mushrooms_small.csv` from the "Test data set" link on the class webpage.
+2. Upload it to the RStudio server. Use the "Upload" button in the panel on the right. 
+3. Use the `read_csv()` function to read the file, and save it as a data frame called `mushrooms`. __Important: The file name must be given to the function as a string.__
+4. Use the `head()` function to preview the *first 10 rows* of the new data frame. Specify the integer as the second argument of the function.
+5. Save the output of the `head()` function as a new data frame called `mushrooms_tiny`.
+6. Use the `write_csv` function to write the data frame `mushrooms_tiny` to a new `.csv` file. __Important: The file name must be given to the function as a string.__
+
+**Note:** If you are coding on a local installation of R, you will have to specify a path to the location of the file or move the file to the working directory. Local installations of R do not have an "Upload" function. These concepts are covered at the end of this section.
+
+```{r}
+# read a file
+mushrooms <- read_csv("mushrooms_small.csv")
+
+# look at the first 10 rows of that dataset
+head(mushrooms, 10)
+
+# save the first 10 rows to a new dataframe
+mushrooms_tiny <- head(mushrooms, 10)
+
+# write to file
+write_csv(mushrooms_tiny, "mushrooms_tiny.csv")
+```
+
+## 5. Locating files
+
+For this class, we are using a computer server where everyone has a preset working directory associated with your unique student ID number. Type `getwd()` to see the file path to your working directory. On a local installation, the output of this function might look something like `C:/Users/Rachael/Documents`.
+
+```{r}
+# output the file path associated with the current working directory
+getwd()
+```
+
+This is the directory R will default to for reading and writing files. Ideally, for real life projects, we keep all the information we need organized into folders (aka sub-directories). More often than not, we have to tell R which sub-directory we want to read a file from or write a file to. Perform the following steps to familiarize yourself with file paths and R's perception of where files are:
+
+1. Use the "New Folder" option in the window on the bottom right to create a new folder called "new_data".
+2. Select `mushrooms_tiny.csv` by checking the box.
+3. Go to "More" > "Move..." and select the new "new_data" folder.
+4. Run `list.files()` to see all the files in the current working directory.
+5. Run `list.files("new_data")` to see the files in the new sub-directory.
+6. Run #5 again, but this time specify that `full.names = TRUE` as the second argument in the function.
+
+
+```{r}
+# list files in current working directory
+list.files()
+
+# list files in the sub-directory called "new_data"
+list.files("new_data")
+
+# list the full path to the files in "new_data"
+list.files("new_data")
+list.files("new_data", full.names = TRUE) # this becomes very useful for reading many sub-directory files at once
+```
+
+Clear your global environment (the broom symbol in the top right window). Read the file in the sub-directory "new_data" using `read_csv`. The function will need the full path given by the output from the code chunk above.
+
+```{r}
+# read in data from a sub-directory
+read_csv("new_data/mushrooms_tiny.csv")
+```
