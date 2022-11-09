@@ -1,0 +1,451 @@
+timestamp,location,biotech_sub_industry,company_name,company_details,approximate_company_size,title,highest_achieved_formal_education,years_of_experience,annual_base_salary,annual_target_bonus,annual_equity,sign_on_bonus,sign_on_relocation_assistance
+5/8/2022 0:38:18,California (Other),Consulting,NA,Private,50-200,Senior Manager,Master's Degree or Equivalent,6,160000,16000,30000,10000,NA
+5/8/2022 0:39:38,San Diego,Pharmaceutical,NA,Public,50-200,Research Associate I,Bachelor's Degree or Equivalent,0,55000,4400,NA,NA,NA
+5/8/2022 0:40:47,Midwest (Other),Academia/Research,NA,Academia/College/Universities,5000+,Researcher 1,Bachelor's Degree or Equivalent,2,28000,NA,NA,NA,NA
+5/8/2022 0:40:49,NYC Metro Area,Pharmaceutical,Wuxi Biologics,Public,1000-5000,Manufacturing technician III,Bachelor's Degree or Equivalent,6,72800,5824,NA,NA,NA
+5/8/2022 0:42:01,Boston Metro Area,Pharmaceutical,Abbvie,Public,5000+,Senior scientist I,Ph.D or Equivalent,0,120000,8%,NA,7000,15000
+5/8/2022 0:55:17,Canada,Pharmaceutical,NA,Start-up,1-50,Software Engineer (DevOps),Associate’s Degree or Equivalent,20,140000,NA,NA,NA,NA
+5/8/2022 0:57:19,Bay Area,Pharmaceutical,NA,Private,1000-5000,Research Associate II,Bachelor's Degree or Equivalent,4,82000,12.50%,NA,NA,NA
+5/8/2022 1:00:21,Seattle,Medical Devices,NA,Public,1000-5000,Bioinformatics Scientist I,Ph.D or Equivalent,1,140000,11000,15000,15000,NA
+5/8/2022 1:09:14,Seattle,Academia/Research,NA,Start-up,50-200,Sr. Scientist,Ph.D or Equivalent,4,140000,21000,NA,0,NA
+5/8/2022 1:09:44,NYC Metro Area,Pharmaceutical,NA,Private,5000+,Contract Assistant Scientist,Bachelor's Degree or Equivalent,2,54745,NA,NA,NA,NA
+5/8/2022 1:20:40,San Diego,Pharmaceutical,NA,Public,200-1000,Research Associate II,Master's Degree or Equivalent,2,68000,NA,NA,NA,NA
+5/8/2022 1:24:52,California (Other),Medical Devices,NA,Private,1-50,Head of Production,Bachelor's Degree or Equivalent,2,63648,NA,NA,NA,NA
+5/8/2022 1:26:39,San Diego,Medical Devices,Illumina,Public,5000+,Scientist I,Ph.D or Equivalent,0,103000,8240,15000,0,20000
+5/8/2022 1:26:42,Bay Area,Pharmaceutical,Pact Pharma,Private,50-200,Scientist 1,Bachelor's Degree or Equivalent,13,131200,10,Not sure,2000,NA
+5/8/2022 1:27:32,Boston Metro Area,Pharmaceutical,Intellia Therapeutics,Public,200-1000,Associate Scientist,Master's Degree or Equivalent,4,100000,10000,NA,NA,NA
+5/8/2022 1:29:01,Kansas City Metro Area,Pharmaceutical,NA,Public,5000+,Associate Scientist II,Bachelor's Degree or Equivalent,1,51500,NA,NA,NA,NA
+5/8/2022 1:29:24,Bay Area,Academia/Research,NA,Start-up,1-50,Bioinformatics Scientist,Ph.D or Equivalent,1,155000,NA,NA,NA,NA
+5/8/2022 1:30:57,Research Triangle,Pharmaceutical,NA,Public,5000+,Associate Process Engineer,Bachelor's Degree or Equivalent,2,72000,7200,NA,NA,NA
+5/8/2022 1:36:17,Bay Area,Pharmaceutical,NA,Private,5000+,Senior clinical scientist,Ph.D or Equivalent,11,220000,40000,45000,NA,NA
+5/8/2022 2:16:36,Bay Area,Pharmaceutical,NA,Public,5000+,Research scientist,Master's Degree or Equivalent,2,95000,6500,NA,5000,9000
+5/8/2022 2:25:37,Western Europe,Pharmaceutical,Sanofi,Public,5000+,Principal scientist,M.D./PharmD/D.D.S. or Equivalent,7,75000,7500,11500,0,100000
+5/8/2022 2:53:07,California (Other),Pharmaceutical,NA,Public,200-1000,Principal Engineer,Bachelor's Degree or Equivalent,8,190000,38000,NA,NA,10000
+5/8/2022 3:06:16,Bay Area,Pharmaceutical,NA,Start-up,1-50,Research Associate,Bachelor's Degree or Equivalent,1,75000,NA,NA,NA,NA
+5/8/2022 3:19:22,Bay Area,Pharmaceutical,Gilead,Public,5000+,SRA 1,Bachelor's Degree or Equivalent,5,100000,7500,5000,5000,5000
+5/8/2022 4:46:54,Western Europe,Research devices,NA,Private,50-200,Scientific Affairs Scientist,Ph.D or Equivalent,3,88000,7000,NA,NA,NA
+5/8/2022 5:23:46,Philadelphia Metro Area,Pharmaceutical,Janssen,Public,5000+,Sr. Scientist,Ph.D or Equivalent,6,142000,15%,15% LTI for ~50% people in pay band,NA,NA
+5/8/2022 5:56:58,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Scientist 1,Ph.D or Equivalent,1,101000,12000,NA,0,NA
+5/8/2022 6:48:45,Boston Metro Area,Academia/Research,Arbor Biotechnologies,Start-up,50-200,Senior Research Associate,Associate’s Degree or Equivalent,4,82000,6150,NA,NA,15000
+5/8/2022 6:56:02,D.C. Metro Area,Pharmaceutical,NA,Public,5000+,Scientist 1,Ph.D or Equivalent,0,88000,3500,NA,0,0
+5/8/2022 6:59:07,San Diego,Pharmaceutical,NA,Public,50-200,Scientist I,Ph.D or Equivalent,4,120000,NA,NA,5000,NA
+5/8/2022 7:01:38,Boston Metro Area,Pharmaceutical,NA,Start-up,1-50,Scientist,Ph.D or Equivalent,2,124000,6000,NA,10000,NA
+5/8/2022 7:05:29,NYC Metro Area,Pharmaceutical,NA,Public,5000+,Scientist II,Bachelor's Degree or Equivalent,3,83567,6267,NA,5000,NA
+5/8/2022 7:29:42,United Kingdom,Academia/Research,NA,Academia/College/Universities,1000-5000,Research Associate,Bachelor's Degree or Equivalent,0,35000,NA,NA,NA,NA
+5/8/2022 7:30:52,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Principal Research Associate II,Bachelor's Degree or Equivalent,9,105000,15000,Variable,NA,NA
+5/8/2022 8:00:39,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Research Associate  2,Bachelor's Degree or Equivalent,5,82000,10%,NA,7000,NA
+5/8/2022 8:09:11,California (Other),Pharmaceutical,Amgen,Public,5000+,Sr. Associate Manufacturing,Bachelor's Degree or Equivalent,4,85000,~5-10k (performance based),LTI ~2k,NA,NA
+5/8/2022 8:25:41,Western Europe,Pharmaceutical,NA,Private,200-1000,QA Analyst,Bachelor's Degree or Equivalent,1,41200,NA,NA,NA,NA
+5/8/2022 8:50:29,NYC Metro Area,Pharmaceutical,NA,Public,5000+,Senior scientist,Master's Degree or Equivalent,4,142000,15%,$8k,NA,NA
+5/8/2022 8:52:58,Chicago,Pharmaceutical,AbbVie,Public,5000+,Senior Scientist I,Ph.D or Equivalent,2,114000,8%,NA,20000,15000
+5/8/2022 8:55:36,Portland,Medical Devices,NA,Private,1-50,Research associate II,Bachelor's Degree or Equivalent,4,72000,NA,NA,NA,NA
+5/8/2022 9:18:48,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Scientist I,Ph.D or Equivalent,4,122000,10%,NA,10000,NA
+5/8/2022 9:26:59,Indianapolis,Pharmaceutical,Eli Lilly,Public,5000+,Scientist,Bachelor's Degree or Equivalent,0,66000,6k plus or minus some. Up to 14k,6% 401K match. Pension after 5 years.,NA,15000
+5/8/2022 9:32:45,Research Triangle,Pharmaceutical,NA,Start-up,50-200,Director,Bachelor's Degree or Equivalent,18,200000,50000,NA,NA,NA
+5/8/2022 9:35:41,Boston Metro Area,Medical Devices,NA,Public,200-1000,Production Associate 1,Associate’s Degree or Equivalent,1,55000,NA,NA,NA,NA
+5/8/2022 9:46:16,Boston Metro Area,Pharmaceutical,Biogen,Public,5000+,Sr Scientist,Ph.D or Equivalent,4,148000,25900,24000,15000,40000
+5/8/2022 10:02:46,Canada,Animal Health,NA,Public,1000-5000,Supervisor,Bachelor's Degree or Equivalent,5,102000,10200,NA,5000,5000
+5/8/2022 10:09:13,Boston Metro Area,Academia/Research,DFCI,Private,200-1000,Intern,High School or Equivalent,1,0,NA,NA,0,NA
+5/8/2022 10:19:20,Boston Metro Area,Pharmaceutical,Abbvie,Public,5000+,Scientist I,Bachelor's Degree or Equivalent,5,89000,8%,NA,NA,NA
+5/8/2022 10:27:34,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Senior Scientist,Ph.D or Equivalent,2,140000,16%,NA,20000,NA
+5/8/2022 10:28:36,Kansas City Metro Area,Pharmaceutical,NA,Public,5000+,Associate Scientist,Bachelor's Degree or Equivalent,1,50000,NA,NA,0,NA
+5/8/2022 10:35:55,Seattle,Analytical Devices,NanoString Technologies Inc.,Public,200-1000,Research Associate II,Master's Degree or Equivalent,3,62500,3125,5000,NA,NA
+5/8/2022 10:49:47,California (Other),Pharmaceutical,"Commissioning Agents, Inc",Private,1000-5000,CQV Engineer,Bachelor's Degree or Equivalent,0,81120,NA,12000,NA,NA
+5/8/2022 11:11:59,Boston Metro Area,Pharmaceutical,NA,Public,200-1000,Research Associate I,Bachelor's Degree or Equivalent,1,72000,7200,2500,0,0
+5/8/2022 11:25:29,Phoenix,Medical Devices,NA,Public,200-1000,Field Applications Scientist,Master's Degree or Equivalent,11,88400,8000,NA,NA,NA
+5/8/2022 11:34:31,Bay Area,Pharmaceutical,NA,Public,50-200,principal scientist,Ph.D or Equivalent,8,170000,25000,30000,10000,NA
+5/8/2022 11:35:38,Bay Area,Pharmaceutical,NA,Private,50-200,senior scientist 1,Ph.D or Equivalent,8,148000,25000,30000,5000,NA
+5/8/2022 11:38:03,Seattle,Pharmaceutical,Just-Evotec Biologics,Subsidiary,200-1000,Associate Scientist,Bachelor's Degree or Equivalent,1,70000,3500,~3500,0,NA
+5/8/2022 11:42:22,Philadelphia Metro Area,Academia/Research,NA,Academia/College/Universities,5000+,PhD Student,Bachelor's Degree or Equivalent,0,30000,NA,NA,NA,NA
+5/8/2022 12:05:15,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Senior associate scientist,Bachelor's Degree or Equivalent,4,109000,16500,5000,NA,NA
+5/8/2022 12:33:42,Bay Area,Pharmaceutical,NA,Public,200-1000,Sr. Scientist I,Ph.D or Equivalent,3,135000,13500,not sure,7500,0
+5/8/2022 12:44:08,Bay Area,Pharmaceutical,NA,Public,200-1000,Research Associate I - Protein Purification,Bachelor's Degree or Equivalent,2,76650,7665,13000,NA,NA
+5/8/2022 13:06:45,Southeastern US,Academia/Research,ORNL,Government,5000+,Postdoc,Ph.D or Equivalent,1,70000,NA,NA,0,5000
+5/8/2022 13:07:30,United Kingdom,Pharmaceutical,NA,Start-up,1-50,Research Technican,Bachelor's Degree or Equivalent,0,25500,2550,NA,NA,NA
+5/8/2022 13:20:20,Bay Area,Pharmaceutical,NA,Private,50-200,Senior Scientist,Ph.D or Equivalent,7,185000,37000,NA,NA,NA
+5/8/2022 13:49:38,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Scientist I,Ph.D or Equivalent,0,125,12000,NA,10000,NA
+5/8/2022 14:03:00,California (Other),Pharmaceutical,NA,Public,200-1000,Scientist,Ph.D or Equivalent,0,135000,13500,NA,NA,5000
+5/8/2022 14:21:36,Seattle,Pharmaceutical,NA,Subsidiary,50-200,Scientist,Bachelor's Degree or Equivalent,3,100000,6000,3000,NA,NA
+5/8/2022 14:52:23,Bay Area,Pharmaceutical,NA,Public,200-1000,Principal Research Associate,Master's Degree or Equivalent,6,118000,11800,NA,5000,12000
+5/8/2022 14:53:03,Research Triangle,Pharmaceutical,NA,Public,5000+,Sr. Validation Engineer,Bachelor's Degree or Equivalent,10,95000,9500,NA,NA,18000
+5/8/2022 15:04:39,Bay Area,Pharmaceutical,NA,Public,1000-5000,Sr. Manager,Ph.D or Equivalent,20,175000,NA,NA,0,0
+5/8/2022 16:06:46,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,MFG Supervisor,Master's Degree or Equivalent,6,130000,13000,NA,10000,3000
+5/8/2022 16:26:13,Seattle,Pharmaceutical,NA,Private,1000-5000,Specialist I,Bachelor's Degree or Equivalent,3,62000,NA,NA,NA,NA
+5/8/2022 16:28:44,Waco,Pharmaceutical,Abbvie,Public,5000+,Laboratory Technician V,Bachelor's Degree or Equivalent,3,70720,3%,NA,NA,NA
+5/8/2022 16:39:11,Bay Area,Academia/Research,NA,Start-up,1-50,Scientist,Ph.D or Equivalent,2,96000,NA,NA,NA,NA
+5/8/2022 16:54:50,New England (Other),Pharmaceutical,NA,Public,1000-5000,Associate Scientist II,Bachelor's Degree or Equivalent,2,77000,7%,10000 RSUs,NA,24000
+5/8/2022 16:57:43,San Diego,Pharmaceutical,NA,Public,50-200,Research Associate II,Bachelor's Degree or Equivalent,2,88000,NA,NA,NA,NA
+5/8/2022 17:17:26,Boston Metro Area,Pharmaceutical,NA,Public,200-1000,Scientist,Ph.D or Equivalent,2,135000,15,10000,NA,20000
+5/8/2022 17:47:11,Western Europe,Academia/Research,NA,Academia/College/Universities,200-1000,PhD student,Master's Degree or Equivalent,0,27000,NA,NA,NA,NA
+5/8/2022 18:32:25,Chicago,Lab consumables,NA,Public,5000+,Scientist I,Bachelor's Degree or Equivalent,2,69300,7000,NA,NA,NA
+5/8/2022 19:27:11,Bay Area,Pharmaceutical,NA,Start-up,1-50,Research Associate,Bachelor's Degree or Equivalent,1,80000,7%,4750,5000,NA
+5/8/2022 19:34:55,California (Other),Pharmaceutical,NA,Public,5000+,QC Analyst 2,Bachelor's Degree or Equivalent,1,70720,5000,NA,NA,NA
+5/8/2022 19:59:48,San Antonio,Animal research (government),NA,Government,200-1000,Research associate,Bachelor's Degree or Equivalent,3,40000,NA,NA,NA,NA
+5/8/2022 20:09:53,Chicago,Pharmaceutical,NA,Public,5000+,QC Supervisor,Bachelor's Degree or Equivalent,12,98500,7000,NA,NA,NA
+5/8/2022 20:22:34,Research Triangle,Medical testing,NA,Private,5000+,Associate Chemist,Bachelor's Degree or Equivalent,6,49920,NA,NA,NA,NA
+5/8/2022 20:23:41,Research Triangle,Medical testing,NA,Private,5000+,Research Associate II,Bachelor's Degree or Equivalent,6,70000,NA,NA,NA,NA
+5/8/2022 20:31:34,California (Other),Pharmaceutical,A,Public,5000+,QC Analyst I,Bachelor's Degree or Equivalent,5,72300,10,NA,NA,NA
+5/8/2022 20:51:20,Kansas City Metro Area,Pharmaceutical,NA,Public,5000+,Senior scientist,Ph.D or Equivalent,1,108000,7020,NA,5000,NA
+5/8/2022 20:52:31,Seattle,Pharmaceutical,Roche,Public,5000+,Senior Research Associate,Bachelor's Degree or Equivalent,4,95000,5000,NA,NA,NA
+5/8/2022 21:18:26,Boston Metro Area,Medical Devices,NA,Private,1-50,Applications Engineer,Ph.D or Equivalent,2,106200,10620,NA,3000,4000
+5/8/2022 21:26:23,Boston Metro Area,Pharmaceutical,NA,Private,1-50,Scientist I,Ph.D or Equivalent,1,95000,10%,NA,2500,NA
+5/8/2022 21:57:37,Philadelphia Metro Area,Academia/Research,NA,Academia/College/Universities,1000-5000,Research Associate III,Master's Degree or Equivalent,15,56182,NA,NA,NA,NA
+5/8/2022 22:01:33,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Senior Scientist,Ph.D or Equivalent,3,127000,15%,7%,0,0
+5/8/2022 22:05:19,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Senior Scientist,Ph.D or Equivalent,1,144000,20%,NA,NA,NA
+5/8/2022 22:06:10,NYC Metro Area,Pharmaceutical,NA,Start-up,1-50,Associate Project Manager,Bachelor's Degree or Equivalent,1,82350,8235,NA,3000,NA
+5/8/2022 22:10:57,Philadelphia Metro Area,Pharmaceutical,NA,Public,5000+,Senior Manager,Ph.D or Equivalent,8,140000,25000,33000,NA,NA
+5/8/2022 22:21:30,D.C. Metro Area,Pharmaceutical,GSK,Public,5000+,Production Associate Director,Bachelor's Degree or Equivalent,16,148000,18%,"$35,000",NA,NA
+5/8/2022 22:44:29,Southeastern US,Academia/Research,NA,Academia/College/Universities,5000+,Lab Tech,Bachelor's Degree or Equivalent,2,31200,NA,NA,NA,NA
+5/8/2022 22:46:52,Boston Metro Area,"I’m in flavors and fragrances department, but we also have nutraceuticals and biologics at the company.",Conagen,Private,50-200,"Scientist II, Strain Development",Ph.D or Equivalent,2,85000,1300,NA,NA,5000
+5/8/2022 22:53:25,Houston,Pharmaceutical,Immatics,Public,200-1000,Senior Manufacturing Associate,Bachelor's Degree or Equivalent,6,81180,9741,3000,NA,NA
+5/8/2022 23:09:47,Bay Area,Pharmaceutical,Startup,Public,50-200,Science II,Bachelor's Degree or Equivalent,6,135000,20000,5000,NA,NA
+5/8/2022 23:17:52,San Diego,Pharmaceutical,NA,Public,200-1000,Senior Research Associates,Bachelor's Degree or Equivalent,4,90000,20%,RSU  yearly,10000,NA
+5/8/2022 23:33:25,San Diego,Medical Devices,NA,Public,200-1000,Biochemist I,Bachelor's Degree or Equivalent,1,58000,NA,NA,NA,NA
+5/8/2022 23:35:37,California (Other),Medical Devices,Thermo Fisher,Public,5000+,Scientist II,Bachelor's Degree or Equivalent,7,75000,5625,NA,5000,NA
+5/8/2022 23:47:46,Midwest (Other),Pharmaceutical,NA,Start-up,50-200,VP,Ph.D or Equivalent,15,265000,60000,250000,100000,60000
+5/8/2022 23:48:50,Houston,Academia/Research,NA,Academia/College/Universities,5000+,Staff Scientist,Ph.D or Equivalent,6,56000,NA,NA,NA,NA
+5/9/2022 0:26:00,California (Other),Academia/Research,UC Davis,Academia/College/Universities,5000+,SRA II (Lab Manager/Research Coordinator),Master's Degree or Equivalent,1,55000,NA,NA,NA,NA
+5/9/2022 0:32:10,Canada,Pharmaceutical,NA,Start-up,1-50,Scientist,Ph.D or Equivalent,4,90000,10000,NA,NA,NA
+5/9/2022 0:36:53,San Diego,Pharmaceutical,NA,Start-up,50-200,Senior Research Associate II,Bachelor's Degree or Equivalent,6,93000,9300,NA,0,0
+5/9/2022 0:39:29,California (Other),Pharmaceutical,NA,Private,50-200,"Vice President, Business Development",Master's Degree or Equivalent,11,230000,150000,100000,50000,NA
+5/9/2022 0:59:12,United Kingdom,Pharmaceutical,Novo Nordisk,Public,5000+,Lab Coordinator/tech,Associate’s Degree or Equivalent,3,31200,3120,NA,NA,NA
+5/9/2022 1:00:24,United Kingdom,Pharmaceutical,Evotec,Public,1000-5000,Research associate,Associate’s Degree or Equivalent,4,30000,1500,NA,500,NA
+5/9/2022 1:59:45,Indianapolis,Pharmaceutical,Catalent,Public,5000+,Scientist,Ph.D or Equivalent,4,93000,NA,NA,3000,NA
+5/9/2022 6:01:04,Research Triangle,Pharmaceutical,Novartis,Public,5000+,Specialist I,Bachelor's Degree or Equivalent,3,88000,7000,NA,7000,NA
+5/9/2022 6:03:37,Bay Area,Pharmaceutical,NA,Subsidiary,50-200,Research Associate,Bachelor's Degree or Equivalent,1,70000,7000,NA,NA,NA
+5/9/2022 6:21:41,NYC Metro Area,Pharmaceutical,NA,Private,5000+,Associate Scientist,Bachelor's Degree or Equivalent,4,70000,8000,NA,NA,NA
+5/9/2022 6:22:04,Western Europe,Medical Devices,NA,Private,50-200,Molecular Biologist,Bachelor's Degree or Equivalent,1,40000,NA,NA,NA,NA
+5/9/2022 7:43:42,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Associate Director,Bachelor's Degree or Equivalent,7,192000,48000,95000,NA,NA
+5/9/2022 8:49:18,NYC Metro Area,Pharmaceutical,Pfizer,Public,5000+,Associate Scientist,Bachelor's Degree or Equivalent,0,69000,NA,NA,5000,10000
+5/9/2022 9:12:19,California (Other),Pharmaceutical,Amgen,Public,5000+,Scientist,Ph.D or Equivalent,2,140000,16800,10000,25000,60000
+5/9/2022 9:39:08,Boston Metro Area,Pharmaceutical,Eli Lilly and Co,Public,5000+,Senior TS/MS Scientist - Upstream Processes,Master's Degree or Equivalent,3,80800,10%,NA,5000,13000
+5/9/2022 10:02:04,Boston Metro Area,Pharmaceutical,NA,Start-up,50-200,Associate Scientist,Master's Degree or Equivalent,11,113000,10,20000,NA,NA
+5/9/2022 10:57:29,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Sr. Research Associate,Bachelor's Degree or Equivalent,3,89000,8900,NA,7000,NA
+5/9/2022 11:27:55,Midwest (Other),Pharmaceutical,NA,Public,200-1000,Scientist II,Ph.D or Equivalent,3,115000,"17,000",NA,NA,NA
+5/9/2022 11:28:08,Midwest (Other),Pharmaceutical,NA,Public,200-1000,Scientist II,Ph.D or Equivalent,3,115000,"17,000",NA,NA,NA
+5/9/2022 15:07:26,Salt Lake City,Pharmaceutical,BIOMERIEUX,Public,5000+,Associate Scientist,Bachelor's Degree or Equivalent,1,28.37,2360,NA,NA,NA
+5/9/2022 15:09:15,California (Other),Pharmaceutical,NA,Public,5000+,Associate Validation Engineer,Bachelor's Degree or Equivalent,0,73100,5600,2000,NA,NA
+5/9/2022 15:24:52,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Research Scientist II,Master's Degree or Equivalent,1,87000,7%,NA,10000,NA
+5/9/2022 16:49:04,Philadelphia Metro Area,Pharmaceutical,NA,Start-up,1-50,Research Scientist,Ph.D or Equivalent,3,95000,NA,NA,NA,15000
+5/9/2022 18:12:18,Research Triangle,Vendor,Sartorius,Public,1000-5000,Field Application Specialist,Bachelor's Degree or Equivalent,8,107000,15000,NA,15000,NA
+5/9/2022 20:45:53,Bay Area,Agriculture/Food,NA,Start-up,50-200,Research Associate 2,Bachelor's Degree or Equivalent,2,100000,NA,"10,000",NA,NA
+5/9/2022 21:12:52,Bay Area,Pharmaceutical,NA,Private,50-200,Production Associate,Bachelor's Degree or Equivalent,3,90000,16000,NA,NA,NA
+5/9/2022 23:50:05,Denver Metro Area,Academia/Research,NA,Start-up,1-50,Research Associate III,Bachelor's Degree or Equivalent,5,63840,NA,NA,NA,2000
+5/10/2022 0:13:58,Bay Area,Pharmaceutical,NA,Private,50-200,Senior Research Associate,Bachelor's Degree or Equivalent,5,115000,"17,250",NA,NA,NA
+5/10/2022 3:02:47,Research Triangle,Biotech,NA,Private,1-50,Research Associate,Master's Degree or Equivalent,1,50000,2500,NA,3000,NA
+5/10/2022 5:14:59,California (Other),Medical Devices,NA,Subsidiary,1-50,Associate Scientist,Ph.D or Equivalent,1,65000,NA,NA,NA,NA
+5/10/2022 7:02:48,Research Triangle,Agriculture/Food,NA,Start-up,1-50,Scientist,Ph.D or Equivalent,4,85000,8500,NA,NA,NA
+5/10/2022 9:47:40,California (Other),Medical Devices,Singular Genomics,Public,50-200,Systems Engineer,Bachelor's Degree or Equivalent,4,115000,10000,NA,NA,NA
+5/10/2022 10:03:53,NYC Metro Area,Pharmaceutical,NA,Start-up,50-200,Senior Scientist,Ph.D or Equivalent,6,131000,10000,5000,10000,3000
+5/10/2022 10:33:07,California (Other),Pharmaceutical,Janssen,Public,5000+,Scientist,Ph.D or Equivalent,0,121000,14000,NA,NA,NA
+5/10/2022 12:18:55,Bay Area,Pharmaceutical,NA,Public,50-200,Research Associate 2,Master's Degree or Equivalent,3,90000,9000,5000,2500,NA
+5/10/2022 12:39:56,Boston Metro Area,Pharmaceutical,NA,Start-up,50-200,Sr. Research Associate,Master's Degree or Equivalent,2,90000,9000,625,8500,NA
+5/10/2022 16:17:51,Waco,Pharmaceutical,AbbVie,Public,5000+,Microbiology Lab Technician 4,Bachelor's Degree or Equivalent,3,63771,10%,NA,NA,NA
+5/10/2022 17:51:17,Boston Metro Area,Pharmaceutical,NA,Private,1-50,Scientist II,Ph.D or Equivalent,3,130000,13000,NA,0,0
+5/10/2022 21:24:16,Bay Area,Pharmaceutical,Gilead,Public,5000+,Clinical Trials Manager,Bachelor's Degree or Equivalent,6,160000,19200,8000,NA,NA
+5/10/2022 22:00:56,Bay Area,Biotech Software/SAAS,Dotmatics,Private,200-1000,Product Manager,Ph.D or Equivalent,4,152000,15000,50k,0,0
+5/11/2022 0:45:56,Houston,Pharmaceutical,It is a CDMO,Public,200-1000,Scientist I,Master's Degree or Equivalent,6,90000,NA,NA,NA,NA
+5/11/2022 2:50:34,Seattle,Pharmaceutical,NA,Start-up,50-200,Research Associate,Bachelor's Degree or Equivalent,3,95000,10%,NA,NA,NA
+5/11/2022 11:08:07,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Associate Scientist,Bachelor's Degree or Equivalent,1,80000,5500,3750,5000,0
+5/11/2022 16:08:48,Bay Area,Industrial biotech,NA,Start-up,1-50,Director,Ph.D or Equivalent,16,220000,20%,NA,33000,NA
+5/11/2022 16:10:05,Bay Area,Industrial biotech,NA,Start-up,1-50,Principal Scientist,Ph.D or Equivalent,16,165000,NA,NA,10000,NA
+5/11/2022 18:07:37,Canada,Pharmaceutical,Benchsci,Private,200-1000,Science,Ph.D or Equivalent,5,75000,NA,NA,NA,NA
+5/11/2022 21:01:20,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Sr. Scientist 1,Master's Degree or Equivalent,7,115000,11000,NA,NA,NA
+5/11/2022 21:44:32,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Scientist II,Ph.D or Equivalent,3,150000,30000,35000,NA,NA
+5/11/2022 23:54:37,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Principal scientist,Ph.D or Equivalent,12,180000,36000,45000,50000,100000
+5/12/2022 5:28:00,Bay Area,Medical Devices,Twist Bioscience,Start-up,200-1000,Manufacturing Associate,Associate’s Degree or Equivalent,0,66000,NA,6000,2000,NA
+5/12/2022 10:23:12,Boston Metro Area,Gene Therapy,NA,Private,50-200,Senior Research Associate,Bachelor's Degree or Equivalent,4,90500,2000,NA,3000,0
+5/12/2022 10:32:00,California (Other),Pharmaceutical,NA,Private,5000+,PD Senior Associate,Bachelor's Degree or Equivalent,6,80293,10% based on salary and review,NA,NA,NA
+5/12/2022 17:54:36,Bay Area,Pharmaceutical,NA,Start-up,1-50,Scientist III,Ph.D or Equivalent,6,150000,12000,NA,5000,NA
+5/12/2022 19:15:09,Research Triangle,Pharmaceutical,Cambrex,Private,200-1000,Scientist 1,Ph.D or Equivalent,1,79560,2,NA,NA,NA
+5/12/2022 20:20:18,Research Triangle,Pharmaceutical,NA,Public,200-1000,Manufacturing Associate,Bachelor's Degree or Equivalent,1,52000,8%,NA,NA,NA
+5/12/2022 21:21:43,D.C. Metro Area,Pharmaceutical,GSK,Public,5000+,Associate Scientist,Bachelor's Degree or Equivalent,3,77500,6200,NA,NA,NA
+5/13/2022 3:13:21,San Diego,Pharmaceutical,NA,Public,5000+,Sr. Associate II,Bachelor's Degree or Equivalent,5,115000,11500,4000,NA,NA
+5/13/2022 9:51:34,Bay Area,Diagnostics,NA,Public,1000-5000,Scientist II,Ph.D or Equivalent,2,155000,13500,7000,15000,NA
+5/13/2022 10:22:37,Canada,Pharmaceutical,NA,Private,200-1000,Senior Analytical Chemist,Master's Degree or Equivalent,9,74000,NA,NA,0,1000
+5/13/2022 10:47:03,D.C. Metro Area,Medical Devices,Tetracore,Private,50-200,Mechanical Engineer,Bachelor's Degree or Equivalent,2,78600,2000,NA,NA,NA
+5/14/2022 2:29:51,Bay Area,Medical Devices,NA,Private,50-200,Research Associate 1,Bachelor's Degree or Equivalent,1,67000,NA,4000,0,0
+5/14/2022 12:37:31,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Scientist,Bachelor's Degree or Equivalent,5,107000,10700,10700,NA,NA
+5/14/2022 14:10:25,Boston Metro Area,Pharmaceutical,Sanofi,Private,5000+,Sr. Research Associate,Master's Degree or Equivalent,0,85000,8500,NA,NA,NA
+5/14/2022 20:49:09,Bay Area,Pharmaceutical,NA,Public,200-1000,Associate Director,Ph.D or Equivalent,10,200000,40000,45000,10000,NA
+5/14/2022 20:50:21,San Diego,Pharmaceutical,NA,Start-up,1-50,Director,Ph.D or Equivalent,10,220000,49500,NA,15000,NA
+5/15/2022 4:06:21,California (Other),Pharmaceutical,Takeda,Public,5000+,Quality Analyst I,Bachelor's Degree or Equivalent,3,62000,NA,NA,NA,NA
+5/15/2022 15:06:04,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Scientist I,Ph.D or Equivalent,0,130000,"13,000",Monopoly money,NA,NA
+5/15/2022 15:48:13,Bay Area,Academia/Research,NA,Start-up,50-200,Research Associate,Master's Degree or Equivalent,2,85000,NA,NA,NA,NA
+5/15/2022 22:10:31,Philadelphia Metro Area,Pharmaceutical,NA,Private,50-200,Research Associate I,Bachelor's Degree or Equivalent,0,49000,NA,NA,NA,NA
+5/16/2022 9:01:45,Bay Area,Medical Devices,NA,Start-up,50-200,Scientist,Ph.D or Equivalent,0,130000,NA,NA,NA,8000
+5/16/2022 11:46:53,Western Europe,Pharmaceutical,NA,Public,5000+,Director,Master's Degree or Equivalent,5,200000,20%,NA,NA,30000
+5/16/2022 15:54:34,Research Triangle,Biotech,NA,Private,50-200,Research Associate I,Master's Degree or Equivalent,1,50000,"varies >$2,000",NA,3000,NA
+5/16/2022 17:41:49,Boston Metro Area,Pharmaceutical,NA,Private,50-200,QC Sr Manager,Bachelor's Degree or Equivalent,11,140000,21000,NA,NA,NA
+5/16/2022 17:59:47,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Senior Manager,Master's Degree or Equivalent,9,130000,24000,10000,NA,NA
+5/16/2022 19:01:40,Philadelphia Metro Area,Pharmaceutical,NA,Start-up,50-200,Senior Associate Scientist,Bachelor's Degree or Equivalent,6,85000,8500,NA,NA,NA
+5/17/2022 10:53:06,California (Other),Pharmaceutical,NA,Public,200-1000,Scientist,Ph.D or Equivalent,0,145000,14500,NA,10000,10000
+5/17/2022 11:47:34,Phoenix,Pharmaceutical,NA,Private,1000-5000,Associate Scientist II,Ph.D or Equivalent,0,107000,5300,NA,NA,NA
+5/17/2022 13:25:42,New England (Other),Pharmaceutical,NA,Private,5000+,Sr. Scientist,Ph.D or Equivalent,3,120000,NA,NA,0,3000
+5/17/2022 14:09:26,Bay Area,Academia/Research,NA,Public,50-200,Sr. Scientist,Master's Degree or Equivalent,7,120000,12000,NA,NA,NA
+5/17/2022 18:00:13,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Research associate II,Master's Degree or Equivalent,0,80000,2400,5000,0,0
+5/17/2022 22:23:40,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Scientist,Bachelor's Degree or Equivalent,8,84500,5000,NA,NA,NA
+5/17/2022 22:59:11,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Sr scientist,Ph.D or Equivalent,3,150000,27000,25000,NA,NA
+5/18/2022 16:55:52,Southeastern US,Pharmaceutical,NA,Public,1000-5000,Regulatory Affairs,Ph.D or Equivalent,8,138000,20000,20000,NA,NA
+5/19/2022 12:45:30,Western Europe,Hematology,NA,Private,200-1000,Technical assistant,Associate’s Degree or Equivalent,0,44200,NA,NA,NA,NA
+5/19/2022 22:29:48,Boston Metro Area,Pharmaceutical,Pfizer,Public,5000+,Scientist,Bachelor's Degree or Equivalent,6,93500,7500,NA,0,0
+5/20/2022 17:56:48,Chicago,Industrial Fermentation (CO2 gas fermentation),LanzaTech,Private,200-1000,Scientist,Ph.D or Equivalent,1,115000,11500,NA,10000,NA
+5/20/2022 22:34:04,San Diego,Pharmaceutical,NA,Private,5000+,Principal Scientist I,Ph.D or Equivalent,2,125000,18500,NA,NA,NA
+5/21/2022 12:11:47,Boston Metro Area,Pharmaceutical,Catalent,Public,5000+,Manufacturing Associate 1,Bachelor's Degree or Equivalent,0,62500,NA,NA,NA,NA
+5/21/2022 21:42:09,D.C. Metro Area,Academia/Research,NA,Private,1000-5000,Biosignals Engineer,Master's Degree or Equivalent,1,84000,NA,NA,4000,NA
+5/21/2022 23:22:04,Bay Area,Pharmaceutical,NA,Start-up,50-200,Senior Research Associate,Master's Degree or Equivalent,4,101000,7000,7000,10000,0
+5/23/2022 12:16:59,San Diego,Medical Devices,NA,Public,200-1000,Clinical Scientist,M.D./PharmD/D.D.S. or Equivalent,2,103000,10300,NA,5000,0
+5/23/2022 18:39:23,Boston Metro Area,Pharmaceutical,NA,Public,200-1000,"Associate Director, Commercial",Ph.D or Equivalent,5,180000,36000,2000,NA,NA
+5/24/2022 0:17:39,Bay Area,Biotech,NA,Start-up,1-50,Senior Researcher,Ph.D or Equivalent,0,95000,NA,Will Start offering after a few months,NA,10000
+5/24/2022 14:13:57,Boston Metro Area,Pharmaceutical,Ultragenyx,Public,200-1000,Research associate I,Bachelor's Degree or Equivalent,0,80000,NA,NA,NA,NA
+5/24/2022 20:47:24,San Diego,Pharmaceutical,NA,Private,50-200,Research Associate I,Bachelor's Degree or Equivalent,1,75000,NA,2000,NA,NA
+5/25/2022 11:39:26,San Diego,Pharmaceutical,NA,Start-up,50-200,Scientist I,Ph.D or Equivalent,0,120000,12000,options,7000,20000
+5/25/2022 13:12:42,NYC Metro Area,Pharmaceutical,NA,Public,5000+,Associate principal scientist,Ph.D or Equivalent,6,136000,21000,NA,NA,NA
+5/25/2022 22:34:07,Bay Area,Pharmaceutical,NA,Public,50-200,Senior Research Associate I,Bachelor's Degree or Equivalent,4,102000,8160,10000,6000,NA
+5/26/2022 15:20:55,Bay Area,Pharmaceutical,NA,Start-up,50-200,Sr. Scientist 2,Ph.D or Equivalent,7,170000,29750,NA,NA,NA
+5/26/2022 19:21:20,Seattle,Life Science tools,NA,Public,200-1000,Manufacturing Research Associate I I,Bachelor's Degree or Equivalent,2,59500,"2,000","10,000",NA,NA
+5/26/2022 19:29:39,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,QA Analyst,Bachelor's Degree or Equivalent,2,105000,12%,25k,20000,10000
+5/26/2022 21:33:27,Bay Area,Pharmaceutical,Roche,Public,5000+,System support engineer,Bachelor's Degree or Equivalent,6,93000,4600,NA,NA,NA
+5/27/2022 18:44:46,Boston Metro Area,Pharmaceutical,Pfizer,Public,5000+,Scientist,Bachelor's Degree or Equivalent,6,94000,7000,NA,0,0
+5/28/2022 14:03:39,Houston,Pharmaceutical,NA,Public,5000+,Core Technician,Master's Degree or Equivalent,0,49400,NA,NA,NA,NA
+5/28/2022 16:38:43,Bay Area,Academia/Research,NA,Start-up,1-50,Research associate,Bachelor's Degree or Equivalent,1,63500,NA,NA,0,0
+5/28/2022 17:26:14,Boston Metro Area,Pharmaceutical,NA,Private,1-50,Senior Scientist,Master's Degree or Equivalent,19,143000,"20,000",NA,5000,NA
+5/28/2022 19:39:46,Research Triangle,Pharmaceutical,NA,Start-up,50-200,Sr Scientist,Ph.D or Equivalent,3,120000,12000,NA,NA,NA
+5/30/2022 10:21:24,San Diego,Pharmaceutical,NA,Public,5000+,Sr. Scientist,Ph.D or Equivalent,7,145000,25000,30000,NA,NA
+5/30/2022 22:54:41,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Manufacturing associate II,Bachelor's Degree or Equivalent,3,7550,5000,15000,NA,NA
+5/31/2022 2:22:29,California (Other),Pharmaceutical,NA,Start-up,50-200,Director,Ph.D or Equivalent,19,200000,40000,NA,10000,NA
+5/31/2022 4:21:29,Bay Area,Pharmaceutical,NA,Public,50-200,Research Associate II,Bachelor's Degree or Equivalent,4,102000,10200,2600 Options,NA,NA
+5/31/2022 8:49:06,Boston Metro Area,Cosmetics,Manus bio,Private,50-200,Scientist,Ph.D or Equivalent,0,103000,NA,25000,NA,3000
+5/31/2022 12:10:37,Bay Area,Pharmaceutical,NA,Start-up,50-200,Scientist II,Ph.D or Equivalent,3,132000,NA,NA,NA,6000
+5/31/2022 17:19:29,Houston,Academia/Research,NA,Start-up,50-200,Scientific Development Program Associate,Bachelor's Degree or Equivalent,1,65000,6800,73000,NA,NA
+5/31/2022 19:57:35,NYC Metro Area,Pharmaceutical,NA,Private,5000+,qa,Bachelor's Degree or Equivalent,6,110000,15000,NA,NA,NA
+5/31/2022 21:58:14,Canada,Academia/Research,McGill University,Academia/College/Universities,5000+,Research Technician,Associate’s Degree or Equivalent,3,46592,NA,NA,NA,NA
+6/1/2022 17:23:23,D.C. Metro Area,Pharmaceutical,NA,Public,1000-5000,Director,Bachelor's Degree or Equivalent,17,240000,50000,130000,NA,NA
+6/2/2022 12:52:28,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Senior Research Associate,Master's Degree or Equivalent,0,90000,9000,NA,NA,7500
+6/2/2022 14:45:04,Boston Metro Area,Pharmaceutical,NA,Start-up,1-50,Senior Scientist,Ph.D or Equivalent,4,150000,15%,NA,10000,NA
+6/2/2022 15:17:44,Southeastern US,bioplastics,NA,Start-up,200-1000,Bioprocesses Technician,High School or Equivalent,0,45697.6,NA,NA,NA,NA
+6/2/2022 23:06:50,Bay Area,Biotech,NA,Private,50-200,Sr. Research Associate,Bachelor's Degree or Equivalent,4,103000,8% bonus,NA,10000,NA
+6/3/2022 10:03:12,Bay Area,synbio,NA,Start-up,200-1000,Research Associate 1,Bachelor's Degree or Equivalent,3,78000,NA,NA,NA,NA
+6/3/2022 15:04:25,Boston Metro Area,Pharmaceutical,Resilience,Private,1000-5000,Associate Director,Ph.D or Equivalent,7,170000,17000,17000,NA,NA
+6/3/2022 15:23:43,Boston Metro Area,Pharmaceutical,NA,Public,50-200,"Associate Director, Scientific Communications",Ph.D or Equivalent,7,165000,"33,000",68970,5000,NA
+6/3/2022 21:52:38,Seattle,Academia/Research,NA,Public,200-1000,Intern,Master's Degree or Equivalent,2,60000,NA,NA,NA,NA
+6/4/2022 1:23:25,San Diego,Pharmaceutical,ImmunityBio,Public,NA,Purchasing Assistant,Bachelor's Degree or Equivalent,1,65000,5000,NA,NA,NA
+6/4/2022 17:37:29,San Diego,Pharmaceutical,NA,Public,1000-5000,Sr Scientist/Manager,Ph.D or Equivalent,6,145000,15%,NA,7500,NA
+6/5/2022 0:56:34,Boston Metro Area,Biotechnology,NA,Start-up,1-50,Sr. Scientist,Ph.D or Equivalent,6,160000,24000,50000,NA,NA
+6/5/2022 1:09:49,Bay Area,Animal Health,NA,Public,5000+,Scientist,Ph.D or Equivalent,0,120000,NA,NA,0,0
+6/5/2022 10:10:28,Bay Area,Pharmaceutical,NA,Private,50-200,Senior Scientist I,Bachelor's Degree or Equivalent,9,140000,16800,NA,NA,NA
+6/5/2022 15:36:36,Philadelphia Metro Area,Academia/Research,Century Therapeutics,Public,50-200,Research Associate,Bachelor's Degree or Equivalent,1,95000,4750,NA,NA,NA
+6/5/2022 23:04:55,Boston Metro Area,Biologics,NA,Public,200-1000,Associate scientist,Master's Degree or Equivalent,0,95000,9500,3000,3000,NA
+6/6/2022 14:26:25,Bay Area,Pharmaceutical,NA,Start-up,50-200,Senior Research Associate 1,Master's Degree or Equivalent,4,98000,9800,yes,0,0
+6/6/2022 14:34:05,United Kingdom,Sequencing/Genetic Analysis,NA,Public,5000+,Data Steward I,Bachelor's Degree or Equivalent,1,35700,1800,2500,NA,NA
+6/6/2022 20:10:17,United Kingdom,Academia/Research,NA,Academia/College/Universities,5000+,Research Associate,Ph.D or Equivalent,18,31400,NA,NA,NA,NA
+6/6/2022 22:00:11,Seattle,Pharmaceutical,Bristol Myers Squibb,Private,5000+,Senior research associate,Bachelor's Degree or Equivalent,1,85000,5000,NA,5000,NA
+6/6/2022 23:09:15,Boston Metro Area,Academia/Research,Dana farber Cancer institute,Academia/College/Universities,5000+,Research fellow,Ph.D or Equivalent,4,64000,NA,NA,NA,NA
+6/7/2022 16:11:47,Bay Area,Pharmaceutical,Genentech,Private,1000-5000,Scientist I,Ph.D or Equivalent,0,130000,NA,NA,NA,NA
+6/9/2022 16:33:42,Bay Area,Pharmaceutical,NA,Public,1000-5000,Quality Sr Associate,Bachelor's Degree or Equivalent,8,120000,15000,15000,NA,NA
+6/9/2022 18:45:47,Seattle,Pharmaceutical,BMS,Public,5000+,Scientist,Master's Degree or Equivalent,6,123000,12300,NA,NA,NA
+6/9/2022 22:25:31,NYC Metro Area,Pharmaceutical,NA,Public,5000+,Senior Scientist,Ph.D or Equivalent,6,130000,16900,NA,5000,25000
+6/9/2022 22:29:56,Midwest (Other),Academia/Research,NA,Private,5000+,Clinical lab tech,Bachelor's Degree or Equivalent,3,68500,NA,NA,NA,NA
+6/10/2022 13:02:01,California (Other),Pharmaceutical,NA,Public,50-200,Scientist II,Ph.D or Equivalent,6,135000,10000,NA,NA,NA
+6/11/2022 3:45:29,Bay Area,Pharmaceutical,NA,Public,1000-5000,Senior research associate,Master's Degree or Equivalent,6,115,5,NA,NA,NA
+6/11/2022 6:17:32,Canada,Academia/Research,NA,Academia/College/Universities,50-200,Lab Technician,Associate’s Degree or Equivalent,2,45000,NA,NA,NA,NA
+6/11/2022 10:33:29,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Scientist,Ph.D or Equivalent,0,110000,15%,NA,10000,NA
+6/11/2022 17:00:37,Boston Metro Area,Pharmaceutical,NA,Private,1000-5000,Associate Director,Ph.D or Equivalent,12,180000,36000,NA,20000,NA
+6/11/2022 17:13:59,Philadelphia Metro Area,Pharmaceutical,Catalent,Public,5000+,QA Inspector,Bachelor's Degree or Equivalent,0,50000,NA,NA,NA,NA
+6/11/2022 19:57:36,Bay Area,Pharmaceutical,NA,Public,200-1000,Research Associate III,Bachelor's Degree or Equivalent,3,99000,9900,1000,NA,NA
+6/13/2022 0:37:38,Denver Metro Area,Pharmaceutical,NA,Private,1-50,Senior Scientist,Ph.D or Equivalent,7,110000,11000,NA,NA,NA
+6/13/2022 19:00:08,D.C. Metro Area,Pharmaceutical,NA,Public,1000-5000,Manager,Bachelor's Degree or Equivalent,7,125000,75000,NA,NA,NA
+6/13/2022 20:43:10,Bay Area,Pharmaceutical,NA,Private,1-50,Senior Research Associate II,Bachelor's Degree or Equivalent,7,110000,NA,NA,2500,NA
+6/13/2022 23:36:32,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Scientist,Ph.D or Equivalent,3,104000,NA,NA,NA,NA
+6/14/2022 17:48:40,Boston Metro Area,Pharmaceutical,NA,Start-up,1-50,Principal Research Associate,Master's Degree or Equivalent,3,100000,3000,NA,5000,NA
+6/14/2022 20:49:10,Western Europe,Pharmaceutical,BioMarin,Public,1000-5000,Biotechnician,Bachelor's Degree or Equivalent,3,53000,Between 10-14%,NA,NA,NA
+6/16/2022 3:11:38,San Diego,Medical Devices,NA,Public,5000+,Senior Product Support Engineer,Master's Degree or Equivalent,12,108000,5000,NA,NA,NA
+6/16/2022 17:13:08,Remote,Pharmaceutical,Ergomed,Public,1000-5000,Project Manager,Master's Degree or Equivalent,7,150000,NA,NA,NA,NA
+6/17/2022 3:23:03,Seattle,Pharmaceutical,NA,Public,1000-5000,Director,Ph.D or Equivalent,11,200000,50000,25000,45000,50000
+6/18/2022 8:48:05,Boston Metro Area,Pharmaceutical,Alnylam,Private,1000-5000,Associate Scientist II,Bachelor's Degree or Equivalent,1,78000,7800,NA,10000,NA
+6/18/2022 17:18:05,Boston Metro Area,Pharmaceutical,NA,Start-up,1-50,Sr. Director,Ph.D or Equivalent,15,250000,50000,NA,50000,NA
+6/18/2022 22:46:39,Boston Metro Area,Pharmaceutical,NA,Start-up,50-200,Research Associate I,Bachelor's Degree or Equivalent,0,70000,7000,NA,NA,NA
+6/20/2022 15:41:42,Bay Area,Pharmaceutical,VIR,Public,200-1000,Scientist I,Ph.D or Equivalent,0,130000,16250,5750,NA,40000
+6/21/2022 16:29:29,San Diego,synthetic biology,NA,Public,200-1000,Field Application Scientist,Master's Degree or Equivalent,7,110000,"27,750",stock options,0,NA
+6/21/2022 20:37:51,Chicago,Medical Devices,NA,Private,200-1000,Biomedical Engineer 1,Bachelor's Degree or Equivalent,3,70000,NA,NA,NA,NA
+6/21/2022 21:18:17,Boston Metro Area,Medical Devices,Qiagen,Public,5000+,Lab Technician,Bachelor's Degree or Equivalent,1,43680,NA,NA,0,0
+6/21/2022 23:10:53,Boston Metro Area,Pharmaceutical,NA,Start-up,50-200,Research Associate I,Bachelor's Degree or Equivalent,2,77000,3850,NA,NA,NA
+6/23/2022 22:16:47,Bay Area,Pharmaceutical,NA,Private,200-1000,Scientist,Bachelor's Degree or Equivalent,17,133000,20000,5000,NA,NA
+6/24/2022 19:55:29,NYC Metro Area,Pharmaceutical,NA,Start-up,1-50,Director,Bachelor's Degree or Equivalent,7,180000,NA,NA,NA,NA
+6/25/2022 7:04:10,Boston Metro Area,Pharmaceutical,Verve therapeutics,Public,50-200,Senior research associate,Master's Degree or Equivalent,2,88000,11000,16000,0,NA
+6/25/2022 19:18:48,Bay Area,Pharmaceutical,NA,Start-up,1-50,Scientist,Ph.D or Equivalent,0,115000,NA,NA,10000,NA
+6/25/2022 21:15:52,D.C. Metro Area,Academia/Research,NCBI which is under NLM-NIH-HHS,Public,200-1000,Data Engineer,Bachelor's Degree or Equivalent,0,100000,NA,NA,0,0
+6/25/2022 23:23:47,San Diego,Medical Devices,NA,Start-up,1-50,Postdoctoral Scientist,Ph.D or Equivalent,5,75000,NA,7500,NA,1500
+6/26/2022 8:25:32,United Kingdom,Pharmaceutical,Mogrify,Private,50-200,Scientist,Ph.D or Equivalent,5,41200,NA,NA,NA,NA
+6/26/2022 11:48:36,NYC Metro Area,Pharmaceutical,Cellectis,Public,200-1000,Research Associate I,Bachelor's Degree or Equivalent,1,75000,10%,NA,NA,NA
+6/27/2022 9:34:01,United Kingdom,Academia/Research,University of Oxford,Academia/College/Universities,5000+,Research Assistant,Master's Degree or Equivalent,2,31400,NA,NA,NA,NA
+6/28/2022 7:53:43,Boston Metro Area,Academia/Research,NA,Subsidiary,200-1000,Scientist II,Ph.D or Equivalent,0,120000,15%,NA,10000,10000
+6/28/2022 12:31:09,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Principal Scientist,Ph.D or Equivalent,15,170000,NA,10000,10000,NA
+6/28/2022 13:39:31,Boston Metro Area,Pharmaceutical,Vertex,Private,1000-5000,Research Associate,Bachelor's Degree or Equivalent,0,83200,NA,NA,0,0
+6/28/2022 21:58:29,Research Triangle,Pharmaceutical,NA,Public,50-200,Research Associate,Bachelor's Degree or Equivalent,6,110000,11000,10000,0,0
+6/29/2022 22:52:39,NYC Metro Area,Pharmaceutical,NA,Public,5000+,Data analyst (senior manager indep contributor),Master's Degree or Equivalent,8,150000,27000,17000,5000,NA
+6/30/2022 22:28:55,Bay Area,Energy,Sandia National Laboratories,Government,1000-5000,Intern,High School or Equivalent,1,72800,NA,NA,0,0
+7/1/2022 15:42:42,San Diego,Medical Devices,NA,Public,NA,Scientist,Ph.D or Equivalent,0,110000,NA,10000,NA,5000
+7/1/2022 19:03:20,Boston Metro Area,Pharmaceutical,Deciphera,Public,200-1000,Clinical Trial Associate,Bachelor's Degree or Equivalent,3,100000,"10,000","8,000",NA,NA
+7/1/2022 23:00:01,Bay Area,Medical Devices,NA,Public,1000-5000,Manager,Ph.D or Equivalent,5,180000,15000,80000,15000,NA
+7/2/2022 1:02:42,Seattle,Pharmaceutical,NA,Subsidiary,200-1000,Quality assurance,Bachelor's Degree or Equivalent,3,60500,7000,NA,NA,NA
+7/4/2022 8:41:19,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Sr director,Bachelor's Degree or Equivalent,10,300000,100000,100000,NA,NA
+7/4/2022 12:27:23,San Diego,Pharmaceutical,NA,Private,5000+,Senior Principal Scientist,Ph.D or Equivalent,11,184000,20%,15%,NA,NA
+7/6/2022 12:45:35,Houston,Pharmaceutical,Lonza,Public,200-1000,Research Associate,Bachelor's Degree or Equivalent,4,78000,5000,NA,NA,NA
+7/6/2022 22:48:26,Bay Area,Pharmaceutical,NA,Public,50-200,Sr. Scientist,Bachelor's Degree or Equivalent,6,117000,11700,NA,NA,NA
+7/8/2022 14:01:53,California (Other),Pharmaceutical,NA,Private,200-1000,Quality Assurance Specialist II,Bachelor's Degree or Equivalent,11,91734,9173,NA,NA,NA
+7/8/2022 17:24:28,Bay Area,Pharmaceutical,NA,Public,50-200,Research Associate II,Master's Degree or Equivalent,3,77000,3850,NA,NA,NA
+7/9/2022 2:26:21,San Diego,Academia/Research,NA,Start-up,1-50,Scientist I,Ph.D or Equivalent,2,120000,20000,NA,5000,NA
+7/9/2022 19:10:33,Research Triangle,Pharmaceutical,Merck,Public,5000+,Quality Specialist II,Bachelor's Degree or Equivalent,4,80000,NA,NA,NA,NA
+7/9/2022 19:11:12,Research Triangle,Pharmaceutical,Biogen,Public,1000-5000,Quality Associate II,Bachelor's Degree or Equivalent,4,61000,NA,NA,NA,NA
+7/10/2022 17:02:20,Philadelphia Metro Area,Pharmaceutical,NA,Private,5000+,Sr. Engineer,Bachelor's Degree or Equivalent,10,115000,15000,NA,NA,25000
+7/10/2022 19:15:58,Canada,Pharmaceutical,NA,Private,1000-5000,Business development manager,Master's Degree or Equivalent,8,120000,NA,NA,NA,NA
+7/10/2022 19:25:06,California (Other),Pharmaceutical,Amgen,Public,5000+,Scientist,Ph.D or Equivalent,3,125000,18000,10000,NA,NA
+7/11/2022 21:53:08,Bay Area,Medical Devices,NA,Private,1-50,Research Associate 1,Bachelor's Degree or Equivalent,3,80000,NA,NA,NA,NA
+7/12/2022 22:27:26,Research Triangle,Pharmaceutical,BioAgilytix,Private,1000-5000,Accessioning Supervisor,High School or Equivalent,8,90000,"$13,500",NA,NA,NA
+7/13/2022 1:20:38,Denver Metro Area,Pharmaceutical,NA,Public,50-200,Associate Director,Ph.D or Equivalent,14,185000,28000,NA,NA,NA
+7/14/2022 22:11:48,San Diego,Pharmaceutical,Ionis,Public,200-1000,Senior Scientist,Ph.D or Equivalent,5,121000,15000,10000,7500,NA
+7/14/2022 23:26:46,Boston Metro Area,Pharmaceutical,Bristol Myers Squibb,Private,5000+,"Specialist, Assistant Manufacturing Engineer",Bachelor's Degree or Equivalent,1,83230,2469,NA,NA,NA
+7/15/2022 0:06:28,Seattle,Cell therapy,NA,Public,1000-5000,Manager Quality Assurance,Master's Degree or Equivalent,20,122000,14000,15000,25000,45000
+7/15/2022 14:19:15,California (Other),Pharmaceutical,NA,Subsidiary,1000-5000,QA Specialist I,Bachelor's Degree or Equivalent,4,95000,7000,NA,8000,20000
+7/15/2022 18:45:36,Boston Metro Area,Pharmaceutical,NA,Private,50-200,St. Scientist,Ph.D or Equivalent,4,145000,15%,NA,NA,NA
+7/16/2022 1:33:47,Bay Area,Pharmaceutical,NA,Start-up,50-200,Facilities technician,Associate’s Degree or Equivalent,1,70000,NA,NA,NA,NA
+7/16/2022 1:34:02,Bay Area,Pharmaceutical,NA,Start-up,50-200,Facilities technician,Associate’s Degree or Equivalent,1,70000,NA,NA,NA,NA
+7/18/2022 17:09:21,United Kingdom,Pharmaceutical,NA,Private,1-50,Senior Scientist,Ph.D or Equivalent,3,45000,NA,NA,NA,NA
+7/18/2022 17:33:49,Bay Area,Academia/Research,NA,Public,50-200,Senior research associate,Master's Degree or Equivalent,6,94000,6000,NA,NA,NA
+7/18/2022 21:00:40,Indianapolis,Pharmaceutical,Eli Lilly and Company,Public,5000+,Principal Scientist,Master's Degree or Equivalent,5,95000,10000,NA,NA,NA
+7/18/2022 21:13:46,Houston,Pharmaceutical,NA,Public,200-1000,Associates Principal Scientist,Ph.D or Equivalent,6,130000,15000,NA,NA,NA
+7/18/2022 21:18:47,Boston Metro Area,Pharmaceutical,NA,Public,200-1000,Scientist II,Ph.D or Equivalent,7,130000,15%,NA,NA,NA
+7/18/2022 21:42:40,Seattle,Pharmaceutical,Just - Evotec,Subsidiary,50-200,Process Engineer 1,Bachelor's Degree or Equivalent,0,70000,3500,NA,NA,7500
+7/18/2022 23:15:06,NYC Metro Area,Medical Devices,NA,Public,1000-5000,Sr. Scientist,Ph.D or Equivalent,4,110000,10000,?,NA,NA
+7/19/2022 8:07:59,Western Europe,Pharmaceutical,NA,Start-up,1-50,Scientist,Master's Degree or Equivalent,4,59000,NA,NA,NA,NA
+7/19/2022 11:01:32,Boston Metro Area,Medical Devices,NA,Start-up,50-200,Research Associate II,Bachelor's Degree or Equivalent,1,65000,NA,NA,1000,0
+7/19/2022 13:11:00,Austin,Pharmaceutical,Xbiotech,Public,50-200,QC Analyst,Bachelor's Degree or Equivalent,2,51000,NA,NA,NA,NA
+7/19/2022 15:44:04,Research Triangle,Pharmaceutical,BioAgilytix,Private,1000-5000,Analyst II,Master's Degree or Equivalent,1,62400,10%,NA,NA,NA
+7/19/2022 22:43:58,Boston Metro Area,Pharmaceutical,NA,Start-up,1-50,Director,Ph.D or Equivalent,15,210000,42000,NA,NA,NA
+7/19/2022 23:39:31,Boston Metro Area,Pharmaceutical,NA,Public,200-1000,Scientist II,Ph.D or Equivalent,0,125000,15%,NA,20000,10000
+7/20/2022 15:38:05,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Associate Principal Scientist,Ph.D or Equivalent,10,135000,20%,"$10,000",NA,10000
+7/21/2022 19:47:39,NYC Metro Area,Pharmaceutical,Preclinical startup - CNS & rare disease,Public,1-50,"Senior Director, Corporate Communications",Bachelor's Degree or Equivalent,14,235000,50000,NA,20000,NA
+7/22/2022 19:24:14,Bay Area,Pharmaceutical,NA,Public,50-200,Research Associate II,Bachelor's Degree or Equivalent,2,85000,8.5k,NA,7500,NA
+7/23/2022 19:54:30,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Associate Scientist,Bachelor's Degree or Equivalent,6,101000,12620,NA,0,0
+7/25/2022 16:33:27,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Senior Research Associate,Bachelor's Degree or Equivalent,3,85000,8500,NA,NA,NA
+7/26/2022 22:11:14,Research Triangle,Pharmaceutical,Xilis,Start-up,50-200,Lab Technologist,Master's Degree or Equivalent,0,46400,NA,1000,NA,NA
+8/8/2022 15:22:23,Boston Metro Area,diagnostics,NA,Public,1000-5000,research associate,Bachelor's Degree or Equivalent,4,73000,7%,NA,NA,NA
+8/8/2022 16:43:49,San Diego,Pharmaceutical,NA,Public,200-1000,Associate Director,Ph.D or Equivalent,15,185000,41625,20000,NA,NA
+8/8/2022 18:56:17,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Research Associate I,Bachelor's Degree or Equivalent,0,65000,5%,NA,5000,NA
+8/8/2022 20:00:58,Remote,Pharmaceutical,NA,Private,50-200,Validation Engineering Manager,Bachelor's Degree or Equivalent,4,110000,NA,NA,0,0
+8/8/2022 21:02:39,Boston Metro Area,Pharmaceutical,NA,Start-up,1000-5000,Process engineer II,Bachelor's Degree or Equivalent,5,99750,NA,NA,NA,NA
+8/9/2022 3:04:46,Canada,Pharmaceutical,NA,Public,50-200,Research Associate II,Bachelor's Degree or Equivalent,3,87000,9000,NA,NA,NA
+8/10/2022 14:31:17,NYC Metro Area,Pharmaceutical,Bristol Myer Squibb,Public,5000+,Manufacturing Associate,Bachelor's Degree or Equivalent,0,70000,NA,NA,NA,NA
+8/11/2022 18:43:05,Bay Area,Biotech,NA,Public,50-200,Research Associate I,Bachelor's Degree or Equivalent,0,80000,NA,NA,NA,NA
+8/12/2022 8:13:28,Boston Metro Area,Pharmaceutical,NA,Private,5000+,Manufacturing Supervisor,Master's Degree or Equivalent,5,10000,8000,NA,0,0
+8/13/2022 10:14:10,Boston Metro Area,Pharmaceutical,NA,Private,1-50,Clinical Research Project Lead,Bachelor's Degree or Equivalent,2,90000,NA,NA,NA,NA
+9/10/2022 15:53:39,Boston Metro Area,Pharmaceutical,NA,Public,200-1000,"Associate Director, Process Development",Ph.D or Equivalent,7,185000,35000,10000,35000,0
+9/13/2022 22:17:39,Philadelphia Metro Area,Pharmaceutical,NA,Public,5000+,Associate Director,Ph.D or Equivalent,7,157000,28260,28260,40000,10000
+9/14/2022 2:01:26,Bay Area,Pharmaceutical,NA,Private,1-50,Scientist,Ph.D or Equivalent,0,130000,NA,6000,NA,NA
+9/15/2022 3:07:09,Western Europe,Pharmaceutical,NA,Public,5000+,Associate Director,Master's Degree or Equivalent,9,180000,50000,16000,5000,NA
+9/15/2022 9:11:18,Boston Metro Area,Academia/Research,NA,Academia/College/Universities,5000+,Postdoc,Ph.D or Equivalent,1,54000,NA,NA,NA,2500
+9/15/2022 11:02:15,Boston Metro Area,Pharmaceutical,NA,Public,1-50,Principal Scientist,Ph.D or Equivalent,4,160000,24000,10000,0,0
+9/15/2022 20:41:23,Boston Metro Area,Pharmaceutical,NA,Private,200-1000,Program Manager,Ph.D or Equivalent,3,140000,NA,NA,NA,NA
+9/16/2022 3:48:52,California (Other),Biotech,Zymo Research,Private,50-200,Research Associate I,Bachelor's Degree or Equivalent,0,62400,NA,NA,NA,NA
+9/16/2022 8:23:17,Kansas City Metro Area,Pharmaceutical,Catalent,Public,5000+,Senior Associate Scientist,Bachelor's Degree or Equivalent,2,64500,NA,NA,NA,NA
+9/16/2022 9:15:46,Seattle,Pharmaceutical,NA,Subsidiary,50-200,Senior Research Associate,Master's Degree or Equivalent,5,85000,10000,NA,10000,NA
+9/16/2022 10:22:25,Boston Metro Area,Academia/Research,NA,Start-up,50-200,Senior Scientist,Ph.D or Equivalent,8,154000,25000,NA,NA,NA
+9/16/2022 10:59:11,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Sr. Scientist,Ph.D or Equivalent,5,150000,15%,NA,10000,NA
+9/16/2022 12:46:15,Research Triangle,Medical Devices,NA,Private,1-50,Product Manager,Ph.D or Equivalent,4,110000,20000,NA,NA,NA
+9/16/2022 12:54:16,Bay Area,Pharmaceutical,NA,Private,5000+,Sr. Scientist,Ph.D or Equivalent,5,185000,32000,30000,10000,NA
+9/16/2022 12:55:46,Bay Area,Pharmaceutical,NA,Public,50-200,Principal Scientist,Ph.D or Equivalent,5,210000,40000,25000,12000,NA
+9/16/2022 12:57:27,Boston Metro Area,Pharmaceutical,NA,Private,1-50,Sr. Scientist,Ph.D or Equivalent,3,165000,NA,NA,NA,NA
+9/16/2022 12:58:35,Bay Area,Pharmaceutical,NA,Private,1-50,Sr. Scientist,Ph.D or Equivalent,3,185000,NA,30000,10000,NA
+9/16/2022 12:59:27,Bay Area,Pharmaceutical,NA,Public,1000-5000,Sr. Scientist,Ph.D or Equivalent,4,167000,NA,12000,2000,NA
+9/16/2022 16:29:00,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Research Associate Ii,M.D./PharmD/D.D.S. or Equivalent,5,90000,9000,1500,NA,NA
+9/16/2022 17:32:17,San Diego,Pharmaceutical,NA,Start-up,50-200,Director,Ph.D or Equivalent,17,200000,40000,5000,10000,NA
+9/16/2022 18:24:43,California (Other),Pharmaceutical,NA,Subsidiary,1000-5000,QC Microbiology Tech,Bachelor's Degree or Equivalent,2,52000,NA,NA,8000,NA
+9/16/2022 18:53:14,Research Triangle,Pharmaceutical,NA,Private,200-1000,Scientist II,Ph.D or Equivalent,2,115000,11500,NA,NA,NA
+9/16/2022 19:28:38,Boston Metro Area,molecular bio,NA,Private,200-1000,Scientist I,Master's Degree or Equivalent,0,70,14,NA,NA,NA
+9/16/2022 20:50:00,Remote,Pharmaceutical,NA,Public,5000+,Sr. Scientist,Bachelor's Degree or Equivalent,5,112000,14560,NA,NA,NA
+9/16/2022 22:47:20,California (Other),Pharmaceutical,ImmunityBio,Public,200-1000,"Associate, Document Control",Bachelor's Degree or Equivalent,3,67000,NA,NA,0,0
+9/16/2022 23:04:12,Research Triangle,Academia/Research,United Therapeatics,Private,50-200,Bioprocess Technician,Bachelor's Degree or Equivalent,1,62500,12000,NA,NA,NA
+9/16/2022 23:14:04,San Diego,Medical Devices,NA,Subsidiary,200-1000,Scientist III,Ph.D or Equivalent,8,123600,NA,NA,5000,NA
+9/16/2022 23:34:23,San Diego,Pharmaceutical,NA,Public,200-1000,Sr. Scientist,Ph.D or Equivalent,6,135000,12%,15000,NA,NA
+9/16/2022 23:42:12,Bay Area,Pharmaceutical,NA,Start-up,1-50,Scientist II,Ph.D or Equivalent,2,124000,TBD,TBD,1500,0
+9/17/2022 1:43:27,Bay Area,Pharmaceutical,NA,Start-up,1-50,Scientist I,Bachelor's Degree or Equivalent,8,147500,19000,NA,12000,NA
+9/18/2022 11:02:20,Boston Metro Area,Pharmaceutical,NA,Start-up,50-200,Principal scientist,Ph.D or Equivalent,6,160000,15%,NA,13000,NA
+9/18/2022 22:05:59,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Director,Ph.D or Equivalent,14,220000,44000,15000,25000,NA
+9/19/2022 12:06:33,Canada,Pharmaceutical,NA,Start-up,50-200,Bioinformatics Engineer,Master's Degree or Equivalent,3,128000,10000,NA,NA,NA
+9/19/2022 16:47:14,Bay Area,Pharmaceutical,NA,Public,200-1000,Field Application Scientist (FAS),Ph.D or Equivalent,1,110000,20000,7500,5000,NA
+9/19/2022 21:48:32,NYC Metro Area,Pharmaceutical,NA,Public,1000-5000,Group Leader - Director,Ph.D or Equivalent,18,225000,56000,40000,NA,10000
+9/20/2022 2:05:45,Boston Metro Area,Pharmaceutical,GlaxoSmithKline,Public,5000+,Computational Biologist,Ph.D or Equivalent,6,150000,18000,NA,10000,5000
+9/20/2022 2:09:15,Seattle,Biotech,NA,Public,50-200,Associate Director,Master's Degree or Equivalent,20,210000,17%,NA,NA,NA
+9/25/2022 1:56:08,NYC Metro Area,Pharmaceutical,Bristol Myers Squibb,Public,5000+,"Associate Scientist, QC Flow Cytometry",Bachelor's Degree or Equivalent,1,80000,6400,7500,10000,0
+9/29/2022 21:16:24,Boston Metro Area,Pharmaceutical,Alloy,Start-up,50-200,Ops Associate,Master's Degree or Equivalent,1,87500,NA,NA,NA,NA
+9/30/2022 0:01:26,Bay Area,Pharmaceutical,NA,Public,5000+,Scientist,Ph.D or Equivalent,0,160000,24000,24000,60000,120000
+9/30/2022 0:13:21,Bay Area,Agriculture/Food,NA,Private,50-200,Research Associate,Master's Degree or Equivalent,2,72000,NA,60000,NA,NA
+10/1/2022 16:15:41,Boston Metro Area,Academia/Research,BIDMC,Academia/College/Universities,1-50,RA II,Bachelor's Degree or Equivalent,1,36000,NA,NA,NA,NA
+10/1/2022 17:30:41,Kansas City Metro Area,Pharmaceutical,NA,Private,5000+,Project Manager,Bachelor's Degree or Equivalent,3,70000,5% target,NA,NA,NA
+10/1/2022 17:34:17,Boston Metro Area,Pharmaceutical,NA,Public,5000+,External Manufacturing Senior Manager,Master's Degree or Equivalent,9,160000,30000,35000,0,0
+10/1/2022 17:48:41,Portland,Synbio,Amyris,Public,1000-5000,Software Engineer II,Bachelor's Degree or Equivalent,5,120000,NA,10000,12000,NA
+10/1/2022 18:23:28,Bay Area,Biotech,NA,Start-up,50-200,Scientist II,Ph.D or Equivalent,1,124000,NA,NA,NA,2500
+10/1/2022 19:00:50,Austin,Pharmaceutical,NA,Public,50-200,Associate Scientist,Bachelor's Degree or Equivalent,3,65000,3250,NA,NA,NA
+10/1/2022 19:07:55,San Diego,Medical Devices,Quidel,Public,1000-5000,Research Associate II,Bachelor's Degree or Equivalent,2,61000,NA,NA,NA,NA
+10/1/2022 20:07:08,San Diego,Pharmaceutical,NA,Private,1-50,Principal scientist,Ph.D or Equivalent,4,150000,NA,NA,NA,NA
+10/1/2022 20:31:19,Boston Metro Area,Pharmaceutical,NA,Public,50-200,Senior Scientist,Ph.D or Equivalent,2,145000,25000,NA,5000,5000
+10/1/2022 20:36:09,Bay Area,Diagnostics,NA,Start-up,200-1000,Principal Scientist,Ph.D or Equivalent,5,140000,NA,30000,NA,2000
+10/1/2022 21:23:20,Bay Area,Academia/Research,NA,Private,50-200,Scientist,Ph.D or Equivalent,0,115000,14950,NA,NA,2500
+10/1/2022 22:04:52,Bay Area,Academia/Research,NA,Public,1000-5000,Senior Research Associate 1,Master's Degree or Equivalent,2,95000,5700,10000,NA,7000
+10/1/2022 22:37:07,D.C. Metro Area,Pharmaceutical,Catalent,Public,5000+,Manufacturing Associate II,Bachelor's Degree or Equivalent,2,73000,3500,NA,NA,5000
+10/1/2022 23:17:27,Boston Metro Area,Pharmaceutical,NA,Public,200-1000,Computational scientist,Ph.D or Equivalent,1,143000,17000,5000,15000,NA
+10/2/2022 0:17:07,Seattle,Pharmaceutical,NA,Public,5000+,MSAT Engineer 2,Bachelor's Degree or Equivalent,4,95000,10%,7500,0,0
+10/2/2022 1:20:08,California (Other),Medical Devices,Cepheid,Subsidiary,1000-5000,Scientist,Bachelor's Degree or Equivalent,7,100000,"10,000",NA,10000,8000
+10/2/2022 1:31:46,D.C. Metro Area,Pharmaceutical,NA,Private,1-50,Scientist,Ph.D or Equivalent,1,72000,NA,NA,NA,NA
+10/2/2022 2:47:32,Bay Area,Academia/Research,Chan Zuckerberg Biohub,Private,200-1000,Research Associate I,Bachelor's Degree or Equivalent,2,76000,Annual 3% bonuses with performance multipliers.,NA,0,2000
+10/2/2022 4:02:21,NYC Metro Area,Pharmaceutical,Abbvie,Public,5000+,Project Engineer,Master's Degree or Equivalent,4,77000,NA,NA,NA,NA
+10/2/2022 6:53:29,Boston Metro Area,Biosynthesis,NA,Start-up,50-200,Scientist,Ph.D or Equivalent,0,100000,NA,NA,NA,5000
+10/2/2022 9:23:21,San Diego,Medical Devices,NA,Private,200-1000,Principal Scientist,Ph.D or Equivalent,6,264000,52000,175000,0,0
+10/2/2022 9:44:04,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Scientist,Bachelor's Degree or Equivalent,10,115000,15000,14000,NA,15000
+10/2/2022 14:38:08,Research Triangle,Pharmaceutical,CSL Seqirus,Public,1000-5000,Scientific Associate II,Bachelor's Degree or Equivalent,6,93000,9300,NA,NA,NA
+10/2/2022 16:27:59,Bay Area,Pharmaceutical,NA,Private,200-1000,Associate Director,Ph.D or Equivalent,12,197000,35000,100000,NA,NA
+10/3/2022 22:10:51,Canada,Pharmaceutical,NA,Private,200-1000,Scientist I,Ph.D or Equivalent,0,110000,12000-20000,NA,NA,NA
+10/4/2022 11:52:10,Bay Area,Pharmaceutical,NA,Public,50-200,Associate Engineer II,Bachelor's Degree or Equivalent,4,110000,NA,NA,0,0
+10/4/2022 21:06:57,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Principal Scientist,Ph.D or Equivalent,6,175000,32000,30000,15000,10000
+10/5/2022 20:27:27,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Assoc Dir,Master's Degree or Equivalent,11,170,25k,25k - 100k,NA,NA
+10/6/2022 0:16:33,Bay Area,Pharmaceutical,Merck,Public,5000+,Senior scientist 1,Ph.D or Equivalent,1,143000,NA,NA,NA,NA
+10/6/2022 0:16:43,Bay Area,Pharmaceutical,Merck,Public,5000+,Senior scientist 1,Ph.D or Equivalent,1,143000,NA,NA,NA,NA
+10/6/2022 8:00:26,Boston Metro Area,Pharmaceutical,NA,Start-up,1-50,Scientist I,Bachelor's Degree or Equivalent,8,120000,10%,NA,NA,NA
+10/8/2022 14:38:17,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Corp Dev Analyst,Master's Degree or Equivalent,3,95000,NA,NA,NA,5000
+10/9/2022 1:27:22,Bay Area,Medical Devices,NA,Public,200-1000,Vp,Ph.D or Equivalent,25,360000,60000,NA,NA,NA
+10/9/2022 1:31:28,San Diego,Pharmaceutical,NA,Public,5000+,Sr. Scientist I,Ph.D or Equivalent,6,180000,20% (0-200%),NA,90000,NA
+10/10/2022 17:33:09,Boston Metro Area,Pharmaceutical,NA,Private,50-200,Associate Scientist,Bachelor's Degree or Equivalent,5,110000,11000,NA,NA,15000
+10/16/2022 20:58:41,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Associate Director,Ph.D or Equivalent,6,161000,16%,"50,000",10000,NA
+10/16/2022 21:24:10,Boston Metro Area,Pharmaceutical,NA,Public,200-1000,Sr Clinical Research Coordinator,Bachelor's Degree or Equivalent,3,87000,7000,NA,NA,NA
+10/16/2022 21:40:34,Bay Area,Pharmaceutical,Genentech,Private,5000+,Senior Scientific Researcher,Bachelor's Degree or Equivalent,5,160000,16000,NA,NA,NA
+10/16/2022 22:28:50,San Diego,Medical Devices,Illumina,Public,5000+,Scientist II,Bachelor's Degree or Equivalent,8,85000,6000,NA,NA,NA
+10/16/2022 22:32:27,Boston Metro Area,Pharmaceutical,NA,Start-up,50-200,Senior Research Associate,Master's Degree or Equivalent,5,90000,9000,6000,NA,NA
+10/16/2022 22:32:42,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Sr. Manager,Master's Degree or Equivalent,4,185000,NA,NA,NA,NA
+10/17/2022 0:45:48,Houston,Pharmaceutical,NA,Public,5000+,Process Engineer,Bachelor's Degree or Equivalent,3,100000,NA,NA,NA,NA
+10/17/2022 7:13:35,NYC Metro Area,Pharmaceutical,BMS,Public,5000+,Associate Director,Ph.D or Equivalent,21,192000,36000,22500,NA,NA
+10/17/2022 8:04:38,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Senior scientist,Ph.D or Equivalent,0,120000,8%,NA,NA,NA
+10/17/2022 9:48:11,Boston Metro Area,Pharmaceutical,Alnylam,Public,1000-5000,Sr. Specialist,Master's Degree or Equivalent,6,120000,15000,"10,000",NA,NA
+10/17/2022 11:22:29,Boston Metro Area,Pharmaceutical,NA,Start-up,1-50,Associate Scientist,Bachelor's Degree or Equivalent,2,78000,6240,NA,10000,NA
+10/17/2022 12:05:51,Boston Metro Area,Pharmaceutical,Pfizer,Public,5000+,Senior Associate Scientist,Bachelor's Degree or Equivalent,3,84000,5000,NA,5000,NA
+10/17/2022 12:37:51,Midwest (Other),Academia/Research,NA,Academia/College/Universities,5000+,Research assistant,Bachelor's Degree or Equivalent,10,60000,NA,NA,NA,NA
+10/17/2022 13:37:14,Midwest (Other),Pharmaceutical,PPD,Public,5000+,Senior Research Scientist,Ph.D or Equivalent,6,103000,NA,NA,NA,NA
+10/17/2022 13:54:09,California (Other),Pharmaceutical,NA,Public,5000+,Research Associate 111,Bachelor's Degree or Equivalent,4,102000,NA,NA,NA,NA
+10/17/2022 14:01:26,Philadelphia Metro Area,Pharmaceutical,NA,Private,5000+,Scientist,Bachelor's Degree or Equivalent,6,88588,6000,NA,NA,NA
+10/17/2022 16:30:30,Boston Metro Area,Pharmaceutical,NA,Public,1000-5000,Senior Scientist,Ph.D or Equivalent,3,140000,21000,10000,0,0
+10/17/2022 23:57:05,California (Other),Academia/Research,Hospital,Academia/College/Universities,1-50,Clinical research coordinator,Bachelor's Degree or Equivalent,2,75000,NA,NA,NA,NA
+10/18/2022 6:23:34,Boston Metro Area,Academia/Research,NA,Public,200-1000,Associate Director,Ph.D or Equivalent,17,160000,NA,NA,NA,9000
+10/18/2022 20:13:57,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Sr. Scientist,Ph.D or Equivalent,8,130000,20000,20000,NA,NA
+10/19/2022 18:15:01,Salt Lake City,Academia/Research,NA,Start-up,1-50,Research Associate,Bachelor's Degree or Equivalent,3,53000,NA,NA,1000,NA
+10/20/2022 22:04:27,Kansas City Metro Area,Agriculture/Food,NewLeaf,Start-up,50-200,Research Associate,Bachelor's Degree or Equivalent,1,56000,8400,NA,0,2500
+10/21/2022 6:19:13,Boston Metro Area,Pharmaceutical,Bristol Myers Squibb (contractor via Spectraforce Technologies),Public,5000+,Field QA Specialist,Bachelor's Degree or Equivalent,2,120000,NA,NA,0,0
+10/21/2022 15:18:42,NYC Metro Area,Pharmaceutical,NA,Public,1000-5000,Research Scientist,Master's Degree or Equivalent,2,99000,10%-15%,25000,10000,NA
+10/21/2022 15:19:09,Canada,Pharmaceutical,Phyton Biotech,Private,50-200,Chemical Operations Technologist I,Bachelor's Degree or Equivalent,0,52500,NA,NA,NA,NA
+10/21/2022 21:08:55,Seattle,Pharmaceutical,NA,Private,200-1000,Scientist I,Ph.D or Equivalent,1,80000,NA,NA,6000,NA
+10/22/2022 0:25:13,Research Triangle,Pharmaceutical,NA,Public,5000+,Engineer II,Bachelor's Degree or Equivalent,2,80000,8000,3000,NA,NA
+10/22/2022 3:39:45,Bay Area,Animal Health,NA,Public,5000+,scientist,Ph.D or Equivalent,0,100000,0-8%,NA,NA,NA
+10/22/2022 9:02:06,Seattle,Pharmaceutical,NA,Private,1-50,RandD engineer 2,Master's Degree or Equivalent,2,90000,NA,NA,NA,NA
+10/25/2022 0:33:15,Bay Area,Pharmaceutical,NA,Start-up,1-50,Sr Director,Ph.D or Equivalent,12,250000,56000,NA,NA,NA
+10/27/2022 10:44:19,Philadelphia Metro Area,RNA,NA,Start-up,1-50,Corporate Operations Manager,Master's Degree or Equivalent,4,70000,10%,NA,NA,NA
+10/27/2022 14:42:10,Boston Metro Area,Pharmaceutical,NA,Public,5000+,Senior manager,Bachelor's Degree or Equivalent,7,140000,16%,NA,NA,NA
+10/30/2022 3:09:38,San Diego,Pharmaceutical,NA,Private,200-1000,CQV Engineer II,Bachelor's Degree or Equivalent,4,110000,10%,NA,NA,10000
