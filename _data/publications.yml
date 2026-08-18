@@ -1,3 +1,21 @@
+- author: R. M. Cox, O. Papoulas, S. Shril, C. Lee, T. P. Gardner, Z. T. Ansari, A. Battenhouse, M. Lee, K. Drew, C. M. McWhite, D. Yang, J. C. Leggere, D. Durand, F. Hildebrandt, J. B. Wallingford, E. M. Marcotte 
+  year: 2026 
+  title: A protein interactome for the last eukaryotic common ancestor illuminates the biochemical basis of modern genetic diseases.
+  ref: "Cell Genom. 6(6), 101254, 2026"
+  doi: 10.1016/j.xgen.2026.101254
+
+- author: R. M. Cox, Z. T. Ansari, C. D. Johnson, E. M Marcotte, A. D. Ellington, S. Bhadra
+  year: 2026
+  title: Agnostic material classification using differential de Bruijn graphs of DNA imprints.
+  ref: "bioRxiv 2026.06. 23.733838, 2026"
+  doi: 10.64898/2026.06.23.733838
+
+- author: V. Dang, B. Voigt, G. Hoogerbrugge, M. Lee, R. M. Cox, O. Papoulas, C. D. McWhite, R. Pradeep, J. C. Leggere, B. A. Neely, R. S. Grey, E. M. Marcotte
+  year: 2026
+  title: A cross-vertebrate brain protein interaction map identifies conserved neural and non-neural complexes.
+  ref: "Cell Rep. 45(6), 117422, 2026"
+  doi: 10.1016/j.celrep.2026.117422 
+
 - author: R. J. Huebner, S. Weng, C. Lee, S. Sarikaya, O. Papoulas, R. M. Cox, E. M. Marcotte, J. B. Wallingford
   year: 2022
   title: Cell adhesions link subcellular actomyosin dynamics to tissue scale force production during vertebrate convergent extension.
