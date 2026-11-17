@@ -1,0 +1,6 @@
+.DS_Store
+*.sw[op]
+_site/
+.jekyll-cache/
+.sass-cache/
+Gemfile.lock

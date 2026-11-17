@@ -37,97 +37,9 @@ body, html {
 /* about block */
 
 #about-block{
-    background: url(../img/profile_031920.png) no-repeat middle right rgb(0,0,0);
-    -webkit-background-size: 50%;
-    -moz-background-size: 50%;
-    -o-background-size: 50%;
     background: $grey-color;
     color: #ffffff;
 }
-
-/**
- * People page
- */
-#people { 
-    background: url(../img/LabPictureOct2018.jpg) no-repeat top left rgb(1,2,2); 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    /*
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    */
-}
-
-
-.people-title {
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    color: $text-color-extra-light;
-    text-shadow: 2px 2px 4px #000000;
-
-    &,
-    &:visited {
-        color: $grey-color-light;
-    }
-}
-
-.people-icon {
-    display: inline-block;
-    position: relative;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin: 0px;
-    margin-top: 2px;
-    background: $text-color-light;
-    color: $brand-color-dark;
-    border-radius: 2px;
-
-    &:hover {
-        color: $brand-color;
-    }
-
-    .icon-tooltip {
-        display: none;
-        position: absolute;
-        top: 26px;
-        left: 0px;
-        background-color: $text-color-extra-light;
-        color: $grey-color-dark;
-        border-color: $grey-color-dark;
-        border-style: solid;
-        border-width: 0.5px;
-        border-radius: 2px;
-        width: auto;
-        height: 1.3*$base-font-size;
-        padding: 1px;
-        padding-left: 2px;
-        padding-right: 2px;
-        z-index: 10000;
-    }
-    &:hover .icon-tooltip {
-        display: block;
-    }
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $brand-color;
-        }
-    }
-}
-
 
 /***
  * Loader image
