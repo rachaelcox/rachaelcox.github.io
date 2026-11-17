@@ -1,0 +1,40 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<div class="post">
+  <h1 class="post-title">Projects</h1>
+  <p class="page-intro">Selected projects. Full list of papers on the <a href="/publications/">publications</a> page.</p>
+
+  <div class="project">
+    <h2>A protein interactome for the last eukaryotic common ancestor</h2>
+    <p class="project-meta">First author &middot; <em>Cell Genomics</em>, June 2026 &middot; PhD work in the <a href="http://www.marcottelab.org/index.php/Main_Page">Marcotte Lab</a> at UT Austin</p>
+
+    <figure class="project-figure">
+      <img src="/img/leca_fig2.jpg" alt="Overview of the experimental and computational methods: a co-fractionation mass spectrometry workflow, the eukaryotic tree of species sampled with the last eukaryotic common ancestor at its center, and the supervised machine learning pipeline used to score protein-protein interactions." loading="lazy" />
+      <figcaption>Co-fractionation mass spectrometry across 31 species (left), the sampled eukaryotic tree with LECA at its center (right), and the supervised learning pipeline that scores protein&ndash;protein interactions (bottom). Figure 2 from <a href="https://doi.org/10.1016/j.xgen.2026.101254">Cox et al., <em>Cell Genomics</em> 2026</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+    </figure>
+
+    <p>Every eukaryote alive today &mdash; you, a frog, a dandelion, a budding yeast &mdash; descends from a single cell that lived 1.5 to 1.8 billion years ago. Roughly half the gene families we still carry were already present in that ancestor, and a quarter of them have never been characterized. I wanted to know what those ancient proteins were doing, and whether the answer could tell us anything useful about human disease.</p>
+
+    <p>I compared genes across 156 organisms to define the gene families most likely present in that common ancestor, then built a machine learning pipeline over more than 26,000 mass spectrometry experiments from 31 species to infer which of those ancient proteins physically assemble into complexes. The result is a reconstructed interactome: a biochemical snapshot of how the first eukaryotic cell was organized, containing both the machinery we already knew about and assemblies nobody had described.</p>
+
+    <p>The payoff is modern. Because these complexes are conserved across a billion years of evolution, a poorly understood human protein can be annotated by the company it keeps. We used the network to predict new human gene&ndash;disease associations for bone density and congenital birth defects, then tested those predictions in frogs and mice with collaborators at Boston Children's Hospital.</p>
+
+    <ul class="project-stats">
+      <li><span class="num">156</span><span class="label">organisms compared</span></li>
+      <li><span class="num">26,000+</span><span class="label">proteomics experiments</span></li>
+      <li><span class="num">31</span><span class="label">species integrated</span></li>
+    </ul>
+
+    <p class="project-tech"><strong>Built with</strong> &nbsp;Python &middot; R &middot; machine learning &middot; Snakemake &middot; comparative genomics and orthology inference &middot; co-fractionation mass spectrometry &middot; HPC</p>
+
+    <p class="project-links">
+      <a href="https://doi.org/10.1016/j.xgen.2026.101254">Read the paper</a>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13261697/">PubMed Central</a>
+      <a href="https://github.com/marcottelab/leca-proteomics">Code</a>
+    </p>
+  </div>
+</div>
