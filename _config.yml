@@ -1,9 +1,7 @@
 # Site settings
 title: Rachael M. Cox
 email: rachael.cox.davis@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Computational systems and synthetic biologist<br>
-  Ginkgo Bioworks
+description: Computational systems and synthetic biologist
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 linkedin_username: rachaelmcox

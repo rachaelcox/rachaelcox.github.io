@@ -41,6 +41,44 @@ body, html {
     color: #ffffff;
 }
 
+
+/* photo row */
+
+.photo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;
+    clear: both;
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    /* override the global "img { max-width: 25%; float: right }" rule */
+    img {
+        height: 240px;
+        width: auto;
+        max-width: 100%;
+        float: none;
+        display: block;
+        border-radius: 3px;
+    }
+
+    figcaption {
+        margin-top: 6px;
+        color: $grey-color;
+    }
+}
+
+@include media-query($on-palm) {
+    .photo-row img {
+        height: 150px;
+    }
+}
+
 /***
  * Loader image
  */
@@ -224,31 +262,14 @@ a.anchor {
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+    text-align: right;
 }
 
 @include media-query($on-palm) {
@@ -256,6 +277,10 @@ a.anchor {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-2 {
+        text-align: left;
     }
 }
 
