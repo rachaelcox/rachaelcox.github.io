@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Classes
+title: Teaching
 permalink: /classes/
 ---
 - **Introduction to R** (Half Day Course, November 2022):
