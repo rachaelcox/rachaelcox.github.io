@@ -1,12 +1,9 @@
 # Site settings
 title: Rachael M. Cox
-address: The University of Texas at Austin
-email: rachaelcox@utexas.edu
+email: rachael.cox.davis@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Department of Molecular Biosciences<br>
-  Center for Systems and Synthetic Biology<br>
-  2500 Speedway, A4800<br>
-  Room: MBB 3.128B
+  Computational systems and synthetic biologist<br>
+  Ginkgo Bioworks
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: rachaelmcox
